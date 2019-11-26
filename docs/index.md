@@ -1,23 +1,16 @@
-# Installation Guide
+# Reproducible Science and Programming Practices for Research Students
 
-<!-- The Installation Guide for the 2017 edition is not currently available.
+These website should help you to get started in
 
-Please check back closer to the course start date for a detailed guide on setting up your computational environment for our course
+- setting up the computing environment on your machine, and
+- understanding the basic principles of reproducible science, 
 
-Thanks!
+both of which will allow you to manage *data- and computation-intensive projects* way more effeciently than before!
 
-Programming Practices for Research in Economics Team -->
-
-These pages should help you to get started setting up the computing environment on your machine ready for the course "Programming Practices for Research in Economics" at the University of Zurich in Fall 2018.
-
-**Please attempt to install necessary software and packages prior to the beginning of the course.**
-
-!!! summary
-    * If everything goes smoothly, you should be able to complete the installation in one sitting within 60-120 minutes.
-    * Please follow the steps one-by-one in the order they appear on the side bar and do not deviate from them, unless you really know what you are doing.
-    * If you find any outdated links or unclear descriptions, email us at [programming@econ.uzh.ch]() so that we can update the instructions or clarify as needed.
-    * Where necessary, we have provided instructions for Mac, Windows and Linux machines.
-
+!!! tip 
+    * Rather then seeing this page as a one-time exercise, we encourage you to bookmark it and come back to it frequently.
+	* Reproducible science is a process - you can start today (e.g., by setting up file structures in a better way), but it will take time to master the more advanced skills.
+	* If you find any outdated content, links or unclear descriptions, email us at [h.datta@tilburguniversity.edu]() so that we can update the instructions or clarify as needed.
 
 <!-- !!! tip "Installation Help" -->
 <!--     Please try and install all the software before the course begins. -->

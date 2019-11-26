@@ -3,13 +3,13 @@
 A good text editor lies at the heart of any serious programmer's toolkit: It can do almost anything and makes you much more productive.
 The editors built into each program are generally are not an option (we will find certain cases where you may want to use them).
 
-Please download, install it along with the necessary packages and stick with it for at least the duration of the course and assignment to get a feel for how it works.
+Please download, install it along with the necessary packages and stick with it for at least the duration of the project or assignment to get a feel for how it works.
 
 There is a slight learning curve, but soon you hopefully be wondering why no-one forced you to do this before!
-We should get you past the steepest part of the learning curve during the course itself, so we don't anticipate you struggling on your own.
 
 !!! note
-    None of the skills we learn in the course are tied to Atom, so if you do decide to move away to another editor, nothing will be lost.
+    - None of the skills on this website are tied to Atom, 
+	so if you do decide to move away to another editor, nothing will be lost.
 
 <!-- ## Installing Sublime Text
 
@@ -56,30 +56,28 @@ Node    : 8.9.3
 Make sure that the version numbers are above `1.26.x` or newer.
 
 !!! danger "Additional Step for Windows:"
-    Getting things to run from the command line for us is a bit harder. You will need local administration rights for your computer, but you should have these on your personal computers or those owned by the Department.
+    Getting things to run from the command line for Windows users is a bit harder. You will need local administration rights for your computer, but you should have these on your personal computers or those owned by the University.
 
-    Right-click on Computer. Then go to "Properties" and select the tab "Advanced System Settings". Choose "Environment Variables" and select `Path` from the list of system variables.
+    - Right-click on Computer. 
+	- Then go to "Properties" and select the tab "Advanced System Settings". 
+	- Choose "Environment Variables" and select `Path` from the list of system variables.
+	- If you accepted all defaults during your installation, and didn't have any other non-default setting prior to starting this guide, choose `Edit.`
 
-    If you accepted all defaults during your installation, and didn't have any other non-default setting prior to starting this guide, choose `Edit.`
+		- **On Windows 7 or 8 machines:**
+			Append the following (i.e., do not overwrite the previous value) modifying the string, with your relevant `username`:
 
-    **On Windows 7 or 8 machines:**
-     Append the following (i.e., do not overwrite the previous value) modifying the string, with your relevant `username`:
+            `;C:\Users\username\AppData\Local\atom\bin`
 
-            ;C:\Users\username\AppData\Local\atom\bin
+			to the variable value – make sure the rest remains as it is and do not include spaces between the ";" and preceeding text.
 
-    to the variable value – make sure the rest remains as it is and do not include spaces between the ";" and preceeding text.
+		- **On Windows 10 machines:**
+			Click `New` and paste the following string, modifying the `username`
 
-    **On Windows 10 machines:**
-    Click `New` and paste the following string, modifying the `username`
+			`C:\Users\username\AppData\Local\atom\bin`
 
-            C:\Users\username\AppData\Local\atom\bin
-
-    Click on `OK` as often as needed.
+		Click on `OK` as often as needed.
 
     Close your current terminal session, open a new one, and again try `atom .` - the Atom editor will open if this was successful.
-
-    !!! tip
-        You will need to add a new PATH for most of the following installation steps. Always keep in mind that after you add a new PATH, you need to start a *new* cygwin/terminal session to verify whether it worked. Sometimes it may take a couple of minutes until your PATH is recognized by the terminal. 
 
 ## Additional Packages for Atom
 

@@ -1,30 +1,19 @@
 # Contact Us
 
-## Programming Practices Team
+This site builds on the shoulders of academics Lachlan Deer, Adrian Etter, Julian Langer, and Max Winkler at the Department of Economics, University of Zurich.
 
-Programming Practices for Research in Economics was created by
+It has been modified later by Hannes Datta at Tilburg University, with a grant to stimulate the usage of reproducible science tools at 
+the Tilburg School of Economics and Management.
 
-* Lachlan Deer
-* Adrian Etter
-* Julian Langer
-* Max Winkler
-
-at the Department of Economics, University of Zurich in 2016. This installation guide is for the 2018 edition, conducted by
-
-* Ulrich Bergmann
-* Ursina Schaede
-* Dora Simon
-* Carlo Zanella
-* Christian Zünd
 
 ## Questions or Comments?
 
 Please contact us via email:
 
 ```
-programming "AT" econ.uzh.ch
+h.datta "AT" tilburguniversity.edu
 ```
 
-with the title "Installation Guide: Programming Practices for Research in Economics."
+with the title "Reproducible Science"
 
-We look forward to hearing from you if you have questions about the installation guide, found this installation guide useful, or have further comments or suggestions to improve it.
+We look forward to hearing from you if you have questions about the guide, found this guide useful, or have further comments or suggestions to improve it.

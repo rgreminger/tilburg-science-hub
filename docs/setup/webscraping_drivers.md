@@ -6,7 +6,7 @@ This is especially true when the site we want to scrape has content that is load
 We will install one package to help us here: Chromedriver
 
 
-Installing this stuff is operating system specific, hence so are the instructions below.
+Installing this stuff is operating-system specific, hence so are the instructions below.
 
 ## Mac Users
 

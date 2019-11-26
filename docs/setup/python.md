@@ -7,13 +7,15 @@ Follow the steps provided on the website.
 
 During the installation you will be asked whether you want Anaconda Python to be added to your PATH. **Click yes!** Even if the installation window gives a warning about adding it to your PATH, please still check that box.
 
-!!! note "For Windows Users:"
+Note that the installation of Anaconda may take about 5-10 minutes, dependening on how fast your computer is.
+
+!!! note "For Windows Users"
     *   When asked if you want single or multiple user installation, choose single user
     *   Accept all defaults that are set in the installation window
     *   Check the box for adding Anaconda to your PATH
     *   In the last step, you are asked if you want Visual Studio, click **Yes**.
 
-!!! note "For Linux Users:"
+!!! note "For Linux Users"
     For some users Python was not added to the path. To quickly do this, please open a terminal window, paste ```echo '$HOME/anaconda3/bin:$PATH' >> ~/.bashrc``` and press `Return`.
 
 ## Verifying that the installation was successful
@@ -40,8 +42,10 @@ Python 3.6.5 :: Anaconda, Inc.
 Python 3.6.2 :: Anaconda custom (64-bit)
 ```
 
-!!! tip "Python 2 vs Python 3"
-    Python 2 and 3 are incompatible in syntax. If you had Python 2 previously installed on your machine, you might have seen `Python 2.x.x` above. In that case try typing
+!!! tip "Python 2 versus Python 3"
+    Python 2 and 3 are incompatible in syntax. 
+	If you had Python 2 previously installed on your machine, 
+	you might have seen `Python 2.x.x` above. In that case try typing
 
     ```python3 --version```
 
