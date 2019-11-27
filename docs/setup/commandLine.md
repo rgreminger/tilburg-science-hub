@@ -14,11 +14,13 @@ So that we can work as closely as possible to the Mac and Linux users we will in
 ```bash
 userName@computerName: ~$
 ```
-i.e. for Uli he sees:
+<!--i.e. for Uli he sees:
 ```bash
 ubergmann@dhcp-wlan-uzh-10-12-130-xxx: ~$
 ```
+
 We will explain what all this means in the first day or so of the course.
+-->
 
 !!! tip "Why Cygwin"
     *   We will uses Cygwin as our command line tool, and unlike other Windows shells such as PowerShell it uses Unix syntax.

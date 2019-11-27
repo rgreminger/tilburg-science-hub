@@ -4,10 +4,10 @@ nav:
 - Software Setup: 
   - Installation Guide Overview: setup/index.md
   #- Terminology: setup/terminology.md
+  - Command Line Tools: setup/commandLine.md
   - R: setup/r.md
   - Git: setup/gitInstall.md
   - Text Editor: setup/textEditor.md
-  #- Command Line Tools: setup/commandLine.md
   - Python: setup/python.md
   - Python Extras: setup/python-more.md
   - Build Tools: 

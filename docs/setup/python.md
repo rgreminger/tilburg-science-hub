@@ -10,9 +10,9 @@ During the installation you will be asked whether you want Anaconda Python to be
 Note that the installation of Anaconda may take about 5-10 minutes, dependening on how fast your computer is.
 
 !!! note "For Windows Users"
-    *   When asked if you want single or multiple user installation, choose single user
-    *   Accept all defaults that are set in the installation window
-    *   Check the box for adding Anaconda to your PATH
+    *   When asked if you want single or multiple user installation, choose **single user**.
+    *   Accept all defaults that are set in the installation window.
+    *   Check the box for adding Anaconda to your PATH.
     *   In the last step, you are asked if you want Visual Studio, click **Yes**.
 
 !!! note "For Linux Users"

@@ -8,7 +8,7 @@ We will use make to automate the execution of our research projects with a "sing
 ### For Windows Users
 
 We will install Make so that it plays nicely within CygWin.
-Its time to go back to the **setup-x86_64.exe** we told you not to delete. We will use it to install make.
+Its time to go back to the **setup-x86_64.exe** we [told you not to delete](commandLine.md). We will use it to install make.
 Proceed as follows:
 
 * Click through the installation until you arrive at the page "Select packages."
