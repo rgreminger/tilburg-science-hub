@@ -13,16 +13,26 @@ Lachlan Deer, Adran Etter, Julian Langer & Max Winkler, 2017, Installation Guide
 
 *   Module maintainer: Hannes Datta (`@hannesdatta`)
 *   Tilburg University
-*
-*   Current version of website: [https://github.com/hannesdatta/reproducible-science-guide](https://github.com/hannesdatta/reproducible-science-guide)
+*   Current version of website: [https://hannesdatta.github.io/reproducible-science-guide/](https://hannesdatta.github.io/reproducible-science-guide/)
 
 ## Building the Site
 
 We use [MkDocs]() to build the the course websites for this course.
 
+* First, clone our repository and switch to the tilburg-update branch (the master branch is reserved for the original project).
+```{.bash}
+git clone https://github.com/hannesdatta/reproducible-science-guide.git
+git checkout tilburg-update
+```
+
 * Install MkDocs with the following command:
 ```{.bash, id:"j29ie3c7"}
 pip install mkdocs
+```
+
+* Install the `materials` theme for MkDocs:
+```{.bash}
+pip install mkdocs-material
 ```
 
 * Look at a copy of the site served locally on your machine:
