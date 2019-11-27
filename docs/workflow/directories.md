@@ -20,7 +20,13 @@ This helps us to ensure what we refer to as **portability**, enabling co-authors
    
 ## The content of a module
 
-The module itself should contain of a set of five pre-defined directories.
+A module itself contains a set of five pre-defined directories. The basic principles are to 
+
+- keep inputs and outputs separate (e.g., so you can change inputs, leave everything unchanged, and re-run your code to see how results may change),
+
+- and to run scripts from each module.
+
+And... here's our advised subdirectory structure:
 
 1) The `\code` subdirectory contains all the necessary code to execute your project. Think about R or Python scripts.
 

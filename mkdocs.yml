@@ -4,13 +4,13 @@ nav:
 - Software Setup: 
   - Installation Guide Overview: setup/index.md
   #- Terminology: setup/terminology.md
-  - Command Line Tools: setup/commandLine.md
+  #- Command Line Tools: setup/commandLine.md
   - R: setup/r.md
   - Git: setup/gitInstall.md
   - Text Editor: setup/textEditor.md
   - Python: setup/python.md
   - Python Extras: setup/python-more.md
-  - Build Tools: 
+  - Build Tools/Make: 
     - Why Build Tools?: setup/make-intro.md
     - Automation with Make: setup/make.md
 #    - Automation with Waf: setup/waf.md
@@ -23,7 +23,9 @@ nav:
   - Getting started: workflow/index.md
   - Module structure: workflow/directories.md
   #- Alternative module structure: workflow/directories_alt.md
-  #- Automation: workflow/automation.md
+  - Automation: workflow/automation.md
+    #- Overview: 
+    #- Workflow in make: workflow/automation_workflow.md
   #- Versioning: workflow/versioning.md
   #- Data storage: workflow/data.md
   #- Documentation: workflow/doc.md

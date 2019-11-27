@@ -1,246 +1,134 @@
-# Specimen
+# Automation
 
-## Body copy
+## Make
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras arcu libero,
-mollis sed massa vel, *ornare viverra ex*. Mauris a ullamcorper lacus. Nullam
-urna elit, malesuada eget finibus ut, ullamcorper ac tortor. Vestibulum sodales
-pulvinar nisl, pharetra aliquet est. Quisque volutpat erat ac nisi accumsan
-tempor.
+If you've followed the [installation guide properly](../setup/make.md), you have `make` installed on your computer.
 
-**Sed suscipit**, orci non pretium pretium, quam mi gravida metus, vel
-venenatis justo est condimentum diam. Maecenas non ornare justo. Nam a ipsum
-eros. [Nulla aliquam](#) orci sit amet nisl posuere malesuada. Proin aliquet
-nulla velit, quis ultricies orci feugiat et. `Ut tincidunt sollicitudin`
-tincidunt. Aenean ullamcorper sit amet nulla at interdum.
+`Make` helps you to automize 
 
-## Headings
+- what code is executed and when, and
 
-### The 3rd level
+- what inputs a given script needs to run.
 
-#### The 4th level
+## An Illustration of a Typical Workflow using `make`
 
-##### The 5th level
+### Basics
 
-###### The 6th level
+Imagine you have three raw data sets in Excel, that you wish to convert into csv files and then merge. Finally, you want to analyze the data using an OLS regression, and produce some plots, and put the results in a PDF document.
 
-## Headings <small>with secondary text</small>
+This workflow can be visualized as follows:
 
-### The 3rd level <small>with secondary text</small>
+![Workflow](make_flowchart.png)
 
-#### The 4th level <small>with secondary text</small>
+In `make`, the worflow collapses to a set of rules, which are structured as follows:
 
-##### The 5th level <small>with secondary text</small>
+```bash
+target : source(s) 
+    execution command
+```
 
-###### The 6th level <small>with secondary text</small>
+A *target* refers to **what** needs to be build (e.g., a file),
+*source(s)* specify what is **required** to execute the build, and
+the *execution command* specifies **how** to execute the build.
 
-## Blockquotes
+### Translating the Pipeline into `make` Code
 
-> Morbi eget dapibus felis. Vivamus venenatis porttitor tortor sit amet rutrum.
-  Pellentesque aliquet quam enim, eu volutpat urna rutrum a. Nam vehicula nunc
-  mauris, a ultricies libero efficitur sed. *Class aptent* taciti sociosqu ad
-  litora torquent per conubia nostra, per inceptos himenaeos. Sed molestie
-  imperdiet consectetur.
+In "make code", the workflow above - saved in a *makefile* (a file called `makefile`, without a file type ending) - will become:
 
-### Blockquote nesting
+```bash
 
-> **Sed aliquet**, neque at rutrum mollis, neque nisi tincidunt nibh, vitae
-  faucibus lacus nunc at lacus. Nunc scelerisque, quam id cursus sodales, lorem
-  [libero fermentum](#) urna, ut efficitur elit ligula et nunc.
+../temp/cleaned_data1.csv ../temp/cleaned_data2.csv ../temp/cleaned_data3.csv: ../input/raw_data1.xlsx ../input/raw_data2.xlsx ../input/raw_data3.xlsx python to_csv.py
+   	python to_csv.py
+	
+../temp/merged.csv: ../temp/cleaned_data1.csv ../temp/cleaned_data2.csv ../temp/cleaned_data3.csv merge.R
+   	R --vanilla --args "" < "merge.R"
 
-> > Mauris dictum mi lacus, sit amet pellentesque urna vehicula fringilla.
-    Ut sit amet placerat ante. Proin sed elementum nulla. Nunc vitae sem odio.
-    Suspendisse ac eros arcu. Vivamus orci erat, volutpat a tempor et, rutrum.
-    eu odio.
+../temp/analysis.RData: ../temp/merged.csv analyze.R
+   	R --vanilla --args "" < "analyze.R"
 
-> > > `Suspendisse rutrum facilisis risus`, eu posuere neque commodo a.
-      Interdum et malesuada fames ac ante ipsum primis in faucibus. Sed nec leo
-      bibendum, sodales mauris ut, tincidunt massa.
+../temp/plot.png: ../temp/merged.csv plot.R
+   	R --vanilla --args "" < "plot.R"
 
-### Other content blocks
+../output/report.pdf: ../temp/plot.png ../temp/analysis.RData
+	R -e "rmarkdown::render('make_report.Rmd', output_file = '../output/report.pdf')"
 
-> Vestibulum vitae orci quis ante viverra ultricies ut eget turpis. Sed eu
-  lectus dapibus, eleifend nulla varius, lobortis turpis. In ac hendrerit nisl,
-  sit amet laoreet nibh.
-  ``` js hl_lines="8"
-  var _extends = function(target) {
-    for (var i = 1; i < arguments.length; i++) {
-      var source = arguments[i];
-      for (var key in source) {
-        target[key] = source[key];
-      }
-    }
-    return target;
-  };
-  ```
+```
 
-  > > Praesent at `:::js return target`, sodales nibh vel, tempor felis. Fusce
-      vel lacinia lacus. Suspendisse rhoncus nunc non nisi iaculis ultrices.
-      Donec consectetur mauris non neque imperdiet, eget volutpat libero.
+!!! hint
+	Pay attention to the subdirectory structure used here: the rules refer to files in different folders (code, temp, input, output, audit), which are explained [earlier in this guide](directories.md).
 
-## Lists
+### Running `make` 
 
-### Unordered lists
+You can run the workflow by typing `make` in the directory where the `makefile` is located.
+If you type `make -n`, the code will not be executed, but you only are shown a set commands
+`make` *would* execute if it was run (so you can check what files need to be re-built).
 
-* Sed sagittis eleifend rutrum. Donec vitae suscipit est. Nullam tempus tellus
-  non sem sollicitudin, quis rutrum leo facilisis. Nulla tempor lobortis orci,
-  at elementum urna sodales vitae. In in vehicula nulla, quis ornare libero.
+## Some examples of when `make` becomes useful
 
-    * Duis mollis est eget nibh volutpat, fermentum aliquet dui mollis.
-    * Nam vulputate tincidunt fringilla.
-    * Nullam dignissim ultrices urna non auctor.
+- You have a script that takes a very long time to build a dataset 
+(let's say a couple of hours), and another script that runs an analysis on it.
+You only would like to produce a new dataset if actually code to make that dataset has changed. 
+Using `make`, your computer will figure out what code to execute to get you your final analysis.
 
-* Aliquam metus eros, pretium sed nulla venenatis, faucibus auctor ex. Proin ut
-  eros sed sapien ullamcorper consequat. Nunc ligula ante, fringilla at aliquam
-  ac, aliquet sed mauris.
+- You want to run a robustness check on a larger sample, using a virtual computer you have rented in the cloud.
+To run your analysis, you would have to spend hours of executing script after script to make sure the project runs the way you want.
+Using `make `, you can simply ship your entire code off to the cluster, change the sample size, and wait for the job to be done.
 
-* Nulla et rhoncus turpis. Mauris ultricies elementum leo. Duis efficitur
-  accumsan nibh eu mattis. Vivamus tempus velit eros, porttitor placerat nibh
-  lacinia sed. Aenean in finibus diam.
 
-### Ordered lists
+## Make versus ...
 
-1. Integer vehicula feugiat magna, a mollis tellus. Nam mollis ex ante, quis
-  elementum eros tempor rutrum. Aenean efficitur lobortis lacinia. Nulla
-  consectetur feugiat sodales.
+### Readme.txt
 
-2. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur
-  ridiculus mus. Aliquam ornare feugiat quam et egestas. Nunc id erat et quam
-  pellentesque lacinia eu vel odio.
+A `readme.txt` - or, in other words, a plain text file with some documentation - is great. 
+They are very useful to provide an overview about what the project is
+about, and many researchers also use them to explain in which order to run scripts. But then again, 
+you would have to execute that code manually. 
 
-    1. Vivamus venenatis porttitor tortor sit amet rutrum. Pellentesque aliquet
-      quam enim, eu volutpat urna rutrum a. Nam vehicula nunc mauris, a
-      ultricies libero efficitur sed.
+### A bash script
 
-        1. Mauris dictum mi lacus
-        2. Ut sit amet placerat ante
-        3. Suspendisse ac eros arcu
+What you see with other researchers is that they put the running instructions into a bash script, 
+for example a `.bat` file on Windows. Such a file is helpful because it makes the order of 
+execution *explicit*, but such a file will always build *everything*. Especially in data-intensive
+projects, though, you would exactly want to avoid that to make quick progress.
 
-    2. Morbi eget dapibus felis. Vivamus venenatis porttitor tortor sit amet
-      rutrum. Pellentesque aliquet quam enim, eu volutpat urna rutrum a. Sed
-      aliquet, neque at rutrum mollis, neque nisi tincidunt nibh.
+Generally, `make` is preferred over a `readme.txt` - but better have a `readme.txt` than no documentation at all.
 
-    3. Pellentesque eget `:::js var _extends` ornare tellus, ut gravida mi.
-    ``` js hl_lines="1"
-    var _extends = function(target) {
-      for (var i = 1; i < arguments.length; i++) {
-        var source = arguments[i];
-        for (var key in source) {
-          target[key] = source[key];
-        }
-      }
-      return target;
-    };
-    ```
+!!! summary
+	
+	With `make`, we 
 
-3. Vivamus id mi enim. Integer id turpis sapien. Ut condimentum lobortis
-  sagittis. Aliquam purus tellus, faucibus eget urna at, iaculis venenatis
-  nulla. Vivamus a pharetra leo.
+	- explicitly document the workflow, making communication with colleagues (and especially our future selves) more efficient,
 
-### Definition lists
+	- can reproduce the entire workflow with one command,
 
-Lorem ipsum dolor sit amet
+	- keep track of complicated file dependencies, and
 
-:   Sed sagittis eleifend rutrum. Donec vitae suscipit est. Nullam tempus
-    tellus non sem sollicitudin, quis rutrum leo facilisis. Nulla tempor
-    lobortis orci, at elementum urna sodales vitae. In in vehicula nulla.
+	- are kept from *repeating* typos or mistakes - if we stick to using `make` everytime
+	we want to run our project, then we *must* correct each mistake before we can continue.
 
-    Duis mollis est eget nibh volutpat, fermentum aliquet dui mollis.
-    Nam vulputate tincidunt fringilla.
-    Nullam dignissim ultrices urna non auctor.
+## Want to know more?
 
-Cras arcu libero
+This open source book explains you all the bells and whistles about using `make`. Definitely recommended!
 
-:   Aliquam metus eros, pretium sed nulla venenatis, faucibus auctor ex. Proin
-    ut eros sed sapien ullamcorper consequat. Nunc ligula ante, fringilla at
-    aliquam ac, aliquet sed mauris.
+* Mecklenburg, R. (2004). [Managing Projects with GNU Make: The Power of GNU Make for Building Anything.](https://www.oreilly.com/openbook/make3/book/index.csp)), O'Reilly Media, Inc.
 
-## Code blocks
 
-### Inline
+<!--
 
-Morbi eget `dapibus felis`. Vivamus *`venenatis porttitor`* tortor sit amet
-rutrum. Class aptent taciti sociosqu ad litora torquent per conubia nostra,
-per inceptos himenaeos. [`Pellentesque aliquet quam enim`](#), eu volutpat urna
-rutrum a.
 
-Nam vehicula nunc `:::js return target` mauris, a ultricies libero efficitur
-sed. Sed molestie imperdiet consectetur. Vivamus a pharetra leo. Pellentesque
-eget ornare tellus, ut gravida mi. Fusce vel lacinia lacus.
 
-### Listing
+- We have three raw data sets (.xlsx)
 
-    #!js hl_lines="8"
-    var _extends = function(target) {
-      for (var i = 1; i < arguments.length; i++) {
-        var source = arguments[i];
-        for (var key in source) {
-          target[key] = source[key];
-        }
-      }
-      return target;
-    };
+- We want to convert these files to .csv files
 
-## Horizontal rules
+- We want to merge all three files
 
-Aenean in finibus diam. Duis mollis est eget nibh volutpat, fermentum aliquet
-dui mollis. Nam vulputate tincidunt fringilla. Nullam dignissim ultrices urna
-non auctor.
+- We want to analyze the data using an OLS regression
 
-***
+- We want to produce plots
 
-Integer vehicula feugiat magna, a mollis tellus. Nam mollis ex ante, quis
-elementum eros tempor rutrum. Aenean efficitur lobortis lacinia. Nulla
-consectetur feugiat sodales.
+- We want to combine those into a PDF
 
-## Data tables
+- We need to clean this data - to do so, we have one code file
 
-| Sollicitudo / Pellentesi | consectetur | adipiscing | elit    | arcu | sed |
-| ------------------------ | ----------- | ---------- | ------- | ---- | --- |
-| Vivamus a pharetra       | yes         | yes        | yes     | yes  | yes |
-| Ornare viverra ex        | yes         | yes        | yes     | yes  | yes |
-| Mauris a ullamcorper     | yes         | yes        | partial | yes  | yes |
-| Nullam urna elit         | yes         | yes        | yes     | yes  | yes |
-| Malesuada eget finibus   | yes         | yes        | yes     | yes  | yes |
-| Ullamcorper              | yes         | yes        | yes     | yes  | yes |
-| Vestibulum sodales       | yes         | -          | yes     | -    | yes |
-| Pulvinar nisl            | yes         | yes        | yes     | -    | -   |
-| Pharetra aliquet est     | yes         | yes        | yes     | yes  | yes |
-| Sed suscipit             | yes         | yes        | yes     | yes  | yes |
-| Orci non pretium         | yes         | partial    | -       | -    | -   |
 
-Sed sagittis eleifend rutrum. Donec vitae suscipit est. Nullam tempus tellus
-non sem sollicitudin, quis rutrum leo facilisis. Nulla tempor lobortis orci,
-at elementum urna sodales vitae. In in vehicula nulla, quis ornare libero.
-
-| Left       | Center   | Right   |
-| :--------- | :------: | ------: |
-| Lorem      | *dolor*  | `amet`  |
-| [ipsum](#) | **sit**  |         |
-
-Vestibulum vitae orci quis ante viverra ultricies ut eget turpis. Sed eu
-lectus dapibus, eleifend nulla varius, lobortis turpis. In ac hendrerit nisl,
-sit amet laoreet nibh.
-
-<table>
-  <colgroup>
-    <col width="30%">
-    <col width="70%">
-  </colgroup>
-  <thead>
-    <tr class="header">
-      <th>Table</th>
-      <th>with colgroups (Pandoc)</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>Lorem</td>
-      <td>ipsum dolor sit amet.</td>
-    </tr>
-    <tr>
-      <td>Sed sagittis</td>
-      <td>eleifend rutrum. Donec vitae suscipit est.</td>
-    </tr>
-  </tbody>
-</table>

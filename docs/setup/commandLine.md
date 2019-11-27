@@ -103,7 +103,7 @@ If terminal tells you it is not yet installed, then go for ```brew reinstall lib
 
 ## Linux Users
 
-To use the current R version, wee need to install some system tools. For this open a terminal session with `Crtl` + `Alt` + `T`.
+To use the current R version, we need to install some system tools. For this open a terminal session with `Crtl` + `Alt` + `T`.
 
 * Now copy the following command into terminal and press `Enter`:
 

@@ -16,6 +16,27 @@ Make sure your `homebrew` package is up-to-date. To do so, open a terminal and e
 brew update
 ```
 
+If that returns an error, `homebrew` is not installed.
+
+- To install Homebrew, open a terminal and paste the following command:
+
+	```bash
+	ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+	```
+
+- To verify that Homebrew installed correctly, enter the following into your terminal
+	
+	```bash
+	brew doctor
+	```
+
+	...and you should see the following output
+	
+	```bash
+	Your system is ready to brew
+	```
+
+
 ### Chromedriver
 
 * We assume you have Google Chrome installed. If not, do this first.
