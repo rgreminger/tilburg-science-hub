@@ -1,10 +1,7 @@
 # Contact Us
 
-This site builds on the shoulders of academics Lachlan Deer, Adrian Etter, Julian Langer, and Max Winkler at the Department of Economics, University of Zurich.
-
-It has been modified later by Hannes Datta at Tilburg University, with a grant to stimulate the usage of reproducible science tools at 
-the Tilburg School of Economics and Management.
-
+This site heavily builds on work at University of Zurich (see [acknowledgements](acknowledgement.md)). Inspired by their work, the website has
+been further developed by researchers at Tilburg School of Economics at Management, Tilbur University, The Netherlands.
 
 ## Questions or Comments?
 

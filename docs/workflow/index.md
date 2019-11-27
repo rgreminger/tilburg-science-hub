@@ -21,11 +21,13 @@ Well - avoiding this chaos is **at the core of implementing a workflow managemen
 
 The following pages should help you to get introduced to a few principles of a proper workflow management system.
 
-
 !!! tip 
     * We may sometimes sound a bit dogmatic about certain things (e.g., you MUST do this or that). Please trust us that many of our teachings will make sense only after a while; so - stick with our recommendations during the course of your first few projects. Later on, take the liberty to design the workflows to your needs.
 	* You should be able to complete this subchapter in one sitting within 60-120 minutes.
 
+!!! warning
+	This site is under development, and will be updated soon. For now, you've reached the dead-end street of how much material we have at this moment. Please check back later.
+	
 <!--#* Please follow the steps one-by-one in the order they appear on the side bar and do not deviate from them, unless you really know what you are doing.
 #* Where necessary, we have provided instructions for Mac, Windows and Linux machines.
 --!>

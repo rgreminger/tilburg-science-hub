@@ -21,14 +21,15 @@ nav:
   # - Path Settings: setup/path-setting.md
 - Workflow Management: 
   - Getting started: workflow/index.md
-  - Module structure: workflow/directories.md
-  - Alternative module structure: workflow/directories_alt.md
-  - Automation: workflow/automation.md
-  - Data storage: workflow/data.md
-  - Documentation: workflow/doc.md
-  - Housekeeping: workflow/housekeeping.md
-  - Portability: workflow/portability.md
-  - Checklist: workflow/checklist.md
+  #- Module structure: workflow/directories.md
+  #- Alternative module structure: workflow/directories_alt.md
+  #- Automation: workflow/automation.md
+  #- Versioning: workflow/versioning.md
+  #- Data storage: workflow/data.md
+  #- Documentation: workflow/doc.md
+  #- Housekeeping: workflow/housekeeping.md
+  #- Portability: workflow/portability.md
+  #- Checklist: workflow/checklist.md
 - Contact: contact.md
 - Acknowledgements: acknowledgement.md
 

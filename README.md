@@ -1,20 +1,20 @@
 # Module: Guide for Reproducible Science and Programming Practices for Research Students
 
-## Meta-Information
-
-*   This module is based on a fork of https://pp4rs.github.io/installation-guide,
-*   and we would like to acknowledge Lachlan Deer (`@lachlandeer`) as well as the
-*   Department of Economics at the University of Zurich for their fantastic work
-*   on the original package.
+This module is based on a fork of https://pp4rs.github.io/installation-guide,
+and we would like to acknowledge Lachlan Deer (`@lachlandeer`) as well as the
+Department of Economics at the University of Zurich for their fantastic work
+on the original repository.
 
 ```
 Lachlan Deer, Adran Etter, Julian Langer & Max Winkler, 2017, Installation Guide, Programming Practices for Research in Economics, University of Zurich
 ```
 
+## Meta-Information
+
 *   Module maintainer: Hannes Datta (`@hannesdatta`)
 *   Tilburg University
 *
-*   Current version of website: [version here](XXXXhttps://pp4rs.github.io/installation-guide)
+*   Current version of website: [https://github.com/hannesdatta/reproducible-science-guide](https://github.com/hannesdatta/reproducible-science-guide)
 
 ## Building the Site
 
@@ -32,6 +32,12 @@ mkdocs serve
 * Post the site to github pages using:
 ```{.bash, id:"j29ie3c7"}
 mkdocs gh-deploy
+```
+
+* If this is the first time you are making changes to the github pages, please fetch the gh-pages branch first.
+```{.bash}
+git branch -D gh-pages
+git fetch origin gh-pages:gh-pages
 ```
 
 ## Want to Contribute?
