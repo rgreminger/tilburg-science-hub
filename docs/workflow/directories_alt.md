@@ -1,5 +1,28 @@
-# Specimen
+# Modularity and directory structure
 
+## The purpose of modules
+
+In a research project, one typically has a number of "tasks" to accomplish, such as preparing the data, analyzing the data, writing the paper and producing a set of slides.
+We call these tasks `modules` - and would like to define them as being self-contained, i.e., everything required to run code of a specific module is contained in that module itself.
+This helps us to ensure what we refer to as **portability**, enabling co-authors or anybody interested in your work to take on specific module of your project and run it.
+
+!!! tip
+   A typical 
+## The content of a module
+
+The module itself contains of a set of five pre-defined directories.
+
+```
+\project\
+
+
+If you're working on a larger project - or you're working together with co-authors/advisors - then it could very well happen than some of you only work in some of the modules (e.g.,
+in the analysis).
+
+
+
+
+## Please adhere to the following directory structure per module
 ## Body copy
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras arcu libero,
