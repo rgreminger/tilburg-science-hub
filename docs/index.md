@@ -1,4 +1,4 @@
-# Reproducible Science and Programming Practices for Research Students
+# Reproducible Science and Programming Practices for Researchers
 
 These website should help you to get started in
 

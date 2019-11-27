@@ -1,6 +1,6 @@
 # Contributing
 
-[Guide for Reproducible Science and Programming Practices for Research Students](https://github.com/hannesdatta/reproducible-science-guide) is an open source project,
+[Guide for Reproducible Science and Programming Practices for Researchers](https://github.com/hannesdatta/reproducible-science-guide) is an open source project,
 and we welcome contributions of all kinds:
 new lessons,
 fixes to existing material,

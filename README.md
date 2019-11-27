@@ -1,4 +1,4 @@
-# Module: Guide for Reproducible Science and Programming Practices for Research Students
+# Module: Guide for Reproducible Science and Programming Practices for Researchers
 
 This module is based on a fork of https://pp4rs.github.io/installation-guide,
 and we would like to acknowledge Lachlan Deer (`@lachlandeer`) as well as the
