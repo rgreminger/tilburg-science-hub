@@ -2,8 +2,10 @@
 
 Anaconda is a pre-packaged Python distribution for scientific users.
 
-Direct your browser to [Anaconda download page](https://www.anaconda.com/download/) and download the Python 3.6 Graphical Installer for your machine.
-Follow the steps provided on the website.
+Direct your browser to [Anaconda download page](https://www.anaconda.com/download/) and download the Python 3.x Graphical Installer for your machine.
+Sometimes, the download defaults to Mac, so if you're on Windows or Linux, make sure to select the right version.
+
+Then, follow the steps provided on the website.
 
 During the installation you will be asked whether you want Anaconda Python to be added to your PATH. **Click yes!** Even if the installation window gives a warning about adding it to your PATH, please still check that box.
 
