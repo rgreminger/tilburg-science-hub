@@ -4,7 +4,8 @@
 
 If you've followed the [installation guide properly](../setup/make.md), you have `make` installed on your computer.
 
-`Make` helps you to automize 
+`Make` is a build tool used by software developers to compile computer code into programs that you can install. For us
+researchers, `make` can be used to automate
 
 - what code is executed and when, and
 
