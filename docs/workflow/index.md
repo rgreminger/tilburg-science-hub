@@ -26,7 +26,7 @@ The following pages should help you to get introduced to a few principles of a p
 	* You should be able to complete this subchapter in one sitting within 60-120 minutes.
 
 !!! warning
-	This site is under development, and will be updated soon. For now, you've reached the dead-end street of how much material we have at this moment. Please check back later.
+	This site is under development, and will be updated continuously. Please check back frequently.
 	
 <!--#* Please follow the steps one-by-one in the order they appear on the side bar and do not deviate from them, unless you really know what you are doing.
 #* Where necessary, we have provided instructions for Mac, Windows and Linux machines.
