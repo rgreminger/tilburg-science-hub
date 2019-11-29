@@ -6,6 +6,11 @@ reproducible and is well-structured.
 Here's a checklist you can fill in to see how well you are
 adhering to the suggestions put forward in this guide.
 
+!!! warnings
+	This checklist is **work-in-progress**, and still be incomplete, and not perfectly aligned with other sections on this website.
+	Use at your own risk!
+
+	
 |                                                                         | data-prepation | analysis    | paper       | ...     |
 | ------------------------------------------------------------------------|:--------------:|:-----------:|:-----------:|:-------:|
 | **Main documentation**
