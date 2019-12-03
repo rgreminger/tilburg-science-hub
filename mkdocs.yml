@@ -25,7 +25,9 @@ nav:
   - Module structure: workflow/directories.md
   #- Alternative module structure: workflow/directories_alt.md
   - Automation: workflow/automation.md
-  - Documentation: workflow/doc.md
+  - Documentation: 
+    - Documentation of code and workflow: workflow/doc.md
+    - Documentation of new data: workflow/doc_data.md
     #- Overview: 
     #- Workflow in make: workflow/automation_workflow.md
   #- Versioning: workflow/versioning.md

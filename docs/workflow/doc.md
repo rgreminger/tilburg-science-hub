@@ -1,13 +1,12 @@
-# Documentation
+# Documentation of Code and Workflow
 
-Documenting your projects, not only for others, but also for your future self (i.e., if you plan to continue working on the project
+Documenting your project's *workflow*, not only for others, but also for your future self (i.e., if you plan to continue working on the project
 after a while) is **absolutely crucial** to the long-term success of you as a researcher or analyst.
 
 Typically, you would like to 
 
 - include an overall project documentation, and
 - one documentation each for each [submodule](directories.md).
-
 
 ## Main Project Documentation
 
