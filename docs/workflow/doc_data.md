@@ -19,9 +19,8 @@ Instances of "new data" may included, but are not restricted to be:
 
 ## How to Describe my Dataset(s)?
 
-Ideally, your data description includes the questions outlined in `Datasheets for datasets` by Gebru, Timnit, et al. (2018).
-**We strongly** refer you to the [original paper](https://arxiv.org/abs/1803.09010), which explains in detail the seven
-key ingredients of a proper dataset documentation. As a start, you can copy-paste the text below
+Ideally, your data description includes the questions outlined in `Datasheets for datasets` by Gebru, Timnit, et al. (2018). 
+**We strongly** refer you to the [original paper](https://arxiv.org/abs/1803.09010), which explains in detail the seven key ingredients of a proper dataset documentation. As a start, you can copy-paste the text below
 in a `readme.txt`, and start answering the question.
 
 ```
