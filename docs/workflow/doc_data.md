@@ -19,7 +19,7 @@ Instances of "new data" may included, but are not restricted to be:
 
 
 Ideally, your data description *is quite elaborate*, 
-as outlined in [https://arxiv.org/abs/1803.09010](). Below, we have
+as outlined in [https://arxiv.org/abs/1803.09010](https://arxiv.org/abs/1803.09010). Below, we have
 reproduced a list of seven categories along with several questions from
 the aforementioned paper. We believe it is very useful to answer those
 questions - no problem if you have to skip some! Please **include them as a `readme.txt`**, 
