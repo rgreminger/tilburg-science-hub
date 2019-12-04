@@ -26,8 +26,8 @@ nav:
   #- Alternative module structure: workflow/directories_alt.md
   - Automation: workflow/automation.md
   - Documentation: 
-    - Documentation of code and workflow: workflow/doc.md
-    - Documentation of new data: workflow/doc_data.md
+    - Documentation of Code and Workflow: workflow/doc.md
+    - Documentation of New Data: workflow/doc_data.md
     #- Overview: 
     #- Workflow in make: workflow/automation_workflow.md
   #- Versioning: workflow/versioning.md
@@ -35,7 +35,7 @@ nav:
   #- Documentation: workflow/doc.md
   #- Housekeeping: workflow/housekeeping.md
   #- Portability: workflow/portability.md
-  - Checklist with summary: workflow/checklist.md
+  - Checklist with Summary: workflow/checklist.md
 - Contact: contact.md
 - Acknowledgements: acknowledgement.md
 

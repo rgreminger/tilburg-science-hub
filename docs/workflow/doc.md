@@ -5,13 +5,14 @@ after a while) is **absolutely crucial** to the long-term success of you as a re
 
 Typically, you would like to 
 
-- include an overall project documentation, and
+- include a main project documentation, and
 - one documentation each for each [submodule](directories.md).
 
 ## Main Project Documentation
 
-You should place an "overall" project documentation in main directory of your project, and call it `readme.txt`. 
-Keep the document *brief and simple*, but include at least the following information:
+You should place a main project documentation in the root directory of your project, 
+and call it `readme.txt`. Keep the document *brief and simple*, but include at 
+least the following information:
 
 * Project name
 * Details about the project
@@ -37,6 +38,7 @@ DESCRIPTION:		Put project description here.
 					header.
 					
 AUTHORS:			Hannes Datta, h.datta@tilburguniversity.edu
+
 LAST UPDATED:		29 NOVEMBER 2019
 
 
@@ -98,13 +100,16 @@ OVERVIEW
 
 DESCRIPTION
 ==========================================================
-- Briefly describe the contents of the subdirectories & files 
-  (you do not necessarily need to describe each file separately, 
-  but a user should be able to look at the directories and understand 
-  the organization + what each file is)
-
+- If you are using a makefile (strongly recommended!),
+  please refer to the content of that file for running instructions.
+  
+- If you do not make use of a makefile, please briefly describe 
+  the contents of the subdirectory and its files. 
+  Also provide instructions how to run the files, and in which order.
+  
 ``` 
 
+<!--
 In the case of describing your raw data, include the following:
 
 ```
@@ -118,3 +123,4 @@ WHEN/WHERE OBTAINED & ORIGINAL FORM OF FILES
   how they were obtained (email, downloaded from a website, etc.).
   
 ``` 
+-->
