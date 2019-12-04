@@ -61,8 +61,16 @@ In "make code", the workflow above - saved in a *makefile* (a file called `makef
 ### Running `make` 
 
 You can run the workflow by typing `make` in the directory where the `makefile` is located.
+
 If you type `make -n`, the code will not be executed, but you only are shown a set commands
 `make` *would* execute if it was run (so you can check what files need to be re-built).
+
+The parameter `-o filename1 filename2` allows you to consider some of your files (here, `filename1` and `filename2`) to be "infinitely old",
+i.e., to NOT remake those even though their content has updated. You can use this functionality if 
+you have hand-prepped some of your data, and wish to continue the workflow from there onwards. Of
+course, this should only be used for prototyping your code. When you're done with your edits (e.g., 
+at the end of the day), make sure to wipe all of your temporary and output files, and re-run `make`
+to see whether everything works (and reproduces).
 
 ## Some examples of when `make` becomes useful
 
