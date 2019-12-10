@@ -114,8 +114,15 @@ Using `make`, your computer will figure out what code to execute to get you your
 To run your analysis, you would have to spend hours of executing script after script to make sure the project runs the way you want.
 Using `make `, you can simply ship your entire code off to the cluster, change the sample size, and wait for the job to be done.
 
+## Make versus...
 
-## Make versus ...
+Below is a list of some popular pipeline tools. For more, please check [Awesome Pipeline](https://github.com/pditommaso/awesome-pipeline) and [Awesome Workflow](https://github.com/meirwah/awesome-workflow-engines).
+
+- [Dagster](https://github.com/dagster-io/dagster)/[Dask](https://github.com/dask/dask)/[Kedro](https://github.com/quantumblacklabs/kedro)/[Pachyderm](https://github.com/pachyderm/pachyderm)/[Reflow](https://github.com/grailbio/reflow): for data analysts
+
+- [Airflow](https://github.com/apache/airflow) by Airbnb/[Azkaban](https://github.com/azkaban/azkaban) by Linkedin: for programmers
+- [Cmake](https://cmake.org/)/[Scons](https://scons.org/): general make tools
+- [Bazel](https://bazel.build): Google's next generation build system
 
 ### Readme.txt
 
