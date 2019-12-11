@@ -1,16 +1,17 @@
 site_name: Reproducible Science and Programming Practices for Researchers
 nav:
 - Getting Started: index.md
-- Software Setup: 
+- Software Setup:
   - Installation Guide Overview: setup/index.md
   #- Terminology: setup/terminology.md
   #- Command Line Tools: setup/commandLine.md
   - R: setup/r.md
+  - Stata: setup/stata.md
   - Git: setup/gitInstall.md
   - Text Editor: setup/textEditor.md
   - Python: setup/python.md
   - Python Extras: setup/python-more.md
-  - Build Tools/Make: 
+  - Build Tools/Make:
     - Why Build Tools?: setup/make-intro.md
     - Automation with Make: setup/make.md
 #    - Automation with Waf: setup/waf.md
@@ -20,15 +21,15 @@ nav:
 #  - Pandoc: setup/pandoc.md
   # - Matlab: setup/matlab.md
   # - Path Settings: setup/path-setting.md
-- Workflow Management: 
-  - Getting started: workflow/index.md
-  - Module structure: workflow/directories.md
+- Workflow Management:
+  - Getting Started: workflow/index.md
+  - Module/Directory Structure: workflow/directories.md
   #- Alternative module structure: workflow/directories_alt.md
   - Automation: workflow/automation.md
-  - Documentation: 
+  - Documentation:
     - Documentation of Code and Workflow: workflow/doc.md
     - Documentation of New Data: workflow/doc_data.md
-    #- Overview: 
+    #- Overview:
     #- Workflow in make: workflow/automation_workflow.md
   #- Versioning: workflow/versioning.md
   #- Data storage: workflow/data.md
@@ -39,8 +40,8 @@ nav:
 - Contact: contact.md
 - Acknowledgements: acknowledgement.md
 
-theme: 
+theme:
   name: 'material'
-  
+
 markdown_extensions:
   - admonition
