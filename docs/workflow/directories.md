@@ -8,19 +8,19 @@ This helps us to ensure what we refer to as **portability**, enabling co-authors
 
 !!! tip
 	We suggest you to use the following module names in your project.
-	
-	- `\project\data-preparation` 
+
+	- `\project\data-preparation`
 	- `\project\analysis`
 	- `\project\paper`
-	
+
 	```
-   
+
 	Of course, you can deviate from these suggested names. For example, a project involving webscraping may include a directory `\project\webscraping\` to store files related to the data collection.
-   
-   
+
+
 ## The content of a module
 
-A module itself contains a set of five pre-defined directories. The basic principles are to 
+A module itself contains a set of five pre-defined directories. The basic principles are to
 
 - keep inputs and outputs separate (e.g., so you can change inputs, leave everything unchanged, and re-run your code to see how results may change),
 
@@ -40,13 +40,13 @@ And... here's our advised subdirectory structure:
 
 !!! summary
 	Each submodule contains five subdirectories:
-	
+
 	- `\code` for the code
 	- `\temp` for any temp files that are generated on the fly
 	- `\input` for any input files required to run your code (e.g., datasets)
 	- `\output` for the final "output" of your module (e.g., dataset, analysis report)
 	- `\audit` for some auditing files such as plots or text files, which will you allow to check whether the module was executed well.
-	
+
 ## Outline of your project's directory structure
 
 In conclusion, your project's directory structure will look like this:
@@ -74,14 +74,14 @@ In conclusion, your project's directory structure will look like this:
 ```
 
 !!! hint
-	- Remember that horrible [directory and file structure](structure_phd_2013.html) from Hannes' project from back in 2013? Well, things have been getting a bit better since then, and by 2018, Hannes' project on [how streaming services change music consumption](https://pubsonline.informs.org/doi/pdf/10.1287/mksc.2017.1051) looked [like this](http://127.0.0.1:8000/workflow/structure_spotify_2018.html#S:/spotify/spotify).
+	- Remember that horrible [directory and file structure](structure_phd_2013.html) from Hannes' project from back in 2013? Well, things have been getting a bit better since then, and by 2018, Hannes' project on [how streaming services change music consumption](https://pubsonline.informs.org/doi/pdf/10.1287/mksc.2017.1051) looked [like this](structure_spotify_2018.html#spotify).
 	- You've seen those readme.txt's?! These are super helpful to include at the top of your project ("what is your project about"), and in each module ("what is the module about?").
-						  						  						  
+
 
 !!! tip
 	Need feedback on your code, e.g., by your advisor? Just zip the module you are stuck with and use [SURF's filesending service](https://filesender.surf.nl/) to email the project to your collaborator.
-	
+
 	!!! warning "Uhh, email, really?!"
-		- Indeed, email is not what we ideally want to advocate. 
-		- But then again, we want you to get started with reproducible science in a very easy way, and adhering to the modular project structure outlined above already makes your project so much better structured. 
+		- Indeed, email is not what we ideally want to advocate.
+		- But then again, we want you to get started with reproducible science in a very easy way, and adhering to the modular project structure outlined above already makes your project so much better structured.
 		- So, before you proceed to the future chapters of this guide, sit back, and relax, and keep on using good old email.

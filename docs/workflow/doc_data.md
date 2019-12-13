@@ -18,19 +18,15 @@ Instances of "new data" may included, but are not restricted to be:
 	names and associated labels (e.g., as in the case of countries --> GDP per capita).
 
 
-Ideally, your data description *is quite elaborate*, 
-as outlined in [https://arxiv.org/abs/1803.09010](https://arxiv.org/abs/1803.09010). Below, we have
-reproduced a list of seven categories along with several questions from
-the aforementioned paper. We believe it is very useful to answer those
-questions - no problem if you have to skip some! Please **include them as a `readme.txt`**, 
-together with your datasets.
+Ideally, your data description includes the *veru elaborate questions* outlined in `Datasheets for datasets` by Gebru, Timnit, et al. (2018). 
+**We strongly** refer you to the [original paper](https://arxiv.org/abs/1803.09010), which explains in detail the seven key ingredients of a proper dataset documentation. Below, we have reproduced these questions, and we recommend you to include those as a **`readme.txt`**, together with your datasets.
 
 ```
 ==========================================================
-          D A T A S E T   D E S C R I P T I O N 
+  D A T A S E T / D A T A B A S E  D E S C R I P T I O N 
 ==========================================================
 
-* Name of the dataset:
+* Name of the dataset/database:
 
 
 

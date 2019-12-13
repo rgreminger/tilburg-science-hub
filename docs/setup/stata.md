@@ -1,7 +1,8 @@
+<<<<<<< HEAD
 # Installing Stata
 
 
-## Second header
+# Second header
 
 * bullet
 
@@ -64,3 +65,15 @@ Python 3.6.2 :: Anaconda custom (64-bit)
     ```python3 --version```
 
     instead. Now you should see a message like the one above and are good to go for the course.
+=======
+## Installing Stata and adding to bash
+
+### Step 1
+
+[Download](https://www.stata.com/) and install Stata on your computer. Installation guide [here](https://www.stata.com/install-guide/).
+
+### Step 2
+
+Add Stata to your bash file `/.bashrc` or `/.bash_profile` so that you can use it by command line.
+Tutorial [here](https://www.stata.com/support/faqs/mac/advanced-topics/#batch).
+>>>>>>> cc856e368446c51d74fe0382f68c2d9ac622aede
