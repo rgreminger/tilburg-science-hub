@@ -22,8 +22,13 @@ nav:
   # - Matlab: setup/matlab.md
   # - Path Settings: setup/path-setting.md
 - Workflow Management:
-  - Getting started: workflow/index.md
-  - Module structure: workflow/directories.md
+
+  - Getting Started: workflow/index.md
+  - Module/Directory Structure: workflow/directories.md
+
+
+
+
   #- Alternative module structure: workflow/directories_alt.md
   - Automation: workflow/automation.md
   - Documentation:
