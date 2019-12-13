@@ -1,79 +1,58 @@
-<<<<<<< HEAD
 # Installing Stata
 
+Stata is a proprietary statistical software frequently used by scientific users.
+First check with your local IT support whether your institution has Stata licenses
+available.
 
-# Second header
+If not, you can purchase a copy on [Stata's website](https://www.stata.com/) and follow the [installation guide](https://www.stata.com/install-guide/).
 
-* bullet
+## Making Stata Available on the Command Prompt
 
-**bold**
+You have just installed Stata. Later, we'd like to access Stata from the
+command prompt to automatically execute our source code. That way, you will
+be able to run a series of scripts in batch - which will significantly ease the burden of
+building complex data workflows.
 
+### Windows users
+For you to be able to use Stata from the command prompt, follow the steps below.
 
-!!! warning
-	Pay attention to...
-	
-	
-Anaconda is a pre-packaged Python distribution for scientific users.
+!!! danger "Making R available via the PATH settings on Windows"
+    We need to update our PATH settings; these settings are a set of directories that Windows uses to "look up" software to startup.
 
-Direct your browser to [Anaconda download page](https://www.anaconda.com/download/) and download the Python 3.x Graphical Installer for your machine.
-Sometimes, the download defaults to Mac, so if you're on Windows or Linux, make sure to select the right version.
+    - Right-click on Computer.
+	- Go to "Properties" and select the tab "Advanced System settings".
+	- Choose "Environment Variables" and select `Path` from the list of system variables.
+	- Choose `Edit`.
+		- **Windows 7 and 8 machines:**
+			If you chose the default installation directory, copy and paste the following string without spaces at the start or end:
 
-Then, follow the steps provided on the website.
+            `;c:\Program Files (x86)\Stata15`
 
-During the installation you will be asked whether you want Anaconda Python to be added to your PATH. **Click yes!** Even if the installation window gives a warning about adding it to your PATH, please still check that box.
+		  Using a different Stata version? Change the version number then in the path above.
 
-Note that the installation of Anaconda may take about 5-10 minutes, dependening on how fast your computer is.
+		- **Windows 10 machines:**
+			- Click `New` and paste the following string:
 
-!!! note "For Windows Users"
-    *   When asked if you want single or multiple user installation, choose **single user**.
-    *   Accept all defaults that are set in the installation window.
-    *   Check the box for adding Anaconda to your PATH.
-    *   In the last step, you are asked if you want Visual Studio, click **Yes**.
+            `c:\Program Files (x86)\Stata15`
 
-!!! note "For Linux Users"
-    For some users Python was not added to the path. To quickly do this, please open a terminal window, paste ```echo '$HOME/anaconda3/bin:$PATH' >> ~/.bashrc``` and press `Return`.
+			- Click on `OK` as often as needed.
+
+### Mac users
+
+Add Stata to your bash file `/.bashrc` or `/.bash_profile` so that you can use it by command line.
+A tutorial is available [here](https://www.stata.com/support/faqs/mac/advanced-topics/#batch).
+
+<!--- Linux users not available yet
+-->
+
 
 ## Verifying that the installation was successful
 
-To verify that the correct version of Python has been installed and was made available in your PATH settings, close your terminal and open a **new** terminal interface and enter:
-
-
-```bash
-python --version
-```
-followed by hitting the `Return` key.
-
-You should see the following information returned:
-
-###   Windows users:
+To verify that Stata has been correctly installed and configured via your PATH settings,
+open a **new** terminal interface and enter:
 
 ```bash
-Python 3.6.5 :: Anaconda, Inc.
+StataSE-64.exe
 ```
 
-###  Mac & Linux/Ubuntu users:
-
-```bash
-Python 3.6.2 :: Anaconda custom (64-bit)
-```
-
-!!! tip "Python 2 versus Python 3"
-    Python 2 and 3 are incompatible in syntax. 
-	If you had Python 2 previously installed on your machine, 
-	you might have seen `Python 2.x.x` above. In that case try typing
-
-    ```python3 --version```
-
-    instead. Now you should see a message like the one above and are good to go for the course.
-=======
-## Installing Stata and adding to bash
-
-### Step 1
-
-[Download](https://www.stata.com/) and install Stata on your computer. Installation guide [here](https://www.stata.com/install-guide/).
-
-### Step 2
-
-Add Stata to your bash file `/.bashrc` or `/.bash_profile` so that you can use it by command line.
-Tutorial [here](https://www.stata.com/support/faqs/mac/advanced-topics/#batch).
->>>>>>> cc856e368446c51d74fe0382f68c2d9ac622aede
+followed by hitting the `Return` key. Stata will now start.
