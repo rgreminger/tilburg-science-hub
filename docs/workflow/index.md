@@ -1,4 +1,4 @@
-# Workflow Management
+# Project Setup and Workflow Management
 
 When starting a new project, most of us spend time thinking about *what* to create, but not about
 how to *manage* its creation. In other words, we start creating files (code files, data files, Word documents),

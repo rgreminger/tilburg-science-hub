@@ -1,8 +1,10 @@
-# Installation Guide
+# Software Setup Overview
 
 These pages should help you to get started setting up the computing environment on your machine ready.
 
-**If you are writing your Master thesis, please attempt to install necessary software and packages prior to your first meeting.**
+Of course, there are many ways to set up a machine, and we do not mean to consider our way of doing to be perfect. In fact, the setup instructions sometimes resemble a compromise, so that later instructions - given to both Windows, Mac and Linux users - can be followed as closely as possible.
+
+**If you are writing your Master thesis at Tilburg University, please attempt to install necessary software and packages prior to your first meeting.**
 
 !!! summary
     * If everything goes smoothly, you should be able to complete the installation in one sitting within 60-120 minutes.
@@ -10,7 +12,7 @@ These pages should help you to get started setting up the computing environment 
     * Where necessary, we have provided instructions for Mac, Windows and Linux machines.
 
 !!! alert "Beware"
-    * We will use the terms command prompt (Windows) and terminal (Linux, Mac) interchangeably. 
+    * We will use the terms command prompt (Windows) and terminal (Linux, Mac) interchangeably.
 
 <!-- !!! tip "Installation Help" -->
 <!--     Please try and install all the software before the course begins. -->

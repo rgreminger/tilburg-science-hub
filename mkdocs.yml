@@ -21,7 +21,7 @@ nav:
 #  - Pandoc: setup/pandoc.md
   # - Matlab: setup/matlab.md
   # - Path Settings: setup/path-setting.md
-- Workflow Management:
+- Project Setup and Workflow Management:
   - Getting Started: workflow/index.md
   - Module/Directory Structure: workflow/directories.md
   #- Alternative module structure: workflow/directories_alt.md
