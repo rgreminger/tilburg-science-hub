@@ -2,8 +2,9 @@
 
 These website should help you to get started in
 
-- setting up the computing environment on your machine (--> [software setup](setup/)), and
-- understanding the main principles of reproducible science, and how they can be applied in a set of standardized workflows (--> [project setup and workflow management](workflow/) ),
+- setting up the computing environment on your machine (--> [software setup](setup/)),
+- understanding the main principles of reproducible science, and how they can be applied in a set of standardized workflows (--> [project setup and workflow management](workflow/) ), and
+- directly implementing our suggestions by learning from various templates (--> [example projects](examples/)).
 
 both of which will allow you to manage *data- and computation-intensive projects* in an efficient way.
 

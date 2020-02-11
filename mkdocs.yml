@@ -9,6 +9,7 @@ nav:
   - Stata: setup/stata.md
   - Git: setup/gitInstall.md
   - Text Editor: setup/textEditor.md
+#  - Perl: setup/perl.md
   - Python: setup/python.md
   - Python Extras: setup/python-more.md
   - Build Tools/Make:
@@ -37,6 +38,12 @@ nav:
   #- Housekeeping: workflow/housekeeping.md
   #- Portability: workflow/portability.md
   - Checklist with Summary: workflow/checklist.md
+#- Manuals:
+#  - How to write good code:
+#  - Style instructions for papers:
+#  - How to collaborate using Git @Hulai
+#  -
+- Example Projects: examples/index.md
 - Contact: contact.md
 - Acknowledgements: acknowledgement.md
 
