@@ -3,7 +3,7 @@
 Ever wondered how a fully reproducible and automated project may look like? Get inspired here!
 
 ## The TiSEM AirBnB repository
-Using publicly available data from AirBnB (available via [Kaggle.com](kaggle.com)), we
+Using publicly available data from AirBnB (available via [Kaggle.com](https://www.kaggle.com/airbnb/boston)), we
 illustrate how a reproducible workflow may look like in practice.
 
 Check out our [GitHub repository for all the details on how to clone the project and run it](https://github.com/hannesdatta/tisem-airbnb).
