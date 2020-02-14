@@ -1,4 +1,4 @@
-site_name: Reproducible Science and Programming Practices for Researchers
+site_name: Bootcamp in Scientific Computing and Reproducible Science
 nav:
 - Getting Started: index.md
 - Software Setup:
