@@ -43,6 +43,8 @@ nav:
 #  - Style instructions for papers:
 #  - How to collaborate using Git @Hulai
 #  -
+- Tips and Manuals:
+    - Learning R: tips/learn_R.md
 - Example Projects: examples/index.md
 - Contact: contact.md
 - Acknowledgements: acknowledgement.md
