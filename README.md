@@ -1,4 +1,4 @@
-# Module: Guide for Reproducible Science and Programming Practices for Researchers
+# Module: Guide for Bootcamp in Scientific Computing and Reproducible Science
 
 This module is based on a fork of https://pp4rs.github.io/installation-guide,
 and we would like to acknowledge Lachlan Deer (`@lachlandeer`) as well as the
