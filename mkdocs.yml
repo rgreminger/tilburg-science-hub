@@ -24,7 +24,8 @@ nav:
   # - Path Settings: setup/path-setting.md
 - Project Setup and Workflow Management:
   - Getting Started: workflow/index.md
-  - Module/Directory Structure: workflow/directories.md
+  - Pipelines and Project Components: workflow/workflow.md
+  - Directory Structure: workflow/directories.md
   #- Alternative module structure: workflow/directories_alt.md
   - Automation: workflow/automation.md
   - Documentation:

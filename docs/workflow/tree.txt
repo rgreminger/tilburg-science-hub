@@ -1,0 +1,42 @@
+Folder PATH listing for volume New Volume
+Volume serial number is 74A9-CE7B
+D:\PROJECTS\REPRODUCIBLE-SCIENCE-GUIDE\DOCS\WORKFLOW\DIR_STRUCTURE
+ÃÄÄÄdata
+³   ÃÄÄÄdataset1
+³   ³       file1.csv
+³   ³       file2.csv
+³   ³       readme.txt
+³   ³       
+³   ÀÄÄÄdataset2
+³           coding.csv
+³           readme.txt
+³           
+ÃÄÄÄgen
+³   ÃÄÄÄanalysis
+³   ³   ÃÄÄÄaudit
+³   ³   ÃÄÄÄinput
+³   ³   ÃÄÄÄoutput
+³   ³   ÀÄÄÄtemp
+³   ÃÄÄÄdata-preparation
+³   ³   ÃÄÄÄaudit
+³   ³   ÃÄÄÄinput
+³   ³   ÃÄÄÄoutput
+³   ³   ÀÄÄÄtemp
+³   ÀÄÄÄpaper
+³       ÃÄÄÄaudit
+³       ÃÄÄÄinput
+³       ÃÄÄÄoutput
+³       ÀÄÄÄtemp
+ÀÄÄÄsrc
+    ÃÄÄÄanalysis
+    ³       analyze.R
+    ³       
+    ÃÄÄÄdata-preparation
+    ³       clean_data.R
+    ³       load_data.R
+    ³       
+    ÀÄÄÄpaper
+            figures.R
+            paper.tex
+            tables.R
+            
