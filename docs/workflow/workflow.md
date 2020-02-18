@@ -8,6 +8,10 @@ It is useful to break down a project into its most basic parts, which we call
 - A pipeline refers to the **steps that are necessary to build a project** (e.g., prepare dataset, run model, produce tables and figures), and
 - Components refer to **a project's most nuclear building blocks** (e.g., data, source code, and generated temporary and/or output files).
 
+Later on, you will see that such a structure enables you to work on
+your project using multiple computers (e.g., your workstation, your laptop,
+a computer in the cloud), or with multiple collaborators/co-authors.
+
 ## Project Pipelines
 
 In a research project, one typically has a number of tasks to accomplish, such as preparing the data, analyzing the data, writing the paper and producing a set of slides.

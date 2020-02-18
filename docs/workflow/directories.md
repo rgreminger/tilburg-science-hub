@@ -13,6 +13,12 @@ the following components:
 
 Below, we give you some more guidance on how to *actually make use of these components*,
 by casting a prototypical directory structure that you need to set up on your computer.
+Our governing principles are that:
+
+- others should understand your project and
+pipeline, merely by looking at your directory and file structure, and
+- each step in the pipeline is self-contained, i.e., it can be executed without actually having
+to run previous stages in the pipeline.
 
 <!---!!! hint
 		Remember that next to the components (i.e., the most basic building blocks of the projects),
