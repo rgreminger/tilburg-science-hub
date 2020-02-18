@@ -31,7 +31,6 @@ Your project's directory structure will look like this:
 ```
 Contents of folder my_project
 =============================
-
 ├───data
 │   ├───dataset1
 │   │       file1.csv
@@ -45,19 +44,48 @@ Contents of folder my_project
 ├───gen
 │   ├───analysis
 │   │   ├───audit
+│   │   │       audit.txt
+│   │   │       
 │   │   ├───input
+│   │   │       cleaned_data.csv
+│   │   │       
 │   │   ├───output
+│   │   │       model_results.RData
+│   │   │       
 │   │   └───temp
+│   │           imported_data.csv
+│   │           
 │   ├───data-preparation
 │   │   ├───audit
+│   │   │       checks.txt
+│   │   │       
 │   │   ├───input
+│   │   │       dataset1.csv
+│   │   │       dataset2.csv
+│   │   │       
 │   │   ├───output
+│   │   │       cleaned_data.csv
+│   │   │       
 │   │   └───temp
+│   │           tmpfile1.csv
+│   │           tmpfile2.RData
+│   │           
 │   └───paper
 │       ├───audit
+│       │       audit.txt
+│       │       
 │       ├───input
+│       │       model_results.RData
+│       │       
 │       ├───output
+│       │       figure1.png
+│       │       figure2.png
+│       │       tables.html
+│       │       
 │       └───temp
+│               table1.tex
+│               table2.tex
+│               
 └───src
     ├───analysis
     │       analyze.R
@@ -70,6 +98,7 @@ Contents of folder my_project
             figures.R
             paper.tex
             tables.R
+
 ```
 
 1. **Raw data** gets downloaded into the `data` folder from either

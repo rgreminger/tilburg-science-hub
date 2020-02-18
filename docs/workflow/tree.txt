@@ -14,19 +14,48 @@ D:\PROJECTS\REPRODUCIBLE-SCIENCE-GUIDE\DOCS\WORKFLOW\DIR_STRUCTURE
 ÃÄÄÄgen
 ³   ÃÄÄÄanalysis
 ³   ³   ÃÄÄÄaudit
+³   ³   ³       audit.txt
+³   ³   ³       
 ³   ³   ÃÄÄÄinput
+³   ³   ³       cleaned_data.csv
+³   ³   ³       
 ³   ³   ÃÄÄÄoutput
+³   ³   ³       model_results.RData
+³   ³   ³       
 ³   ³   ÀÄÄÄtemp
+³   ³           imported_data.csv
+³   ³           
 ³   ÃÄÄÄdata-preparation
 ³   ³   ÃÄÄÄaudit
+³   ³   ³       checks.txt
+³   ³   ³       
 ³   ³   ÃÄÄÄinput
+³   ³   ³       dataset1.csv
+³   ³   ³       dataset2.csv
+³   ³   ³       
 ³   ³   ÃÄÄÄoutput
+³   ³   ³       cleaned_data.csv
+³   ³   ³       
 ³   ³   ÀÄÄÄtemp
+³   ³           tmpfile1.csv
+³   ³           tmpfile2.RData
+³   ³           
 ³   ÀÄÄÄpaper
 ³       ÃÄÄÄaudit
+³       ³       audit.txt
+³       ³       
 ³       ÃÄÄÄinput
+³       ³       model_results.RData
+³       ³       
 ³       ÃÄÄÄoutput
+³       ³       figure1.png
+³       ³       figure2.png
+³       ³       tables.html
+³       ³       
 ³       ÀÄÄÄtemp
+³               table1.tex
+³               table2.tex
+³               
 ÀÄÄÄsrc
     ÃÄÄÄanalysis
     ³       analyze.R

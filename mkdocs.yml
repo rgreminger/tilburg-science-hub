@@ -27,7 +27,7 @@ nav:
   - Pipelines and Project Components: workflow/workflow.md
   - Directory Structure: workflow/directories.md
   #- Alternative module structure: workflow/directories_alt.md
-  - Automation: workflow/automation.md
+  - Automating your Pipeline: workflow/automation.md
   - Documentation:
     - Documentation of Code and Workflow: workflow/doc.md
     - Documentation of New Data: workflow/doc_data.md
