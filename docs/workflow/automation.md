@@ -7,7 +7,7 @@ If you've followed the [installation guide properly](../setup/make.md), you have
 `Make` is a build tool used by software developers to compile computer code into programs that you can install. For us
 researchers, `make` can be used to automate
 
-- what code is executed and when, and
+- what code runs and when, and
 
 - what inputs a given script needs to run.
 
@@ -18,8 +18,8 @@ researchers, `make` can be used to automate
 Remember the different stages of a project's pipeline, explained earlier. Let's suppose
 we're in the process of preparing our data set for analysis. For example:
 
-- You have three raw data sets in Excel, that you wish to convert into csv files.
-- You want to merge these three csv files, and apply some cleaning steps.
+- You have three raw data sets in Excel that you wish to convert into CSV files.
+- You want to merge these three CSV files and apply some cleaning steps.
 - Finally, you want to save the final data set, so that it can be used by
   other stages of your project pipeline (e.g., such as the analysis).
 
@@ -34,13 +34,13 @@ target : source(s)
     execution command
 ```
 
-A *target* refers to **what** needs to be build (e.g., a file),
+A *target* refers to **what** needs to be built (e.g., a file),
 *source(s)* specify what is **required** to execute the build, and
 the *execution command* specifies **how** to execute the build.
 
 ### Translating the Pipeline into `make` Code
 
-In "make code", the workflow above - saved in a *makefile* (a file called `makefile`, without a file type ending) - will become:
+In "make code," the workflow above - saved in a *makefile* (a file called `makefile`, without a file type ending) - will become:
 
 ```bash
 
