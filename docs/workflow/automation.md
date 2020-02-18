@@ -1,4 +1,4 @@
-# Automation
+# Automating your Pipeline
 
 ## Make
 
@@ -15,13 +15,19 @@ researchers, `make` can be used to automate
 
 ### Basics
 
-Imagine you have three raw data sets in Excel, that you wish to convert into csv files and then merge. Finally, you want to analyze the data using an OLS regression, and produce some plots, and put the results in a PDF document.
+Remember the different stages of a project's pipeline, explained earlier. Let's suppose
+we're in the process of preparing our data set for analysis. For example:
 
-This workflow can be visualized as follows:
+- You have three raw data sets in Excel, that you wish to convert into csv files.
+- You want to merge these three csv files, and apply some cleaning steps.
+- Finally, you want to save the final data set, so that it can be used by
+  other stages of your project pipeline (e.g., such as the analysis).
+
+This workflow for your specific pipeline can be visualized as follows:
 
 ![Workflow](make_flowchart.png)
 
-In `make`, the worflow collapses to a set of rules, which are structured as follows:
+In `make`, the workflow collapses to a set of rules, which are structured as follows:
 
 ```bash
 target : source(s)
@@ -38,12 +44,14 @@ In "make code", the workflow above - saved in a *makefile* (a file called `makef
 
 ```bash
 
-../temp/cleaned_data1.csv ../temp/cleaned_data2.csv ../temp/cleaned_data3.csv: ../input/raw_data1.xlsx ../input/raw_data2.xlsx ../input/raw_data3.xlsx python to_csv.py
+../../gen/data-preparation/temp/cleaned_data1.csv ../../gen/data-preparation/temp/cleaned_data2.csv ../../gen/data-preparation/temp/cleaned_data3.csv: ../../data/dataset1/raw_data1.xlsx ../../data/dataset2/raw_data2.xlsx ../../data/dataset3/raw_data3.xlsx python to_csv.py
    	python to_csv.py
 
-../temp/merged.csv: ../temp/cleaned_data1.csv ../temp/cleaned_data2.csv ../temp/cleaned_data3.csv merge.R
+../../gen/data-preparation/temp/merged.csv: ../../gen/data-preparation/temp/cleaned_data1.csv ../../gen/data-preparation/temp/cleaned_data2.csv ../../gen/data-preparation/temp/cleaned_data3.csv merge.R
    	R --vanilla --args "" < "merge.R"
+```
 
+<!--
 ../temp/analysis.RData: ../temp/merged.csv analyze.R
    	R --vanilla --args "" < "analyze.R"
 
@@ -52,11 +60,11 @@ In "make code", the workflow above - saved in a *makefile* (a file called `makef
 
 ../output/report.pdf: ../temp/plot.png ../temp/analysis.RData
 	R -e "rmarkdown::render('make_report.Rmd', output_file = '../output/report.pdf')"
+-->
 
-```
 
 !!! hint
-	Pay attention to the subdirectory structure used here: the rules refer to files in different folders (code, temp, input, output, audit), which are explained [earlier in this guide](directories.md).
+	Pay attention to the subdirectory structure used here: the rules refer to files in different folders (src, gen, data, etc.), which are explained [earlier in this guide](directories.md).
 
 ### Running `make`
 

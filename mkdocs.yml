@@ -28,9 +28,8 @@ nav:
   - Directory Structure: workflow/directories.md
   #- Alternative module structure: workflow/directories_alt.md
   - Automating your Pipeline: workflow/automation.md
-  - Documentation:
-    - Documentation of Code and Workflow: workflow/doc.md
-    - Documentation of New Data: workflow/doc_data.md
+  - Documenting Code and Pipeline: workflow/doc.md
+  - Documenting Datasets: workflow/doc_data.md
     #- Overview:
     #- Workflow in make: workflow/automation_workflow.md
   #- Versioning: workflow/versioning.md

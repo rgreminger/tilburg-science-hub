@@ -153,7 +153,7 @@ Dropbox, Google Drive, or - if you're located in The Netherlands - Surfdrive.
 -->
 
 !!! hint
-	- Download our example directory structure here, so you can get started right away.
+	- [Download our example directory structure here](dir_structure.zip), so you can get started right away.
 	- Remember that horrible [directory and file structure](structure_phd_2013.html) from Hannes' project from back in 2013? Well, things have been getting a bit better since then, and by 2018, Hannes' project on [how streaming services change music consumption](https://pubsonline.informs.org/doi/pdf/10.1287/mksc.2017.1051) looked [like this](structure_spotify_2018.html#spotify).
 	- You've seen those readme.txt's?! These are super helpful to include at the top of your project ("what is your project about"), and in each module ("what is the module about?").
 
