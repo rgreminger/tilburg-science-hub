@@ -55,3 +55,4 @@ theme:
 
 markdown_extensions:
   - admonition
+  - attr_list

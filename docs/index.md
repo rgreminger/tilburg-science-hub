@@ -1,3 +1,7 @@
+<p align="right">
+  <img height="75" src="tilburgsciencehub.png">
+</p>
+
 # Bootcamp in Scientific Computing and Reproducible Science
 
 <!--## Getting your computer skills up-to-date
