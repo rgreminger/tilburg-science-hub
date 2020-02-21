@@ -10,19 +10,19 @@ It is useful to break down a project into its most basic parts, which we call
 
 Later on, you will see that such a structure enables you to work on
 your project using multiple computers (e.g., your workstation, your laptop,
-a computer in the cloud), or with multiple collaborators/co-authors.
+a computer in the cloud), or with various collaborators/co-authors.
 
 ## Project Pipelines
 
-In a research project, one typically has a number of tasks to accomplish, such as preparing the data, analyzing the data, writing the paper and producing a set of slides.
-**This is what we call a "project pipeline".**
+In a research project, one typically has several tasks to accomplish, such as preparing the data, analyzing the data, writing the paper and producing a set of slides.
+**This is what we call a "project pipeline."**
 
-A typically pipeline for an academic paper may look like this:
+A typical pipeline for an academic paper may look like this:
 
 !!! example "Typical pipeline for an academic paper"
     - Prepare dataset for analysis
-    - Run model on dataset
-    - Produce tables and figures for paper
+    - Run model on a dataset
+    - Produce tables and figures for the paper
 
 Over time, your pipeline will grow increasingly complex. For example, the pipeline
 above recently "matured" into this one:
@@ -30,26 +30,26 @@ above recently "matured" into this one:
 !!! example "More complex pipeline for an academic paper"
     - Download public datasets from the U.N. (to be used for some control variables)
     - Have an RA code some auxiliary variables - files to be delivered in Excel
-    - Merge your main data set with control variables from previous steps; generate
+    - Merge your primary data set with control variables from previous steps; generate
     to "derivative" data sets - one at the monthly level, and one at the weekly level.
     - Estimate models on both data sets
     - Systematically compare both models
-    - Choose best model, and produce tables and figures for a paper.
+    - Choose the best model and produce tables and figures for a paper.
 
 Of course, you can even come up with pipelines that are even more complex -
 not because we love complexity, but because we love clarity.
 
-The benefits of conceiving your project as a pipeline are straightforward:
+The benefits of conceiving your project like a pipeline are straightforward:
 
 - **Write clearer source code:** separate your thousand-line source code into multiple smaller, more accessible components (as defined in your pipeline, like preparing dataset, then running a model, then producing tables and figures).
-- **Obtain results faster:** Because your project is separated into different pipeline stages,
+- **Obtain results faster:** Because your project is separated into different pipeline stages
   and each of these stages is *self-contained*, you can easily run "later" stages of your project (we call this "downstream"),
-  on the basis of *different* input files defined earlier in your project (we call this "upstream").
+  based on *different* input files defined earlier in your project (we call this "upstream").
   You can run later stages in your project (e.g., "analysis") using different
   inputs (e.g., a data set at the monthly level, and at the weekly level) -
   that way, you can rapidly understand how robust your findings are with regard
   to alternative specifications.
-- **Increase transparency and foster collaboration:** With clearer source code, you automatically allow
+- **Increase transparency and foster collaboration:** With more transparent source code, you allow
   others to more easily understand your code. Also, why not make a co-author
   responsible for prepping that data for you ("upstream" in your pipeline), while you
   concentrate on developing a prototype model (more "downstream" in your pipeline)?
@@ -73,14 +73,14 @@ tables or figures), and
   of tables or figures).
 4. **notes**: e.g., meeting notes, PDFs of the literature that you've read, etc.
 
-It's useful to think of these components as separate entities of your project, because
+It's useful to think of these components as separate entities of your project because
 their nature *allows* you to apply different data management policies. For example,
 we probably all agree it's desirable to "roll back" to previous versions of a project
-(e.g., a previous version of a prepped dataset). But - if you work on large datasets,
-it may probably be too burdensome to store each and every version of it (e.g., in one
+(e.g., an earlier version of a prepped dataset). But - if you work on large datasets,
+it may probably be too burdensome to store each version of it (e.g., in one
 of the projects we've been working on, the prepped data sets were a 500 GB, and
 we've created probably close to 50 versions = 25 TB). If you think about this a
-bit more, you may actually discover that storing these different data sets is
+bit more, you may discover that storing these different data sets is
 completely inefficient - as the combination of raw data and *versioned source code*
 will be able to "re-cast" any data set version you have ever worked on.
 
