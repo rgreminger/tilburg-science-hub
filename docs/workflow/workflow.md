@@ -42,17 +42,23 @@ not because we love complexity, but because we love clarity.
 The benefits of conceiving your project as a pipeline are straightforward:
 
 - **Write clearer source code:** separate your thousand-line source code into multiple smaller, more accessible components (as defined in your pipeline, like preparing dataset, then running a model, then producing tables and figures).
-- **Obtain results faster:** Because your project is separated into different steps,
-  you can easily run "later" stages of your project (we call this "downstream"),
+- **Obtain results faster:** Because your project is separated into different pipeline stages,
+  and each of these stages is *self-contained*, you can easily run "later" stages of your project (we call this "downstream"),
   on the basis of *different* input files defined earlier in your project (we call this "upstream").
   You can run later stages in your project (e.g., "analysis") using different
   inputs (e.g., a data set at the monthly level, and at the weekly level) -
   that way, you can rapidly understand how robust your findings are with regard
-  to alternative specifications
+  to alternative specifications.
 - **Increase transparency and foster collaboration:** With clearer source code, you automatically allow
   others to more easily understand your code. Also, why not make a co-author
   responsible for prepping that data for you ("upstream" in your pipeline), while you
   concentrate on developing a prototype model (more "downstream" in your pipeline)?
+- **Use multiple software packages:** In a pipeline, the "outputs" of one module serve as the "inputs" of another.
+  Hence, you can use multiple software packages to accomplish different tasks in your pipeline. For
+  example, we use R's powerful *data.table* package to clean data, and pass on the cleaned dataset
+  to a clustering algorithm in Python's *scikit-learn*.
+  In other words, we use whatever software package we deem most appropriate for each
+  step in our pipeline.
 
 ## Project Components
 
@@ -129,11 +135,22 @@ upload the two final datasets to the temporary file exchange.
         called **file exchange**. File exchanges are used to easily **"ping-pong" (upload or download)
         generated temporary or output files between different stages of the pipeline**.
 
-        Using a file exchange, a co-author building a prototype model on his
-        laptop (see stage 2 of the pipeline) can already work a dataset that another author prepped on a high-performance
-        workstation (this part of the pipeline), without having to actually build it him/herself on the laptop.
+        - Examples for using a file exchange when **collaborating with others**:
+            - A co-author builds a prototype model on his laptop (see stage 2 of the pipeline).
+            He/she can work on a dataset that you have prepped using a high-performance
+        workstation (this part of the pipeline), without having to actually build
+        the dataset him/herself from scratch.
 
-        We'll explain later how to set up such temporary file services.
+        - Examples for using a file exchange **without any collaboration**:
+            - You have built a data set on a high-performance workstation,
+            and would like to work with a sample dataset on your laptop, without
+            having to actually build the dataset from scratch.
+
+        - Examples when using a file exchange **is not necessary**:
+            - You are working exclusively on one computer, without any
+            coauthors.
+
+        Curious on how to set up a file exchange? We'll explain that later.
 
 2. In the second stage of the pipeline, we have switched to our laptop, and
 pull in only the sample data set from the file exchange. That one is only a few

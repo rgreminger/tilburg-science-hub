@@ -22,7 +22,7 @@ and on *efficiently managing web data collections using scraping/APIs and (un)st
 !!! hint "Do I really need this site?"
 
     - No matter how confident you are about your computer skills, chance is that
-    even the brightest ones among us *manage their projects by intuition*. A directory
+    you *manage your projects guided by intuition*. A directory
     here, a code file there, and - oh, where to store raw data again?
     - Over the years, we have experienced that purely relying on intuition in managing
     data- and computation-intensive projects is a bad idea. After all, we spend
@@ -31,10 +31,11 @@ and on *efficiently managing web data collections using scraping/APIs and (un)st
     data- and/or computation intensive project* shouldn't sound that far-fetched.
     - That's why we have created this site, and curated material to make sure that
     your computer skills are at par with your ambition to be a productive researcher.
-    - Last, we have a few tips on how to use our site:
-        * Bookmark our site and check back frequently (the page isn't meant to be a "one-shot" exercise).
-    	  * Science is a process, and you can already start today to manage it more efficiently (e.g., by setting up directory structures in a better way).
-        However, mastering the more advanced skills will take you some time, and we ask for your patience.
+    - So... what are ways in which you can use our site?
+        * Bookmark the site and check back frequently (the page isn't meant to be a "one-shot" exercise).
+        * Use the site to train your doctoral students or research assistants.
+        * First things first: Mastering the more advanced skills advocated on this site will take you some time. But you can
+        already start today with some of the easier things (e.g., by setting up [directory structures](docs/directories.md)).
 
 !!! important "Want to contribute?"
     	  * Find any outdated content, links, or unclear descriptions? [E-mail us!](mailto:h.datta@tilburguniversity.edu)

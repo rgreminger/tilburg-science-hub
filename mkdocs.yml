@@ -45,6 +45,7 @@ nav:
 #  -
 - Tips and Manuals:
     - Learning R: tips/learn_R.md
+    - Learning Python and Julia: tips/quantecon.md
     - Writing an Academic Paper: tips/paper.md
 - Example Projects: examples/index.md
 - Contact: contact.md
