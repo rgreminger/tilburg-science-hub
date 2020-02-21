@@ -13,7 +13,7 @@ To get you started, we have curated a *bootcamp in scientific computing and repr
 
 - Learn how to set up your computing environment (&rarr; [software setup](setup/)),
 - Implement workflows to manage complex computational projects (&rarr; [project setup and workflow management](workflow/) ),
-- Browse a library of tips & tricks (such as how to learn R&rarr; [tips and manuals](tips/)), and
+- Browse a library of tips & tricks (such as how to learn R&rarr; [tips and manuals](tips/learn_R.md)), and
 - Get inspired by learning from various templates (&rarr; [example projects](examples/)).
 
 In the near future, we are planning on releasing resources on *creating R packages*
