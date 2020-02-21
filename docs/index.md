@@ -37,7 +37,7 @@ and on *efficiently managing web data collections using scraping/APIs and (un)st
         However, mastering the more advanced skills will take you some time, and we ask for your patience.
 
 !!! important "Want to contribute?"
-    	  * Find any outdated content, links, or unclear descriptions? [E-mail us!](h.datta@tilburguniversity.edu)
+    	  * Find any outdated content, links, or unclear descriptions? [E-mail us!](mailto:h.datta@tilburguniversity.edu)
         * Want to get involved in this open source project by changing/adding material? [Visit our GitHub page to see how](https://github.com/hannesdatta/tilburg-science-hub/blob/tilburg-update/CONTRIBUTING.md).
 
 <!-- !!! tip "Installation Help" -->
