@@ -1,6 +1,6 @@
-site_name: Bootcamp in Scientific Computing and Reproducible Science
+site_name: Tilburg Science Hub
 nav:
-- Tilburg Science Hub: index.md
+- Home: index.md
 - Software Setup:
   - Installation Guide Overview: setup/index.md
   #- Terminology: setup/terminology.md
