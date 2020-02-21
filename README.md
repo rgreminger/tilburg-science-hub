@@ -21,7 +21,8 @@ fixes to existing material,
 bug reports,
 and reviews of proposed changes are all welcome.
 
-Check out this page for all the details on [how to contribute](CONTRIBUTING.md).
+* See the contributing guide [here](CONTRIBUTING.md).
+* By contributing you agree to abide by the [Code of Conduct](CONDUCT.md)
 
 <!--
 ```{.bash, id:"j29ie3c7"}
@@ -35,11 +36,6 @@ git branch -D gh-pages
 git fetch origin gh-pages:gh-pages
 ```
 -->
-
-## Want to Contribute?
-
-* See the contributing guide [here](CONTRIBUTING.md).
-* By contributing you agree to abide by the [Code of Conduct](CONDUCT.md)
 
 ## License
 

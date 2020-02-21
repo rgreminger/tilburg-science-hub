@@ -38,10 +38,7 @@ and on *efficiently managing web data collections using scraping/APIs and (un)st
 
 !!! important "Want to contribute?"
     	  * Find any outdated content, links, or unclear descriptions? [E-mail us!](h.datta@tilburguniversity.edu)
-        * Want to contribute to this open source project? Watch our YouTube video!
-        * [Get in touch with us](contact.md) so that we can update the instructions or clarify as needed.
-
-
+        * Want to get involved in this open source project by changing/adding material? [Visit our GitHub page to see how](https://github.com/hannesdatta/tilburg-science-hub/blob/tilburg-update/CONTRIBUTING.md).
 
 <!-- !!! tip "Installation Help" -->
 <!--     Please try and install all the software before the course begins. -->
