@@ -57,3 +57,5 @@ theme:
 markdown_extensions:
   - admonition
   - attr_list
+
+google_analytics: ['UA-23035208-2', 'tilburgsciencehub.com']
