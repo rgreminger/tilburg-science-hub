@@ -35,7 +35,7 @@ and on *efficiently managing web data collections using scraping/APIs and (un)st
         * Bookmark the site and check back frequently (the page isn't meant to be a "one-shot" exercise).
         * Use the site to train your doctoral students or research assistants.
         * First things first: Mastering the more advanced skills advocated on this site will take you some time. But you can
-        already start today with some of the easier things (e.g., by setting up [directory structures](docs/directories.md)).
+        already start today with some of the easier things (e.g., by setting up [directory structures](workflow/directories.md)).
 
 !!! important "Want to contribute?"
     	  * Find any outdated content, links, or unclear descriptions? [E-mail us!](mailto:h.datta@tilburguniversity.edu)
