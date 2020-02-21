@@ -2,40 +2,45 @@
   <img height="75" src="tilburgsciencehub.png">
 </p>
 
-# Bootcamp in Scientific Computing and Reproducible Science
+# Tilburg Science Hub
 
-<!--## Getting your computer skills up-to-date
--->
-These website should help you to get started in
+*Tilburg Science Hub* is an open-source resource repository that supports students and researchers
+in the social sciences to *efficiently manage data- and computation-intensive projects*.
 
-- setting up the computing environment on your machine (--> [software setup](setup/)),
-- understanding the main principles of reproducible science, and how they can be applied in a set of standardized workflows (--> [project setup and workflow management](workflow/) ),
-- browsing a library of tips & tricks (such as how to learn R --> [tips and manuals](tips/)), and
-- directly implementing our suggestions by learning from various templates (--> [example projects](examples/)).
+To get you started, we have curated a *bootcamp in scientific computing and reproducible science*.
 
-both of which will allow you to manage *data- and computation-intensive projects* in an efficient way.
+### Bootcamp in Scientific Computing and Reproducible Science
 
-!!! tip
-    * Rather than seeing this page as a one-time exercise, we encourage you to bookmark it and come back to it frequently.
-	* Reproducible science is a process - you can start today (e.g., by setting up file structures in a better way), but it will take time to master the more advanced skills.
-	* If you find any outdated content, links or unclear descriptions, email us at [h.datta@tilburguniversity.edu]() so that we can update the instructions or clarify as needed.
+- Learn how to set up your computing environment (&rarr; [software setup](setup/)),
+- Implement workflows to manage complex computational projects (&rarr; [project setup and workflow management](workflow/) ),
+- Browse a library of tips & tricks (such as how to learn R&rarr; [tips and manuals](tips/)), and
+- Get inspired by learning from various templates (&rarr; [example projects](examples/)).
 
-<!--
-## Why this site?
+In the near future, we are planning on releasing resources on *creating R packages*
+and on *efficiently managing web data collections using scraping/APIs and (un)structured databases*.
 
-No matter how confident you may be about your computer skills, chance is that
-even the brightest ones among us have learnt them on the fly.
-You may have seen a statistical software package coming by at grad school,
-but that's about it.
+!!! hint "Do I really need this site?"
 
-Well, over the years, we have experienced that having your use of the computer
-fully been guided by intuition is actually not a good idea.
+    - No matter how confident you are about your computer skills, chance is that
+    even the brightest ones among us *manage their projects by intuition*. A directory
+    here, a code file there, and - oh, where to store raw data again?
+    - Over the years, we have experienced that purely relying on intuition in managing
+    data- and computation-intensive projects is a bad idea. After all, we spend
+    a considerable amount of time studying past literature to seek an academic contribution.
+    Hence, the idea to learn from others on how to manage the *process of working on a
+    data- and/or computation intensive project* shouldn't sound that far-fetched.
+    - That's why we have created this site, and curated material to make sure that
+    your computer skills are at par with your ambition to be a productive researcher.
+    - Last, we have a few tips on how to use our site:
+        * Bookmark our site and check back frequently (the page isn't meant to be a "one-shot" exercise).
+    	  * Science is a process, and you can already start today to manage it more efficiently (e.g., by setting up directory structures in a better way).
+        However, mastering the more advanced skills will take you some time, and we ask for your patience.
 
-That's why we have assembled a couple of tips to make sure that your
-computer skills are at par with your ambition to write a good paper.
+!!! important "Want to contribute?"
+    	  * Find any outdated content, links, or unclear descriptions? [E-mail us!](h.datta@tilburguniversity.edu)
+        * Want to contribute to this open source project? Watch our YouTube video!
+        * [Get in touch with us](contact.md) so that we can update the instructions or clarify as needed.
 
-Think you don't need it? Nah, we don't think so. So please take your time
-to dig into this.
 
 
 <!-- !!! tip "Installation Help" -->

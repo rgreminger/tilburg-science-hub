@@ -1,16 +1,12 @@
-# Contact Us
+# Contact
 
-This site heavily builds on work at University of Zurich (see [acknowledgements](acknowledgement.md)). Inspired by their work, the website has
-been further developed by researchers at Tilburg School of Economics at Management, Tilburg University, The Netherlands.
+The development of *Tilburg Science Hub* has been financially supported by [Tilburg School of Economics
+and Management (2019-...)](https://www.tilburguniversity.edu/about/schools/economics-and-management).
 
-## Questions or Comments?
+The site is managed by [Hannes Datta](https://www.tilburguniversity.edu/staff/h-datta) and [Tobias Klein](https://www.tilburguniversity.edu/staff/t-j-klein).
+Some material is based on the fantastic (open source) works of others - see [acknowledgements](acknowledgement.md).
 
-Please contact us via email:
+## Want to contribute to this open-source initiative?
 
-```
-h.datta "AT" tilburguniversity.edu
-```
-
-with the title "Reproducible Science"
-
-We look forward to hearing from you if you have questions about the guide, found this guide useful, or have further comments or suggestions to improve it.
+- Find any outdated content, links, or unclear descriptions? [Send us an email](mailto:h.datta@tilburguniversity.edu).
+- Want to contribute to this open source project? Watch our YouTube video!

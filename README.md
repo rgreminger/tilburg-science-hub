@@ -1,54 +1,40 @@
-# Module: Guide for Bootcamp in Scientific Computing and Reproducible Science
+# Tilburg Science Hub
+
+## Module: Guide for Bootcamp in Scientific Computing and Reproducible Science
 
 This module is based on a fork of https://pp4rs.github.io/installation-guide,
 and we would like to acknowledge Lachlan Deer (`@lachlandeer`) as well as the
 Department of Economics at the University of Zurich for their fantastic work
 on the original repository.
 
-```
-Lachlan Deer, Adran Etter, Julian Langer & Max Winkler, 2017, Installation Guide, Programming Practices for Research in Economics, University of Zurich
-```
-
 ## Meta-Information
-
 *   Module maintainer: Hannes Datta (`@hannesdatta`)
-*   Tilburg University
-*   Current version of website: [https://hannesdatta.github.io/reproducible-science-guide/](https://hannesdatta.github.io/reproducible-science-guide/)
+*   Tilburg University, Tilburg School of Economics and Management
+*   Current version of website: [http://www.tilburgsciencehub.com]()
 
-## Building the Site
+## Contributing to this site
 
-We use [MkDocs]() to build the the course websites for this course.
+Tilburg Science Hub is an open source project,
+and we welcome contributions of all kinds:
+new tutorials,
+fixes to existing material,
+bug reports,
+and reviews of proposed changes are all welcome.
 
-* First, clone our repository and switch to the tilburg-update branch (the master branch is reserved for the original project).
-```{.bash}
-git clone https://github.com/hannesdatta/reproducible-science-guide.git
-git checkout tilburg-update
-```
+Check out this page for all the details on [how to contribute](CONTRIBUTING.md).
 
-* Install MkDocs with the following command:
-```{.bash, id:"j29ie3c7"}
-pip install mkdocs
-```
-
-* Install the `materials` theme for MkDocs:
-```{.bash}
-pip install mkdocs-material
-```
-
-* Look at a copy of the site served locally on your machine:
-```{.bash, id:"j29ie3c7"}
-mkdocs serve
-```
-* Post the site to github pages using:
+<!--
 ```{.bash, id:"j29ie3c7"}
 mkdocs gh-deploy
 ```
+
 
 * If this is the first time you are making changes to the github pages, please fetch the gh-pages branch first.
 ```{.bash}
 git branch -D gh-pages
 git fetch origin gh-pages:gh-pages
 ```
+-->
 
 ## Want to Contribute?
 
