@@ -20,7 +20,7 @@ If you get an error, try typing instead:
 python -m pip install --upgrade pip
 ```
 
-For this course, we will need the package `Selenium` as part of the web scraping tool kit we will build up. First let us install a depency for it via
+Suppose we need the package `Selenium` as part of a web scraping tool kit we want to build up. First let us install a depency for it via
 
 ```bash
 pip install msgpack
@@ -37,12 +37,4 @@ If this succeeded, the last line it printed out should be:
 
 ```
 Successfully installed selenium-3.14.0
-```
-
-## More packages
-
-Please also install the following packages:
-
-```bash
-pip install textblob
 ```
