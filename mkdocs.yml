@@ -61,7 +61,7 @@ theme:
   name: 'material'
   palette: 
     primary: 'Blue Grey' # default: indigo, other colors see https://squidfunk.github.io/mkdocs-material/getting-started/
-    accent: 'Blue Grey'
+    accent: 'indigo'
     
 markdown_extensions:
   - admonition
