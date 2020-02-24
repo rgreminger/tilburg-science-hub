@@ -1,15 +1,15 @@
 # Text Editors
 
 A good text editor lies at the heart of any serious programmer's toolkit: It can do almost anything and makes you much more productive.
-The editors built into each program are generally are not an option (we will find certain cases where you may want to use them).
+The editors built into each program often are not the best option (we will find certain cases where you may want to use them).
 
 Please download, install it along with the necessary packages and stick with it for at least the duration of the project or assignment to get a feel for how it works.
 
-There is a slight learning curve, but soon you hopefully be wondering why no-one forced you to do this before!
+There is a slight learning curve, but soon you hopefully will be wondering why no-one forced you to do this before!
 
 !!! note
     - None of the skills on this website are tied to Atom, 
-	so if you do decide to move away to another editor, nothing will be lost.
+	so if you do decide to move away to another editor, nothing will be lost. For example, [Visual Studio Code](https://code.visualstudio.com/) or [Vim](https://www.vim.org/) are also widely used text editors.
 
 <!-- ## Installing Sublime Text
 
