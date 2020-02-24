@@ -83,17 +83,7 @@ Make sure that the version numbers are above `1.26.x` or newer.
 
 One of the advantages of Atom is that there are many *packages* that make your life easier, ranging from simple syntax highlighting to environments that can mimic a complete graphical user interface.
 
-For this course, we will install the minimum number of packages necessary to make your coding life easier.
-
-## Installing Additional Packages for Atom
-
-Atom's package manager is built in to the program itself and is relatively easy to interact with.
-To access Atom's settings press `Ctrl + ,` (`CMD + ,` on Mac) on your keyboard then click on the `Install` tab which is visible on the left hand side.
-
-On the Installation page there is a prompt where you can type in a package name and then press `Return` and Atom will search for that package for you and return results with similar names.
-When you find the package that you need, you click the blue 'Install' button and the package will be installed.
-
-For this course, please install the following packages:
+Some packages that we find useful: 
 
 *   autocomplete-R
 *   autocomplete-python (choose Jedi as your engine when asked)
@@ -110,18 +100,21 @@ For this course, please install the following packages:
 *   autocomplete-citeproc
 *   open-unsupported-files
 *   advanced-open-file
-
-If during the installation of a package Atom asks to install dependencies, always choose to accept.
-
-!!! tip
-    If you decide to stick with Atom after this course, you may find the following packages useful in your day to day work:
-
-    *   language-latex
-    *   language-matlab
-    *   language-stata
-    *   atom-latex
-    *   whitespace
+*   language-latex
+*   language-matlab
+*   language-stata
+*   atom-latex
+*   whitespace
 
 
 
-    Feel free to ask us for whatever other packages we use to make our programming lives easier during some downtime.
+
+
+## Installing Additional Packages for Atom
+
+Atom's package manager is built in to the program itself and is relatively easy to interact with.
+To access Atom's settings press `Ctrl + ,` (`CMD + ,` on Mac) on your keyboard then click on the `Install` tab which is visible on the left hand side.
+
+On the Installation page there is a prompt where you can type in a package name and then press `Return` and Atom will search for that package for you and return results with similar names.
+When you find the package that you need, you click the blue 'Install' button and the package will be installed. If during the installation of a package Atom asks to install dependencies, always choose to accept.
+
