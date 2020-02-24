@@ -60,8 +60,9 @@ nav:
 theme:
   name: 'material'
   palette: 
-    primary: Blue Grey # default: indigo, other colors see https://squidfunk.github.io/mkdocs-material/getting-started/
-
+    primary: 'Blue Grey' # default: indigo, other colors see https://squidfunk.github.io/mkdocs-material/getting-started/
+    accent: 'Blue Grey'
+    
 markdown_extensions:
   - admonition
   - attr_list
