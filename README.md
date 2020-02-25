@@ -10,7 +10,7 @@ on the original repository.
 ## Meta-Information
 *   Module maintainer: Hannes Datta (`@hannesdatta`)
 *   Tilburg University, Tilburg School of Economics and Management
-*   Current version of website: [http://www.tilburgsciencehub.com]()
+*   Current version of website: [http://www.tilburgsciencehub.com](http://www.tilburgsciencehub.com)
 
 ## Contributing to this site
 

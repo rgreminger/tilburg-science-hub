@@ -7,7 +7,7 @@ the following components:
 
 1. raw data: e.g., datasets,
 2. source code: e.g., code to prepare your data and to analyze it
-3. generated temporary/output files: e.g., some diagnostic plots orthe results of your analysis,
+3. generated temporary/output files: e.g., some diagnostic plots or the results of your analysis,
 4. a file exchange to ping-pong temporary/output files between different stages of your pipeline, and
 5. a collection of notes, literature, etc.
 

@@ -1,6 +1,7 @@
 site_name: Tilburg Science Hub
 site_url: http://www.tilburgsciencehub.com
 repo_url: https://github.com/hannesdatta/tilburg-science-hub
+edit_uri: https://github.com/hannesdatta/tilburg-science-hub/blob/tilburg-update/docs/
 repo_name: 'GitHub'
 site_description: "Tilburg Science Hub is an open-source resource repository that supports students and researchers in the social sciences to set up reproducible workflows and to efficiently manage data- and computation-intensive projects."
 site_author: Hannes Datta, Tobias J. Klein
@@ -59,7 +60,11 @@ nav:
 
 theme:
   name: 'material'
-
+  palette: 
+    #primary: 'Blue Grey' # default: indigo, other colors see https://squidfunk.github.io/mkdocs-material/getting-started/
+    primary: 'indigo' # default: indigo, other colors see https://squidfunk.github.io/mkdocs-material/getting-started/
+    accent: 'indigo'
+    
 markdown_extensions:
   - admonition
   - attr_list
