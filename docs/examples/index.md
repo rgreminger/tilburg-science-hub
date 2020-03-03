@@ -19,5 +19,5 @@ We've crafted this project to run
     - produce a paper with output tables and figures.
 
 ## Other examples (including code snippets)
-
+- A basic example of a reproducible workflow using R and LaTeX: [example-make-workflow](https://github.com/rgreminger/example-make-workflow)
 - Code snippet to [download data from Dropbox](dropbox.md).
