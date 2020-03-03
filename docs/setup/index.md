@@ -2,6 +2,9 @@
 
 These pages should help you to get started setting up the computing environment on your machine ready.
 
+Think your machine is already configured well? Then [directly proceed to our tutorial on setting up efficient workflows to manage data- and computation-intensive projects](../workflow/index.md). If necessary, you can come back to this section to make changes to your computer's configuration.
+
+## Configure your computer
 Of course, there are many ways to set up a machine, and we do not mean to consider our way of doing to be perfect. In fact, the setup instructions sometimes resemble a compromise, so that later instructions - given to both Windows, Mac and Linux users - can be followed as closely as possible.
 
 **If you are writing your Master thesis at Tilburg University, please attempt to install necessary software and packages prior to your first meeting.**
