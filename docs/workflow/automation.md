@@ -1,46 +1,41 @@
 # Automating your Pipeline
 
-## Make
+## Overview
 
-If you've followed the [installation guide properly](../setup/make.md), you have `make` installed on your computer.
-
-`Make` is a build tool used by software developers to compile computer code into programs that you can install. For us
-researchers, `make` can be used to automate
-
-- what code runs and when, and
-
-- what inputs a given script needs to run.
-
-## An Illustration of a Typical Workflow using `make`
-
-### Basics
-
-Remember the different stages of a project's pipeline, explained earlier. Let's suppose
+Remember the [different stages of a project's pipeline](workflow.md#project-pipelines)? Let's suppose
 we're in the process of preparing our data set for analysis. For example:
 
-- You have three raw data sets in Excel that you wish to convert into CSV files.
-- You want to merge these three CSV files and apply some cleaning steps.
-- Finally, you want to save the final data set, so that it can be used by
-  other stages of your project pipeline (e.g., such as the analysis).
+1. You wish to convert three raw data sets from Excel to CSV files.
+2. You want to merge these three CSV files and apply some cleaning steps.
+3. Finally, you want to save the final data set, so that it can be used in
+other stages of your project pipeline (e.g., such as the analysis).
 
 This workflow for your specific pipeline can be visualized as follows:
 
 ![Workflow](make_flowchart.png)
 
-In `make`, the workflow collapses to a set of rules, which are structured as follows:
+Using so-called "build tools" such as [`make`](../setup/make.md), we can
+specify
+
+- what code runs and when, and
+- what inputs (e.g., data, parameters) a given source code file needs to run.
+
+Specifically, `make` introduces "recipes" that are used to tell `make` how to
+build certain `targets`, using a set of `source files` and `execution command(s)`.
+
+- A *target* refers to **what** needs to be built (e.g., a file),
+- *source(s)* specify what is **required** to execute the build, and
+- the *execution command* specifies **how** to execute the build.
+
+In `make` code, this becomes
 
 ```bash
-target : source(s)
+target: source(s)
     execution command
 ```
+## Translating the Pipeline into "Recipes" for `make`
 
-A *target* refers to **what** needs to be built (e.g., a file),
-*source(s)* specify what is **required** to execute the build, and
-the *execution command* specifies **how** to execute the build.
-
-### Translating the Pipeline into `make` Code
-
-In "make code," the workflow above - saved in a *makefile* (a file called `makefile`, without a file type ending) - will become:
+In "`make` code," the workflow above - saved in a *makefile* (a file called `makefile`, without a file type ending) - becomes:
 
 ```bash
 
@@ -66,17 +61,19 @@ In "make code," the workflow above - saved in a *makefile* (a file called `makef
 !!! hint
 	Pay attention to the subdirectory structure used here: the rules refer to files in different folders (src, gen, data, etc.), which are explained [earlier in this guide](directories.md).
 
-### Running `make`
+## Running `make`
 
-#### Basic Use
+**Building your pipeline / running `make`**
+
 You run the entire workflow by typing `make` in the directory where the `makefile` is located.
 
-#### Preview Workflow
+**Preview your pipeline, "dry run"**
+
 If you type `make -n`, you are entering a sort-of "preview" mode: `make`
 will provide you a list of commands it would execute - but it does not
 actually execute them. Great to preview how a workflow would be executed!
 
-#### Consider Some Files and Targets as Up-to-Date
+**Consider Source Code or Targets as Up-to-Date**
 
 By default, `make` runs each step in a workflow that *needs* to be
 updated. However, sometimes you wish to only rebuild *some* but not all
@@ -89,7 +86,7 @@ whether you want to consider **file(s)**, or **targets** as up-to-date.
 Recall that *targets* are higher-order recipes, whereas files are, well,
 merely files.
 
-##### Considering a **target** as up-to-date.
+*Considering a **target** as up-to-date:*
 
 Pass the parameter `-t targetname` to `make`, and press enter. For example,
 ```
@@ -99,7 +96,7 @@ make -t targetname
 The `targetname` is now "up-to-date". When you then run `make`,
 it will only run those files necessary to build the remainder of the workflow.
 
-##### Considering **file(s)** as up-to-date
+*Considering **source code** as up-to-date:*
 
 Pass the parameter `-o filename1 filename2` to `make`.
 In other words, `filename1` and `filename2` will be considered "infinitely old",
@@ -111,20 +108,28 @@ and when rebuilding, that part of the project will not be executed.
     your temporary and output files, and re-run `make`
     to see whether everything works (and reproduces).
 
-## Some examples of when `make` becomes useful
+**Advanced use cases**
 
-- You have a script that takes a very long time to build a dataset
+This [book by O'Reilly Media](https://www.oreilly.com/openbook/make3/book/index.csp) explains all the bells and whistles about using `make`. Definitely recommended!
+
+## Miscellaneous
+
+### Why is `make` useful?
+
+- You may have a script that takes a very long time to build a dataset
 (let's say a couple of hours), and another script that runs an analysis on it.
 You only would like to produce a new dataset if actually code to make that dataset has changed.
 Using `make`, your computer will figure out what code to execute to get you your final analysis.
 
-- You want to run a robustness check on a larger sample, using a virtual computer you have rented in the cloud.
+- You may want to run a robustness check on a larger sample, using a virtual computer you have rented in the cloud.
 To run your analysis, you would have to spend hours of executing script after script to make sure the project runs the way you want.
 Using `make `, you can simply ship your entire code off to the cluster, change the sample size, and wait for the job to be done.
 
-## Make versus...
+### Are there alternatives to `make`?
 
-Below is a list of some popular pipeline tools. For more, please check [Awesome Pipeline](https://github.com/pditommaso/awesome-pipeline) and [Awesome Workflow](https://github.com/meirwah/awesome-workflow-engines).
+**Other build tools**
+
+There are dozens of build tools in the market, many of which are open source. For more information, please check [Awesome Pipeline](https://github.com/pditommaso/awesome-pipeline) and [Awesome Workflow](https://github.com/meirwah/awesome-workflow-engines).
 
 - [Dagster](https://github.com/dagster-io/dagster)/[Dask](https://github.com/dask/dask)/[Kedro](https://github.com/quantumblacklabs/kedro)/[Pachyderm](https://github.com/pachyderm/pachyderm)/[Reflow](https://github.com/grailbio/reflow): for data analysts
 
@@ -132,23 +137,27 @@ Below is a list of some popular pipeline tools. For more, please check [Awesome 
 - [Cmake](https://cmake.org/)/[Scons](https://scons.org/): general make tools
 - [Bazel](https://bazel.build): Google's next generation build system
 
-### Readme.txt
+**Readme.txt**
 
-A `readme.txt` - or, in other words, a plain text file with some documentation - is great.
+Don't have time to set up a reproducible workflow using `make`?
+A `readme.txt` - or, in other words, a plain text file with some documentation - is great alternative.
 They are very useful to provide an overview about what the project is
 about, and many researchers also use them to explain in which order to run scripts. But then again,
 you would have to execute that code manually.
 
-### A bash script
+**make.bat - a bash script**
 
 What you see with other researchers is that they put the running instructions into a bash script,
 for example a `.bat` file on Windows. Such a file is helpful because it makes the order of
-execution *explicit*, but such a file will always build *everything*. Especially in data-intensive
+execution *explicit*. The downside is that such a file will always build *everything* - even those
+targets that are already up-to-date. Especially in data- and computation-intensive
 projects, though, you would exactly want to avoid that to make quick progress.
 
-Generally, `make` is preferred over a `readme.txt` - but better have a `readme.txt` than no documentation at all.
+To sum up, we prefer `make` over a `readme.txt` or a `make.bat`. But better have one of those than no documentation at all.
 
-!!! summary
+## Summary
+
+!!! summary "What is `make`, and how can we use it to automate pipelines?"
 
 	With `make`, we
 
@@ -160,28 +169,3 @@ Generally, `make` is preferred over a `readme.txt` - but better have a `readme.t
 
 	- are kept from *repeating* typos or mistakes - if we stick to using `make` everytime
 	we want to run our project, then we *must* correct each mistake before we can continue.
-
-## Want to know more?
-
-This open source book explains you all the bells and whistles about using `make`. Definitely recommended!
-
-* Mecklenburg, R. (2004). [Managing Projects with GNU Make: The Power of GNU Make for Building Anything.](https://www.oreilly.com/openbook/make3/book/index.csp)), O'Reilly Media, Inc.
-
-
-<!--
-
-
-
-- We have three raw data sets (.xlsx)
-
-- We want to convert these files to .csv files
-
-- We want to merge all three files
-
-- We want to analyze the data using an OLS regression
-
-- We want to produce plots
-
-- We want to combine those into a PDF
-
-- We need to clean this data - to do so, we have one code file

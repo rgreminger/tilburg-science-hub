@@ -1,26 +1,19 @@
 # Project Setup and Workflow Management
 
-When starting a new project, most of us spend time thinking about *what* to create (e.g., a cleaned data set, a new algorithm, an analysis, and/or a paper and corresponding slides), but not about how to *manage* its creation.
+## Motivation
 
-In other words, we start creating files (source code, data sets, Word documents), and put those somewhere in our file system. The better ones start sorting files in directories, or keep track of version numbers for files (e.g., 20191126_mycode.R) to remember which file was created when. But - let us promise you - even that much of a good intention will very likely resort in chaos down the road.
+When working on a project, most of us spend time thinking about *what* to create (e.g., a cleaned data set, a new algorithm, an analysis, and/or a paper and corresponding slides), but not about how to *manage* its creation.
 
-For example, have a look at the directory and file structure of a PhD project Hannes once
-was working on (back in 2013). A mapping of the files and directories, without the actual
-content of the files, is [available here](structure_phd_2013.html).
+Gradually, we write code and edit data sets, and put those files somewhere on our computer. When we update files, we either overwrite them, or save new versions under different file names (e.g., including dates like `20191126_mycode.R` or version numbers like `mycode_v2.R`). Even with *best intentions to keep everything tidy*, months or years of working on a project will very likely result in chaos. For example, have a look at the intransparent [directory and file structure of a PhD project](structure_phd_2013.html) Hannes once was working on (back in 2013).
 
-Try to find...
+As you will quickly realize, the folder structure is a mess, and it is close to impossible to find the code that prepared the datasets, or the code that was used to estimate the econometric model that eventually got published (if you do find these files, please let us know). ;-)
 
-- the code that prepared the dataset, and
-- the code of the econometric model that eventually got published.
+Avoiding this chaos is **at the core of managing data- and computation-intensive projects**, and your primary mission.
 
-As you will quickly realize, the folder structure is a mess, and the original model is almost impossible to find.
-
-Well - avoiding this chaos is **at the core of implementing a workflow management system**, and your primary mission.
-
-The following pages should help you to get introduced to a few principles of a proper workflow management system.
+The following pages should help you to get introduced to a few principles of a project management.
 
 !!! tip "Tips"
-    * We may sometimes sound a bit dogmatic about certain things (e.g., you MUST do this or that). Please trust us that many of our teachings will make sense only after a while; so - stick with our recommendations during the course of your first few projects. Later on, take the liberty to design the workflows to your needs.
+    * We may sometimes sound a bit dogmatic (e.g., you must do this or that). Some of our instructions will only make sense to you after a while. So, please stick with our recommendations during the course of your first few projects. Later on, take the liberty to re-design the workflows to your needs.
     * Consider adopting our suggestions **gradually**
         1. Start with a proper [directory structure on your local computer](directories.md)
         2. Start [automating](automation.md) your workflows
@@ -28,8 +21,10 @@ The following pages should help you to get introduced to a few principles of a p
         4. Start to version your code to keep track of changes + clean up
 	  * You should be able to complete this subchapter in one sitting within 60-120 minutes.
 
+<!--
 !!! warning
 	This site is under development, and will be updated continuously. Please check back frequently.
+--!>
 
 <!--#* Please follow the steps one-by-one in the order they appear on the side bar and do not deviate from them, unless you really know what you are doing.
 #* Where necessary, we have provided instructions for Mac, Windows and Linux machines.

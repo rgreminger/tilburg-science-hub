@@ -33,7 +33,6 @@ nav:
   - Getting Started: workflow/index.md
   - Pipelines and Project Components: workflow/workflow.md
   - Directory Structure: workflow/directories.md
-  #- Alternative module structure: workflow/directories_alt.md
   - Automating your Pipeline: workflow/automation.md
   - Documenting Code and Pipeline: workflow/doc.md
   - Documenting Datasets: workflow/doc_data.md
@@ -44,7 +43,7 @@ nav:
   #- Documentation: workflow/doc.md
   #- Housekeeping: workflow/housekeeping.md
   #- Portability: workflow/portability.md
-  - Checklist with Summary: workflow/checklist.md
+  - Checklist to Audit your Project: workflow/checklist.md
 #- Manuals:
 #  - How to write good code:
 #  - Style instructions for papers:
@@ -60,13 +59,14 @@ nav:
 
 theme:
   name: 'material'
-  palette: 
+  palette:
     #primary: 'Blue Grey' # default: indigo, other colors see https://squidfunk.github.io/mkdocs-material/getting-started/
     primary: 'indigo' # default: indigo, other colors see https://squidfunk.github.io/mkdocs-material/getting-started/
     accent: 'indigo'
-    
+
 markdown_extensions:
   - admonition
   - attr_list
+  - footnotes
 
 google_analytics: ['UA-23035208-2', 'tilburgsciencehub.com']
