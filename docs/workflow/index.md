@@ -14,7 +14,7 @@ The following pages should help you to get introduced to a few principles of a p
 
 !!! tip "Configure your computer"
     - Note that to implement our workflow suggestions, your computer needs to be configured properly - so we [suggest you to do that first](../setup/index.md).
-    - Of course, you need not to install all software tools - but pick *at least* your statistical software package (e.g., [we use R](../setup/R.md), but others prefer [Stata](../setup/stata.md)), [Python](../setup/python.md), and [`make`](../setup/make.md).
+    - Of course, you need not to install all software tools - but pick *at least* your statistical software package (e.g., [we use R](../setup/r.md), but others prefer [Stata](../setup/stata.md)), [Python](../setup/python.md), and [`make`](../setup/make.md).
 
 !!! tip "Tips"
     * We may sometimes sound a bit dogmatic (e.g., you must do this or that). Some of our instructions will only make sense to you after a while. So, please stick with our recommendations during the course of your first few projects. Later on, take the liberty to re-design the workflows to your needs.
