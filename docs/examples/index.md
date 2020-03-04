@@ -2,7 +2,20 @@
 
 Ever wondered how a fully reproducible and automated project may look like? Get inspired here!
 
-## The TiSEM AirBnB repository
+## 1. A Simple `Make` Pipeline with R and Latex
+
+[In this example](https://github.com/rgreminger/example-make-workflow), you
+find a simple `make` pipeline, which prepares (`data-preparation`) and analyzes (`analysis`)
+data using R, and creates some tables for a paper (`paper`) using Latex.
+
+This is probably the most simplistic but still complete workflow, and
+thus highly recommended as a template to kickstart your projects.
+
+Checkout [Rafael's GitHub repository](https://github.com/rgreminger/example-make-workflow) for all
+the details! Fork it/use it as a template - contributions appreciated!
+
+## 2. The TiSEM AirBnB repository
+
 Using publicly available data from AirBnB (available via [Kaggle.com](https://www.kaggle.com/airbnb/boston)), we
 illustrate how a reproducible workflow may look like in practice.
 
@@ -18,6 +31,12 @@ We've crafted this project to run
     - run a simple analysis,
     - produce a paper with output tables and figures.
 
-## Other examples (including code snippets)
+!!! warning
+        This repository is still work-in-progress.
 
-- Code snippet to [download data from Dropbox](dropbox.md).
+
+## 3. Other examples (including code snippets)
+
+- Code snippet to [download data from Dropbox](dropbox.md) to your local
+drive, so that you can rely on Dropbox's backup features while keeping
+your code hosted on GitHub.
