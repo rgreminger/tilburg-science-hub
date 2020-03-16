@@ -51,4 +51,4 @@ Python 3.x.x :: Anaconda custom (64-bit)
 
     ```python3 --version```
 
-    instead. Now you should see a message like the one above and are good to go for the course.
+    instead. Now you should see a message like the one above and are good to go.

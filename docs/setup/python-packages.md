@@ -19,7 +19,7 @@ If you get an error, try typing instead:
 python -m pip install --upgrade pip
 ```
 
-For this course, we will need the package `Selenium` as part of the web scraping tool kit we will build up. First let us install a depency for it via
+You also need the package `Selenium` as part of the web scraping tool kit we will build up. First let us install a depency for it via
 
 ```bash
 pip install msgpack
