@@ -18,7 +18,7 @@ Instances of "new data" may included, but are not restricted to be:
 	names and associated labels (e.g., as in the case of countries --> GDP per capita).
 
 
-Ideally, your data description includes the *veru elaborate questions* outlined in `Datasheets for datasets` by Gebru, Timnit, et al. (2018).
+Ideally, your data description includes the *very elaborate questions* outlined in `Datasheets for datasets` by Gebru, Timnit, et al. (2018).
 **We strongly** refer you to the [original paper](https://arxiv.org/abs/1803.09010), which explains in detail the seven key ingredients of a proper dataset documentation. Below, we have reproduced these questions, and we recommend you to include those as a **`readme.txt`**, together with your datasets.
 
 ```
@@ -132,7 +132,7 @@ Ideally, your data description includes the *veru elaborate questions* outlined 
 2.16 Does the dataset contain data that might be considered sensitive in
      any way (e.g., data that reveals racial or ethnic   origins, sexual
      orientations, religious beliefs, political opinions or union memberships,
-     or locations; financial or health data; biometric or genetic data;  
+     or locations; financial or health data; biometric or genetic data;
      forms of government identification, such as social security numbers;
      criminal history)?
      If so, please provide a description.

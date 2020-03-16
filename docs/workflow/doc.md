@@ -6,7 +6,7 @@ after a while) is **absolutely crucial** to the long-term success of you as a re
 Typically, you would like to
 
 - include a main project documentation, and
-- one documentation each for each [submodule](directories.md).
+- one documentation each for each [stage of your pipeline](directories.md).
 
 ## Main Project Documentation
 
@@ -24,7 +24,7 @@ least the following information:
 	* Explaining [submodules/directory structure](directories.md) ("where to find what?")
 	* How to run build the project
 
-Here is an example documentation you can use as a template:  
+Here is an example documentation you can use as a template:
 
 
 ```
@@ -48,36 +48,41 @@ BUILD INSTRUCTIONS
 1) Dependencies
 
 Please follow the installation guide on
-https://hannesdatta.github.io/reproducible-science-guide/.
-
-- Install R and RStudio (3.6.1)
-- Install the following packages:
+http://www.tilburgsciencehub.com/setup for
+- R and RStudio (3.6.1)
+  Install the following R packages:
 
 	packages <- c("data.table", "ggplot2")
 
 	install.packages(packages)
 
-- Install Gnu Make
-- Put GnuMake and R to path so that you can run it
+- Gnu Make
+  Put GnuMake and R to path so that you can run it
   from anywhere on your system.
-- Obtain raw data files and put them into \derived\input
+
+- Obtain raw data files and put them into \raw_data\
 
 2) Directory structure
 
-\raw           Code required to collect/download raw data
-\derived       Data preparation
-\analysis      Data analysis
-\paper         Stores literature reference, paper, and slides
+The project pipeline consists of the following stages:
+
+\src\collect                Code required to collect/download raw data
+\src\data-preparation       Data preparation
+\src\analysis               Data analysis
+\src\paper                  Stores literature reference, paper, and slides
+
+Each directory has a makefile, with running descriptions
+for each stage of the pipelin.
+
+For each pipeline stage, the \gen directory contains
+files generated on the basis of the \raw_data and
+source code stored in \src.
 
 Each directory contains subdirectories,
 	\input (for input files)
 	\output (for final output files)
 	\temp (for any temporary files)
-	\code (for all the code)
 	\audit (for any auditing files)
-
-The \code directory contains the makefile, with running descriptions
-for each submodule.
 
 3) How to run the project
 
@@ -88,9 +93,12 @@ and run
 
 ```
 
-## Documentation at the submodule-level
+## Documentation for each stage of the pipeline
 
-For each of the [submodules](directories.md) (e.g., `\analysis`), please include a `readme.txt`.
+Ideally, a `makefile` lists all the necessary steps to
+run your pipeline. If you do not have a `makefile` yet, include
+a `readme.txt` instead.
+
 Here is a template to start from:
 
 ```
