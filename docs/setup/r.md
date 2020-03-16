@@ -5,9 +5,7 @@ R's use in the data science, econometrics and marketing communities has taken of
 
 ## Installing R
 
-Go to the [R homepage](https://cran.r-project.org/) and download the installer for your operating system.
-
-The current version for Mac and Windows is `R version 3.6.1` and for Linux it is `R version 3.4.1`
+Go to the [R homepage](https://cran.r-project.org/) and download the most recent installer for your operating system.
 
 We strongly suggest you to install R in the directory `C:\R\R-3.x.x\` rather than the default directory, `C:\Program Files\R\R-3.x.x\`.
 
@@ -34,7 +32,7 @@ We will need some additional libraries to conduct our statistical analysis. Proc
 packages <- c("reshape", "rmarkdown",
               "data.table", "Hmisc", "dplr",
                     "stargazer", "knitr",
-                    "xtable","tidyverse", 
+                    "xtable","tidyverse",
                     "RSQLite", "dbplyr")
 
 install.packages(packages)
@@ -48,33 +46,33 @@ install.packages(packages)
 
 You have just installed R and RStudio, and learnt how to open RStudio from the start menu.
 However, for many of the applications that follow, you are required to access R directly from the command prompt.
-For example, this will enable you to run a series of R scripts in batch - which will significantly ease the burden of 
+For example, this will enable you to run a series of R scripts in batch - which will significantly ease the burden of
 building complex data workflows.
 
 For you to be able to use R from the command prompt, **Windows users** need to follow the steps below.
 On Mac and Linux, R is available from the command line by default.
 
 !!! danger "Making R available via the PATH settings on Windows"
-    We need to update our PATH settings; these settings are a set of directories that Windows uses to "look up" software to startup. 
+    We need to update our PATH settings; these settings are a set of directories that Windows uses to "look up" software to startup.
 
-    - Right-click on Computer. 
-	- Go to "Properties" and select the tab "Advanced System settings". 
+    - Right-click on Computer.
+	- Go to "Properties" and select the tab "Advanced System settings".
 	- Choose "Environment Variables" and select `Path` from the list of system variables.
 	- Choose `Edit`.
 		- **Windows 7 and 8 machines:**
-			If you chose your installation directory to be C:\R\R-3.6.1\ during your installation (i.e., you did not use the default directory), copy and paste the following string without spaces at the start or end:
+			If you chose your installation directory to be C:\R\R-3.x.x\ during your installation (i.e., you did not use the default directory), copy and paste the following string without spaces at the start or end:
 
-            `;C:\R\R-3.6.1\bin`
+            `;C:\R\R-3.x.x\bin`
 
 		- **Windows 10 machines:**
 			- Click `New` and paste the following string:
 
-            `C:\R\R-3.6.1\bin`
+            `C:\R\R-3.x.x\bin`
 
 			- Click on `OK` as often as needed.
 
     !!! tip
-        You will need to add a new PATH for most of the following installation steps. Always keep in mind that after you add a new PATH, you need to start a *new* cygwin/terminal session to verify whether it worked. Sometimes it may take a couple of minutes until your PATH is recognized by the terminal. 
+        You will need to add a new PATH for most of the following installation steps. Always keep in mind that after you add a new PATH, you need to start a *new* cygwin/terminal session to verify whether it worked. Sometimes it may take a couple of minutes until your PATH is recognized by the terminal.
 
 **Now let's verify whether we can open R from the command prompt**
 
@@ -87,7 +85,7 @@ R --version
 followed by pressing `Return`. The expected return begins with:
 
 ```bash
-R version 3.x.x (201x-xx-xx) -- "Some Funky Name"
+R version 3.x.x (20xx-xx-xx) -- "Some Funky Name"
 ```
 
 Great job - you've managed to install R and configure it for use for data-intensive projects!

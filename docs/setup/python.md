@@ -35,18 +35,18 @@ You should see the following information returned:
 ###   Windows users:
 
 ```bash
-Python 3.6.5 :: Anaconda, Inc.
+Python 3.x.x :: Anaconda, Inc.
 ```
 
 ###  Mac & Linux/Ubuntu users:
 
 ```bash
-Python 3.6.2 :: Anaconda custom (64-bit)
+Python 3.x.x :: Anaconda custom (64-bit)
 ```
 
 !!! tip "Python 2 versus Python 3"
-    Python 2 and 3 are incompatible in syntax. 
-	If you had Python 2 previously installed on your machine, 
+    Python 2 and 3 are incompatible in syntax.
+	If you had Python 2 previously installed on your machine,
 	you might have seen `Python 2.x.x` above. In that case try typing
 
     ```python3 --version```

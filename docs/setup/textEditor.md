@@ -8,7 +8,7 @@ Please download, install it along with the necessary packages and stick with it 
 There is a slight learning curve, but soon you hopefully will be wondering why no-one forced you to do this before!
 
 !!! note
-    - None of the skills on this website are tied to Atom, 
+    - None of the skills on this website are tied to Atom,
 	so if you do decide to move away to another editor, nothing will be lost. For example, [Visual Studio Code](https://code.visualstudio.com/) or [Vim](https://www.vim.org/) are also widely used text editors.
 
 <!-- ## Installing Sublime Text
@@ -58,8 +58,8 @@ Make sure that the version numbers are above `1.26.x` or newer.
 !!! danger "Additional Step for Windows:"
     Getting things to run from the command line for Windows users is a bit harder. You will need local administration rights for your computer, but you should have these on your personal computers or those owned by the University.
 
-    - Right-click on Computer. 
-	- Then go to "Properties" and select the tab "Advanced System Settings". 
+    - Right-click on Computer.
+	- Then go to "Properties" and select the tab "Advanced System Settings".
 	- Choose "Environment Variables" and select `Path` from the list of system variables.
 	- If you accepted all defaults during your installation, and didn't have any other non-default setting prior to starting this guide, choose `Edit.`
 
@@ -79,48 +79,39 @@ Make sure that the version numbers are above `1.26.x` or newer.
 
     Close your current terminal session, open a new one, and again try `atom .` - the Atom editor will open if this was successful.
 
-## Additional Packages for Atom
+!!! tip "Installing Additional Packages for Atom"
 
-One of the advantages of Atom is that there are many *packages* that make your life easier, ranging from simple syntax highlighting to environments that can mimic a complete graphical user interface.
+    One of the advantages of Atom is that there are many *packages* that make your life easier, ranging from simple syntax highlighting to environments that can mimic a complete graphical user interface.
 
-For this course, we will install the minimum number of packages necessary to make your coding life easier.
+    * To access Atom's settings press `Ctrl + ,` (`CMD + ,` on Mac) on your keyboard then click on the `Install` tab which is visible on the left hand side.
+    * On the Installation page there is a prompt where you can type in a package name and then press `Return` and Atom will search for that package for you and return results with similar names.
+    When you find the package that you need, you click the blue 'Install' button and the package will be installed.
+    * If during the installation of a package Atom asks to install dependencies, always choose to accept.
 
-## Installing Additional Packages for Atom
+    * If you decide to stick with Atom, you may find the following packages useful in your day-to-day work:
 
-Atom's package manager is built in to the program itself and is relatively easy to interact with.
-To access Atom's settings press `Ctrl + ,` (`CMD + ,` on Mac) on your keyboard then click on the `Install` tab which is visible on the left hand side.
+        *   tablr
+        *   tablr-json
 
-On the Installation page there is a prompt where you can type in a package name and then press `Return` and Atom will search for that package for you and return results with similar names.
-When you find the package that you need, you click the blue 'Install' button and the package will be installed.
-
-For this course, please install the following packages:
-
-*   autocomplete-R
-*   autocomplete-python (choose Jedi as your engine when asked)
-*   autoflow
-*   language-r
-*   linter
-*   linter-lintr
-*   tablr
-*   platformio-ide-terminal
-*   project-plus
-*   language-markdown
-*   markdown-table-editor
-*   markdown-preview-plus
-*   autocomplete-citeproc
-*   open-unsupported-files
-*   advanced-open-file
-
-If during the installation of a package Atom asks to install dependencies, always choose to accept.
-
-!!! tip
-    If you decide to stick with Atom after this course, you may find the following packages useful in your day to day work:
-
-    *   language-latex
-    *   language-matlab
-    *   language-stata
-    *   atom-latex
-    *   whitespace
+        *   autocomplete-R
+        *   autocomplete-python (choose Jedi as your engine when asked)
+        *   autoflow
+        *   language-r
+        *   linter
+        *   linter-lintr
+        *   platformio-ide-terminal
+        *   project-plus
+        *   language-markdown
+        *   markdown-table-editor
+        *   markdown-preview-plus
+        *   autocomplete-citeproc
+        *   open-unsupported-files
+        *   advanced-open-file
+        *   language-latex
+        *   language-matlab
+        *   language-stata
+        *   atom-latex
+        *   whitespace
 
 
 

@@ -13,8 +13,8 @@ To get you started, we have curated a *boot camp in scientific computing and rep
 
 The [Oxford Dictionary](https://www.lexico.com/definition/boot_camp) defines a boot camp as a "short, intensive, and rigorous course of training." In this spirit, on this website, you can
 
-- Learn how to set up your computing environment (&rarr; [software setup](setup/)),
 - Implement workflows to manage complex computational projects (&rarr; [project setup and workflow management](workflow/) ),
+- Learn how to set up your computing environment (&rarr; [software setup](setup/)),
 - Browse a library of tips & tricks (such as how to learn R &rarr; [tips and manuals](tips/learn_R.md)), and
 - Get inspired by learning from various templates (&rarr; [example projects](examples/)).
 

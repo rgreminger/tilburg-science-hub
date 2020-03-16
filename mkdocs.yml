@@ -8,27 +8,6 @@ site_author: Hannes Datta, Tobias J. Klein
 
 nav:
 - Home: index.md
-- Software Setup:
-  - Installation Guide Overview: setup/index.md
-  #- Terminology: setup/terminology.md
-  #- Command Line Tools: setup/commandLine.md
-  - R: setup/r.md
-  - Stata: setup/stata.md
-  - Git: setup/gitInstall.md
-  - Text Editor: setup/textEditor.md
-#  - Perl: setup/perl.md
-  - Python: setup/python.md
-  - Python Extras: setup/python-more.md
-  - Build Tools/Make:
-    - Why Build Tools?: setup/make-intro.md
-    - Automation with Make: setup/make.md
-#    - Automation with Waf: setup/waf.md
-    - Automation with Snakemake: setup/snakemake.md
-  - Webscraping: setup/webscraping_drivers.md
-  - Teamviewer: setup/teamviewer.md
-#  - Pandoc: setup/pandoc.md
-  # - Matlab: setup/matlab.md
-  # - Path Settings: setup/path-setting.md
 - Project Setup and Workflow Management:
   - Getting Started: workflow/index.md
   - Pipelines and Project Components: workflow/workflow.md
@@ -44,6 +23,25 @@ nav:
   #- Housekeeping: workflow/housekeeping.md
   #- Portability: workflow/portability.md
   - Checklist to Audit your Project: workflow/checklist.md
+- Software Setup:
+  - Installation Guide Overview: setup/index.md
+  #- Terminology: setup/terminology.md
+  #- Command Line Tools: setup/commandLine.md
+  - R: setup/r.md
+  - Stata: setup/stata.md
+  - Git: setup/gitInstall.md
+  - Text Editor: setup/textEditor.md
+#  - Perl: setup/perl.md
+  - Python: setup/python.md
+  - Python Packages: setup/python-packages.md
+  - Build Tools/Make: setup/make.md
+    # - Automation with Waf: setup/waf.md
+    #- Automation with Snakemake: setup/snakemake.md
+  - Webscraping: setup/webscraping_drivers.md
+  - Teamviewer: setup/teamviewer.md
+#  - Pandoc: setup/pandoc.md
+  # - Matlab: setup/matlab.md
+  # - Path Settings: setup/path-setting.md
 #- Manuals:
 #  - How to write good code:
 #  - Style instructions for papers:
