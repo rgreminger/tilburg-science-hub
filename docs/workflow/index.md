@@ -16,14 +16,17 @@ The following pages should help you to get introduced to a few principles of a p
     - Note that to implement our workflow suggestions, your computer needs to be configured properly - so we [suggest you to do that first](../setup/index.md).
     - Of course, you need not to install all software tools - but pick *at least* your statistical software package (e.g., [we use R](../setup/r.md), but others prefer [Stata](../setup/stata.md)), [Python](../setup/python.md), and [`make`](../setup/make.md).
 
+## Gradual implementation
+
 !!! tip "Tips"
     * We may sometimes sound a bit dogmatic (e.g., you must do this or that). Some of our instructions will only make sense to you after a while. So, please stick with our recommendations during the course of your first few projects. Later on, take the liberty to re-design the workflows to your needs.
     * Consider adopting our suggestions **gradually**
         1. Start with a proper [directory structure on your local computer](directories.md)
-        2. Start [automating](automation.md) your workflows
-        3. Add [documentation](doc.md) to your modules/directories and your (raw) data
-        4. Start to version your code to keep track of changes + clean up
-	  * You should be able to complete this subchapter in one sitting within 60-120 minutes.
+        2. Start [automating](automation.md) (parts of) your pipeline
+        3. Document your [project](doc.md) and [raw data](doc_data.md)
+        4. Start to [track changes to your source code](versioning.md), and [clean up your source/"do your housekeeping"](checklist.md) regularly
+
+<!---* You should be able to complete this subchapter in  sitting within 90-150 minutes.-->
 
 <!--
 !!! warning
