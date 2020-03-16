@@ -11,7 +11,7 @@ make changes to the project. For example, you can `git clone` the project to you
 computer, make changes to files and commit those (`git add`, `git commit`), and
 synchronize your changes with the remote repository on GitHub (e.g., using `git push`).
 
-For an overview of these workflows, see our detailed [tutorial here](git.md).
+For an overview of these workflows, see our detailed [tutorial here](versioning.md).
 
 ## Collaborating on open source projects where you are **not a team member**
 

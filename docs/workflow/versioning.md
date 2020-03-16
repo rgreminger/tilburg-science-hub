@@ -135,7 +135,7 @@ example, which also adds a few other useful commands.
 !!! tip "Exclude files from tracking"
 
     Experience shows that you want to avoid tracking specific files and folders.
-    For example, if you recall the [directory structure](../directories.md) for your
+    For example, if you recall the [directory structure](directories.md) for your
     project, there is no point in tracking *generated files* in `\gen`, as these
     files are purely created based on source code in `\src` (which, in
     turn, you *do* would like to track).
