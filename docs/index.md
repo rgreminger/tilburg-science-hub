@@ -7,7 +7,7 @@
 *Tilburg Science Hub* is an open-source resource repository that supports students and researchers
 in the social sciences to *efficiently manage data- and computation-intensive projects*.
 
-To get you started, we recommend you to follow our *Boot camp in Scientific Computaing and Reproducible Science*.
+To get you started, we recommend you to follow our *Boot camp in Scientific Computing and Reproducible Science*.
 
 ### Boot camp in Scientific Computing and Reproducible Science
 

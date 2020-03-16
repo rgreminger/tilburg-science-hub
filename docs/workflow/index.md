@@ -23,7 +23,7 @@ The following pages should help you to get introduced to a few principles of a p
     * Consider adopting our suggestions **gradually**
         1. Start with a proper [directory structure on your local computer](directories.md)
         2. Start [automating](automation.md) (parts of) your pipeline
-        3. Document your [project](doc.md) and [raw data](doc_data.md)
+        3. Document your [project](documenting-code.md) and [raw data](documenting-data.md)
         4. Start to [track changes to your source code](versioning.md), and [clean up your source/"do your housekeeping"](checklist.md) regularly
 
 <!---* You should be able to complete this subchapter in  sitting within 90-150 minutes.-->

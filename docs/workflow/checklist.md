@@ -13,7 +13,7 @@ Here's a checklist you can use to audit your progress.
 | ------------------------------------------------------------------------|:--------------:|:-----------:|:-----------:|:-------:|
 | **At the project level**
 | Implement a consistent [directory structure](directories.md#working-example): data/src/gen
-| Include [readme with project description](doc.md#main-project-documentation) and technical instruction how to run/build the project
+| Include [readme with project description](documenting-code.md#main-project-documentation) and technical instruction how to run/build the project
 | Store any authentication credentials outside of the repository (e.g., in a JSON file), NOT clear-text in source code
 | Mirror your `\data` folder to a secure backup location; alternatively, store all raw data on a secure server and download relevant files to `\data`
 |
