@@ -14,7 +14,7 @@ Please indicate you download Teamviewer for *private use*. We have purchased a T
 ## Starting a Teamviewer session
 
 Open TeamViewer via the start menu, select **remote control** on the left side of your screen (it's the default), and note down **your ID** and **your password**. When talking or texting with us, please give us this ID (which is parmanent),
-and your passport (which is only a temporary password). 
+and your password (which is only temporary). 
 
 We can then access your computer, and you can watch us.
 
