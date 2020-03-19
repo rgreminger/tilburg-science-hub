@@ -42,19 +42,22 @@ Please [download it here](http://gnuwin32.sourceforge.net/downlinks/make.php).
 !!! danger "Making `make` available via the PATH settings on Windows"
     We need to update our PATH settings; these settings are a set of directories that Windows uses to "look up" software to startup.
 
-    - Right-click on Computer.
-	- Go to "Properties" and select the tab "Advanced System settings".
-	- Choose "Environment Variables" and select `Path` from the list of system variables.
-	- Choose `Edit`.
-		- **Windows 7 and 8 machines:**
-			If you have used the default directory during your installation, copy and paste the following string without spaces at the start or end. Otherwise, modify the path accordingly:
+    - Open the settings for environment variables
+        - Right-click on Computer.
+      	- Go to "Properties" and select the tab "Advanced System settings".
+      	- Choose "Environment Variables"
+    - Alternatively, type "environment variable" (Dutch: omgevingsvariabelen) in your Windows 10 search menu, and press Enter.
 
-            `;c:\Program Files (x86)\GnuWin32\bin\`
+	-  Select `Path` from the list of user variables. Choose `Edit`.
+		- **Windows 7 and 8 machines:**
+			If you chose your installation directory to be `C:\Program Files\GnuWin32\bin` during your installation (i.e., you did use the default directory), copy and paste the following string without spaces at the start or end:
+
+            `;C:\Program Files (x86)\GnuWin32\bin`
 
 		- **Windows 10 machines:**
 			- Click `New` and paste the following string:
 
-            `c:\Program Files (x86)\GnuWin32\bin\`
+            `C:\Program Files (x86)\GnuWin32\bin`
 
 			- Click on `OK` as often as needed.
 

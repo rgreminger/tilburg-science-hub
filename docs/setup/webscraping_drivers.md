@@ -62,7 +62,7 @@ chromedriver --version
 *   Add the directory `C:\chromedriver` (or whichever directory you chose above) to your PATH as described before (for instructions, see below)
 *   If this went successfully, open a terminal/command prompt, and enter `chromedriver --version`, you should get output that looks like `ChromeDriver [version number]`
 
-!!! danger "Making `make` available via the PATH settings on Windows"
+!!! danger "Making `chromedriver` available via the PATH settings on Windows"
     We need to update our PATH settings; these settings are a set of directories that Windows uses to "look up" software to startup.
 
     - Open the settings for environment variables
@@ -73,19 +73,16 @@ chromedriver --version
 
 	-  Select `Path` from the list of user variables. Choose `Edit`.
 		- **Windows 7 and 8 machines:**
-			If you chose your installation directory to be `C:\Program Files\GnuWin32\bin` during your installation (i.e., you did use the default directory), copy and paste the following string without spaces at the start or end:
+			If you chose your installation directory to be `C:\chromedriver` during your installation (i.e., you did use the default directory), copy and paste the following string without spaces at the start or end:
 
-            `;C:\Program Files\GnuWin32\bin`
+            `;C:\chromedriver`
 
 		- **Windows 10 machines:**
 			- Click `New` and paste the following string:
 
-            `C:\Program Files\GnuWin32\bin`
+            `C:\chromedriver`
 
 			- Click on `OK` as often as needed.
-
-    !!! tip
-        You will need to add a new PATH for most of the following installation steps. Always keep in mind that after you add a new PATH, you need to start a *new* cygwin/terminal/command prompt session to verify whether it worked. Sometimes it may take a couple of minutes until your PATH is recognized by the terminal.
 
 ## Linux Users
 
