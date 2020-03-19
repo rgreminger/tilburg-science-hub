@@ -13,7 +13,7 @@ We strongly suggest you to install R in the directory `C:\R\R-3.x.x\` rather tha
 
 RStudio provides an easy to work with interface to R, and its format should feel familiar to other software environments like Stata or SPSS.
 
-Download and install the free version of RStudio for your operating system from [here](https://www.rstudio.com/products/rstudio/download3/).
+Download and install the **free version of RStudio** for your operating system from [here](https://www.rstudio.com/products/rstudio/download/).
 
 ## Verifying your Installation of R
 
@@ -55,10 +55,13 @@ On Mac and Linux, R is available from the command line by default.
 !!! danger "Making R available via the PATH settings on Windows"
     We need to update our PATH settings; these settings are a set of directories that Windows uses to "look up" software to startup.
 
-    - Right-click on Computer.
-	- Go to "Properties" and select the tab "Advanced System settings".
-	- Choose "Environment Variables" and select `Path` from the list of system variables.
-	- Choose `Edit`.
+    - Open the settings for environment variables
+        - Right-click on Computer.
+      	- Go to "Properties" and select the tab "Advanced System settings".
+      	- Choose "Environment Variables"
+    - Alternatively, type "environment variable" (Dutch: omgevingsvariabelen) in your Windows 10 search menu, and press Enter.
+
+	-  Select `Path` from the list of user variables. Choose `Edit`.
 		- **Windows 7 and 8 machines:**
 			If you chose your installation directory to be C:\R\R-3.x.x\ during your installation (i.e., you did not use the default directory), copy and paste the following string without spaces at the start or end:
 

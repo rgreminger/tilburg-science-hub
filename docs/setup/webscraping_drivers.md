@@ -25,13 +25,13 @@ If that returns an error, `homebrew` is not installed.
 	```
 
 - To verify that Homebrew installed correctly, enter the following into your terminal
-	
+
 	```bash
 	brew doctor
 	```
 
 	...and you should see the following output
-	
+
 	```bash
 	Your system is ready to brew
 	```
@@ -57,11 +57,35 @@ chromedriver --version
 
 *   Install Google Chrome from [here](https://www.google.com/chrome/browser/desktop/index.html)
 *   Download the windows version of Chromedriver from [here](https://chromedriver.storage.googleapis.com/index.html?path=2.41/).
-*   Extract the contents from the zip file, and extract them into a new directory under `C:\chromedriver`
-*   Make sure that the chromedriver.exe file is directly under the PATH you specified, i.e. under C:\chromedriver. If your zip unpacker created a new folder with a different name inside your specified folder, move the .exe file to `C:\chromedriver`.
-*   Add the directory `C:\chromedriver` to your PATH as described before.
-*   If this went successfully, open a new Cygwin session, and enter `chromedriver --version`, you should get output that looks like `ChromeDriver 2.4X.XX`
+*   Extract the contents from the zip file, and extract them into a new directory under `C:\chromedriver`. If you do not have admin rights, you can put the file also in another folder, for example `C:\Program Files\chromedriver`, or `C:\Users\[your-username]\chromedriver`. It does not matter where exactly the file will be put, as long as you remember where it is (it's not a good idea though to leave it in your downloads folder).
+*   Make sure that the chromedriver.exe file is directly under the PATH you specified, i.e. under `C:\chromedriver` (or an alternative path). If your zip unpacker created a new folder with a different name inside your specified folder, move the .exe file to that path.
+*   Add the directory `C:\chromedriver` (or whichever directory you chose above) to your PATH as described before (for instructions, see below)
+*   If this went successfully, open a terminal/command prompt, and enter `chromedriver --version`, you should get output that looks like `ChromeDriver [version number]`
 
+!!! danger "Making `make` available via the PATH settings on Windows"
+    We need to update our PATH settings; these settings are a set of directories that Windows uses to "look up" software to startup.
+
+    - Open the settings for environment variables
+        - Right-click on Computer.
+      	- Go to "Properties" and select the tab "Advanced System settings".
+      	- Choose "Environment Variables"
+    - Alternatively, type "environment variable" (Dutch: omgevingsvariabelen) in your Windows 10 search menu, and press Enter.
+
+	-  Select `Path` from the list of user variables. Choose `Edit`.
+		- **Windows 7 and 8 machines:**
+			If you chose your installation directory to be `C:\Program Files\GnuWin32\bin` during your installation (i.e., you did use the default directory), copy and paste the following string without spaces at the start or end:
+
+            `;C:\Program Files\GnuWin32\bin`
+
+		- **Windows 10 machines:**
+			- Click `New` and paste the following string:
+
+            `C:\Program Files\GnuWin32\bin`
+
+			- Click on `OK` as often as needed.
+
+    !!! tip
+        You will need to add a new PATH for most of the following installation steps. Always keep in mind that after you add a new PATH, you need to start a *new* cygwin/terminal/command prompt session to verify whether it worked. Sometimes it may take a couple of minutes until your PATH is recognized by the terminal.
 
 ## Linux Users
 
