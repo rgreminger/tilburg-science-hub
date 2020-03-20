@@ -5,6 +5,10 @@ R's use in the data science, econometrics and marketing communities has taken of
 
 ## Installing R
 
+Watch our YouTube video, in which we walk you through the setup on Windows.
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/xvw4Xha10qg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 Go to the [R homepage](https://cran.r-project.org/) and download the most recent installer for your operating system.
 
 We strongly suggest you to install R in the directory `C:\R\R-3.x.x\` rather than the default directory, `C:\Program Files\R\R-3.x.x\`.

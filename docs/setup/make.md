@@ -37,7 +37,11 @@ We will use `make` to automate the execution of our projects with a "single clic
 
 We will install `make` so that it plays nicely with your Anaconda/Python distribution and the Windows command line.
 
-Please [download it here](http://gnuwin32.sourceforge.net/downlinks/make.php).
+Watch our YouTube video, in which we walk you through the setup on Windows.
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/8bqH8AOPT3U" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+Please [download `make` here](http://gnuwin32.sourceforge.net/downlinks/make.php).
 
 !!! danger "Making `make` available via the PATH settings on Windows"
     We need to update our PATH settings; these settings are a set of directories that Windows uses to "look up" software to startup.

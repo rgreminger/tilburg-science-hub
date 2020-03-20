@@ -9,9 +9,14 @@ GitHub is a (commercial) platform which allows you to host your source code
 
 online. It also offers a set of collaborative tools to manage "Issues",
 and track progress on project boards.
+
 - Please [register for a GitHub account](https://github.com/join).
 
 ## Installation
+
+Watch our YouTube video, in which we walk you through the setup on Windows.
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/VUzv5RcnW60" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 Download and install the latest versions of Git [here](https://git-scm.com/download).
 

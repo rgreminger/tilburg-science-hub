@@ -55,6 +55,10 @@ chromedriver --version
 
 ### Chromedriver
 
+Watch our YouTube video, in which we walk you through the setup on Windows.
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/l2aRxtYN3eY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 *   Install Google Chrome from [here](https://www.google.com/chrome/browser/desktop/index.html)
 *   Download the windows version of Chromedriver from [here](https://chromedriver.storage.googleapis.com/index.html?path=2.41/).
 *   Extract the contents from the zip file, and extract them into a new directory under `C:\chromedriver`. If you do not have admin rights, you can put the file also in another folder, for example `C:\Program Files\chromedriver`, or `C:\Users\[your-username]\chromedriver`. It does not matter where exactly the file will be put, as long as you remember where it is (it's not a good idea though to leave it in your downloads folder).
