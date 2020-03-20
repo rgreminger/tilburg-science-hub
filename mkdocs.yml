@@ -53,6 +53,7 @@ nav:
     - Learning R: tips/learn_R.md
     - Learning Python and Julia: tips/quantecon.md
     - Writing an Academic Paper: tips/paper.md
+    - Writing Good Code: tips/coding.md
 - Example Projects: examples/index.md
 - Contact: contact.md
 - Acknowledgements: acknowledgement.md
