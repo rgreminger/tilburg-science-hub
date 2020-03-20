@@ -60,7 +60,7 @@ Just navigate to your main project directory, open `Git bash`, and
 type
 
     # initialize a new repository
-    `git init`
+    git init
 
 Then, proceed to step 3.
 
@@ -222,9 +222,8 @@ changes with the remote repository on GitHub.
 ## Summary
 
 Want to know more about how to use Git? Check out the lessons at [software carpentry](https://software-carpentry.org/lessons/),
-and make use of the [cheatsheet](https://education.github.com/git-cheat-sheet-education.pdf) throughout your work.
-
-We also provide a summary below.
+and make use of the [cheatsheet](https://education.github.com/git-cheat-sheet-education.pdf) throughout your work. Also, our friends at
+the University of Zurich have a [fantastic tutorial on using Git](https://github.com/pp4rs/2020-uzh-course-material/blob/master/11-version-control/slides/git-local.pdf).
 
 !!! summary "Summary"
     The Figure below summarizes typical Git/GitHub workflows.
