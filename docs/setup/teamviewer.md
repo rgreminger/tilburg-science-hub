@@ -11,8 +11,8 @@ We recommend you to install Teamviewer *permanently*. If you do not have admin r
 
 Please indicate you download Teamviewer for *private use*. We have purchased a Teamviewer license, so that we can attend your session.
 
-!!! warning "Mac users!"
-		After installing TeamViewer, Mac users need to change a few security settings to grant access rights. Just [follow this guide](https://community.teamviewer.com/t5/Knowledge-Base/How-to-control-a-Mac-running-macOS-10-14-or-higher/ta-p/44699).
+!!! warning "Mac users need to change additional security settings!"
+		After installing TeamViewer, Mac users need to change a few security settings to grant access rights (so that a team member may steer your mouse and type on your keyboard). Please [follow this guide](https://community.teamviewer.com/t5/Knowledge-Base/How-to-control-a-Mac-running-macOS-10-14-or-higher/ta-p/44699#toc-hId--1220346050).
 
 ## Starting a Teamviewer session
 
