@@ -5,12 +5,15 @@ a file, and easily collaborate with others on source code.
 
 ## Let's create a GitHub account
 
-GitHub is a (commercial) platform which allows you to host your source code
-
-online. It also offers a set of collaborative tools to manage "Issues",
+GitHub is a (commercial) platform which allows you to host your source code online.
+It also offers a set of collaborative tools to manage "Issues",
 and track progress on project boards.
 
-- Please [register for a GitHub account](https://github.com/join).
+- Please [register for a GitHub account](https://github.com/join), and
+  claim your [education benefits for students and professors](https://education.github.com) afterwards.
+- You can also watch our YouTube video where we will walk you through the sign-up procedure.
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/3KOnOgz_dAA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ## Installation
 
