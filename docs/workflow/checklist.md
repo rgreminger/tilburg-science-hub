@@ -44,3 +44,8 @@ Here's a checklist you can use to audit your progress.
 | Tested on different computer (Windows) | &#9744;        | &#9744;     | &#9744;     | &#9744; |    |
 | Tested on different computer (Mac) | &#9744;        | &#9744;     | &#9744;     | &#9744; |    |
 | Tested on different computer (Linux) | &#9744;        | &#9744;     | &#9744;     | &#9744; |    |
+
+
+!!! warning "Versioned any sensitive data?"
+    Before making a GitHub repository public, we recommend you check that you have not stored any sensitive information in it (such as any passwords).
+    This tool has worked great for us: [GitHub credentials scanner](https://geekflare.com/github-credentials-scanner/).

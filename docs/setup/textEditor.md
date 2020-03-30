@@ -19,11 +19,10 @@ Go to the [downloads page](https://www.sublimetext.com/3) and download the live 
 
 ### Mac and Windows Users
 
-Go to the [downloads page](https://github.com/atom/atom/releases/latest) and download the live installer for your operating system.
+Go to the [downloads page](https://github.com/atom/atom/releases/latest) and download the installer for your operating system:
 
-* Windows users download AtomSetup-x64.exe and execiute the installer
+* Windows users download AtomSetup-x64.exe and execute the installer
 * Mac users download Atom-Mac.zip and copy the contained Atom.app into the applications folder
-
 
 ### Linux/Ubuntu users
 

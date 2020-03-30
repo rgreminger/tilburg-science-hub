@@ -34,8 +34,14 @@ We've crafted this project to run
 !!! warning
         This repository is still work-in-progress.
 
+## 3. The webscraper repository
 
-## 3. Other examples (including code snippets)
+Check out our [GitHub repository with a few web scrapers](https://github.com/hannesdatta/scraping_workshop) that illustrate our thinking of how to code up data collections.
+
+!!! warning
+      The repository is still work-in-progress.
+
+## 4. Other examples (including code snippets)
 
 - Code snippet to [download data from Dropbox](dropbox.md) to your local
 drive, so that you can rely on Dropbox's backup features while keeping
