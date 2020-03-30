@@ -2,8 +2,7 @@
 
 ## Overview
 
-It is useful to break down a project into its most basic parts, which we call
-**pipeline** and **components**.
+It is useful to break down a project into its most basic parts, which we call **pipeline** and **components**.
 
 - A pipeline refers to the **steps that are necessary to build a project** (e.g., prepare dataset, run model, produce tables and figures), and
 - Components refer to **a project's most nuclear building blocks** (e.g., data, source code, and generated temporary and/or output files).
@@ -62,59 +61,65 @@ The benefits of conceiving your project like a pipeline are straightforward:
 
 ## Project Components
 
-Now that we've covered what a pipeline is, let's draw our attention to project components, which are the most nuclear building blocks of a project.
-Suppose you needed to bring structure to [Hannes's chaotic first project](structure_phd_2013.html), then probably you may end up
-with the following "components":
+Now that we've covered what a pipeline is, let's draw our attention to **project components**, which are the most nuclear building blocks of a project. It's useful to think of these components as *separate entities of your project* because
+their nature allows you to apply different data management policies.
 
-1. **raw data**
-2. **source code** to execute your pipeline (defined earlier; e.g., preparing data, analyzing it, and producing some
-tables or figures), and
-3. **generated temp (temporary and output) files** that are the result of executing your source code (e.g., think
-  of tables or figures).
-4. **notes**: e.g., meeting notes, PDFs of the literature that you've read, etc.
-
-It's useful to think of these components as separate entities of your project because
-their nature *allows* you to apply different data management policies. For example,
-we probably all agree it's desirable to "roll back" to previous versions of a project
-(e.g., an earlier version of a prepped dataset). But - if you work on large datasets,
-it may probably be too burdensome to store each version of it (e.g., in one
-of the projects we've been working on, the prepped data sets were a 500 GB, and
-we've created probably close to 50 versions = 25 TB). If you think about this a
-bit more, you may discover that storing these different data sets is
+* For example, we probably all agree it's desirable to *roll back to previous versions of a project*
+(e.g., an earlier version of a prepped dataset). But - if you work on large datasets -
+it may probably be too burdensome to store each version of your **generated files** (e.g., in one
+of the projects we've been working on, the generated (cleaned) data sets were a 500 GB, and
+we've created probably close to 50 versions = 25 TB).
+* If you think about this a bit more, you may discover that storing these different data sets is
 completely inefficient - as the combination of raw data and *versioned source code*
 will be able to "re-cast" any data set version you have ever worked on.
 
-So, here's our advice on how to store each component of your project.
-Of course, check with your own institution and their rules on data storage
-and management.
 
-!!! tip "Data management policies for project components"
-    1. Raw data
-        * Store where: On a secure server that project members have access to
-        (e.g., could also be a network folder; later, we show to you how to use
-        a variety of systems like Amazon S3, Dropbox, or Google Drive to
-        "host" your raw data). No time to think about this much? Well, then
-        just have your data available locally on your PC, and set yourself a
-        reminder to move it to a more secure environment soon.
-        * Backup policy: Regular backups (e.g., weekly)
-        * Versioning (i.e., being able to roll back to prior versions): not necessary, although
-        you need to store different versions of the same data (e.g., a data set delivered in 2012, an updated dataset delivered in 2015) in
-        different folders.
-    2. Source code
-        * Store where: on Git/GitHub - which will allow you to collaborate efficiently on code
-        * Backup policy: Inherent (every change can be rolled back - good if you
-          want to roll back to previous versions of a model, for example)
-        * Versioning: complete versioning
-    3. Generated temp (temporary and output) files
-        * Store where: only on your local computer.
-        * Backup policy: None. These files are entirely produced on the basis of raw data and source code,
-        and hence, can always be "reproduced" from 1. and 2. if they get wiped.
-    4. Notes
-        * Store where: anywhere where it's convenient for you! Think about tools like
-        Dropbox or Google Drive, which also offer great features that you may
-        enjoy when you work in a team.
-        * Backup policy: Automatic backups (standard for these services)
-        * Versioning: not necessary (but typically offered for free for 1 month)
+Suppose you needed to bring structure to [Hannes's chaotic first project](structure_phd_2013.html), then probably you may end up
+with the following project "components":
+
+1. **raw data**
+
+    These are the data sets used in the projects. Typically, you will never *delete* that data,
+    but only *add* new data sets throughout the duration of the project.
+
+2. **source code**
+
+    This is all the source code written to *execute your pipeline* (defined earlier; e.g., preparing data, analyzing it, and producing some tables or figures). It's important to version your code, so that you can always roll back to different incarnations
+    of your project.    
+
+3. **generated files (temporary and output)**
+
+    These files are *the result of executing your source code*. Think about cleaned
+    data sets, results of your analysis, or tables and figures. In most instances, it may be enough to store
+    those only temporarily on your local computer.
+
+4. **file exchange**
+
+    File exchanges are used to easily "ping-pong" (upload or download)
+    generated temporary or output files between different stages of the pipeline.
+
+    !!! example "Examples of file exchanges"
+        - A file exchange to **collaborate with others**:
+            - A co-author builds a prototype model on his laptop (see stage 2 of the pipeline).
+            He/she can work on a dataset that you have prepped using a high-performance
+        workstation (this part of the pipeline), without having to actually build
+        the dataset him/herself from scratch.
+
+        - A file exchange **without any collaboration**:
+            - You have built a data set on a high-performance workstation,
+            and would like to work with a sample dataset on your laptop, without
+            having to actually build the dataset from scratch.
+
+        - Situations in which a file exchange **is not necessary**:
+            - You are working exclusively on one computer, without any
+            coauthors.
+
+        - Curious on how to set up a file exchange? We'll explain that later.
+
+  5. **notes**
+
+      You can keep your meeting notes, PDFs of the literature that you've read, etc. in a separate
+      folder (with, potentially, subfolders).
 
 ## Putting it all together...
 
@@ -124,53 +129,34 @@ different project components.
 
 ![Workflow overview](workflow.png)
 
-1. In the first stage of the pipeline, we use a workstation with relatively large memory
-(e.g., 64 GB) to download the raw data from our secure server, and run some
-code to prepare different versions of the dataset (e.g., the final data, and
-dataset only 1% of the size of the full one). We version our code using Git, and
-upload the two final datasets to the temporary file exchange.
+!!! summary "Written explanation of the workflow"
+    1. **Stage 1 - Prepare raw data**: In the first stage of the pipeline, we use a workstation with relatively large memory
+    (e.g., 64 GB) to download the raw data from our secure server, and run some
+    code to prepare different versions of the dataset (e.g., the final data, and
+    dataset only 1% of the size of the full one). We version our code using Git, and
+    upload the two final datasets to the temporary file exchange.
 
-    !!! tip "The file exchange"
-        The fifth project component - we have not mentioned that one before - is
-        called **file exchange**. File exchanges are used to easily **"ping-pong" (upload or download)
-        generated temporary or output files between different stages of the pipeline**.
+    2. **Stage 2 - build prototype model**: In the second stage of the pipeline, we have switched to our laptop, and
+    pull in only the sample data set from the file exchange. That one is only a few
+    megabytes big, so it's perfect to develop a prototype model and extensively
+    test it. We pass the model results back to the file exchange so that we can
+    already generate some tables and figures for stage 4 of the project. Of course,
+    we're also committing our changes to the model code to Git so that later
+    pipeline stages can use our updated model code.
 
-        - Examples for using a file exchange when **collaborating with others**:
-            - A co-author builds a prototype model on his laptop (see stage 2 of the pipeline).
-            He/she can work on a dataset that you have prepped using a high-performance
-        workstation (this part of the pipeline), without having to actually build
-        the dataset him/herself from scratch.
+    3. **Stage 3 - estimate final model**: It's time to estimate our model on the entire dataset! We've launched
+    a powerful EC2 instance in the Amazon Cloud, cloned our source code using Git,
+    pulled in that big final dataset from the file exchange, and estimate our model.
+    We're relieved the model is running in the cloud, as that computer likely will
+    not restart or crash (unlike our office PC, which may be arbitrarily shut down
+    by our IT admins... - been there before...).
 
-        - Examples for using a file exchange **without any collaboration**:
-            - You have built a data set on a high-performance workstation,
-            and would like to work with a sample dataset on your laptop, without
-            having to actually build the dataset from scratch.
+    4. **Stage 4 - prepare tables and figures & write paper**: Time to shine! We pull in our final data set from stage 1, and either the
+    prototype model results (from stage 2) or the final model results (from stage 3)
+    to produce tables (e.g., descriptive stats, model results) and figures (e.g.,
+    plotting some data) that will directly feed in our paper our slide deck.
 
-        - Examples when using a file exchange **is not necessary**:
-            - You are working exclusively on one computer, without any
-            coauthors.
-
-        Curious on how to set up a file exchange? We'll explain that later.
-
-2. In the second stage of the pipeline, we have switched to our laptop, and
-pull in only the sample data set from the file exchange. That one is only a few
-megabytes big, so it's perfect to develop a prototype model and extensively
-test it. We pass the model results back to the file exchange so that we can
-already generate some tables and figures for stage 4 of the project. Of course,
-we're also committing our changes to the model code to Git so that later
-pipeline stages can use our updated model code.
-
-3. It's time to estimate our model on the entire dataset! We've launched
-a powerful EC2 instance in the Amazon Cloud, cloned our source code using Git,
-pulled in that big final dataset from the file exchange, and estimate our model.
-We're relieved the model is running in the cloud, as that computer likely will
-not restart or crash (unlike our office PC, which may be arbitrarily shut down
-by our IT admins... - been there before...).
-
-4. Time to shine! We pull in our final data set from stage 1, and either the
-prototype model results (from stage 2) or the final model results (from stage 3)
-to produce tables (e.g., descriptive stats, model results) and figures (e.g.,
-plotting some data) that will directly feed in our paper our slide deck.
+## Summary
 
 !!! summary
 

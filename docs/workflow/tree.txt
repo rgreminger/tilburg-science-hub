@@ -1,14 +1,23 @@
-Folder PATH listing for volume New Volume
-Volume serial number is 74A9-CE7B
-D:\PROJECTS\REPRODUCIBLE-SCIENCE-GUIDE\DOCS\WORKFLOW\DIR_STRUCTURE
+Folder PATH listing for volume Windows
+Volume serial number is 8ACC-5F6C
+C:\PROJECTS\TILBURG-SCIENCE-HUB\DOCS\WORKFLOW\DIR_STRUCTURE
 ÃÄÄÄdata
-³   ÃÄÄÄdataset1
-³   ³       file1.csv
-³   ³       file2.csv
+³   ÃÄÄÄcompany_B
+³   ³       coding.csv
 ³   ³       readme.txt
 ³   ³       
-³   ÀÄÄÄdataset2
-³           coding.csv
+³   ÃÄÄÄdata_provider_C
+³   ³   ÃÄÄÄ2019-11-04
+³   ³   ³       coding.csv
+³   ³   ³       readme.txt
+³   ³   ³       
+³   ³   ÀÄÄÄ2020-03-01
+³   ³           coding.csv
+³   ³           readme.txt
+³   ³           
+³   ÀÄÄÄwebsite_A
+³           file1.csv
+³           file2.csv
 ³           readme.txt
 ³           
 ÃÄÄÄgen
@@ -59,13 +68,18 @@ D:\PROJECTS\REPRODUCIBLE-SCIENCE-GUIDE\DOCS\WORKFLOW\DIR_STRUCTURE
 ÀÄÄÄsrc
     ÃÄÄÄanalysis
     ³       analyze.R
+    ³       get_input.txt
+    ³       put_output.txt
     ³       
     ÃÄÄÄdata-preparation
     ³       clean_data.R
+    ³       get_input.txt
     ³       load_data.R
+    ³       put_output.txt
     ³       
     ÀÄÄÄpaper
             figures.R
+            get_input.txt
             paper.tex
             tables.R
             
