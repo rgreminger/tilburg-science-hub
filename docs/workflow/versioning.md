@@ -1,6 +1,7 @@
 # Versioning using Git and GitHub
 
 ## Overview
+
 ### What is Git?
 
 **Git** is an [open-source version control system](../setup/gitInstall.md), which allows you to keep track

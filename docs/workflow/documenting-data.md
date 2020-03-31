@@ -1,5 +1,7 @@
 # Documenting Datasets
 
+## Overview
+
 If your project contains data that has been newly created (i.e., which is not otherwise (publicly) available yet), you are
 required to include a documentation of that data in your project.
 
@@ -17,6 +19,7 @@ Instances of "new data" may included, but are not restricted to be:
 	not to be "big" data, but can simply consist of a `.csv` file with
 	names and associated labels (e.g., as in the case of countries --> GDP per capita).
 
+## Describe your raw data
 
 Ideally, your data description includes the *very elaborate questions* outlined in `Datasheets for datasets` by Gebru, Timnit, et al. (2018).
 **We strongly** refer you to the [original paper](https://arxiv.org/abs/1803.09010), which explains in detail the seven key ingredients of a proper dataset documentation. Below, we have reproduced these questions, and we recommend you to include those as a **`readme.txt`**, together with your datasets.
@@ -25,6 +28,9 @@ Ideally, your data description includes the *very elaborate questions* outlined 
 ==========================================================
   D A T A S E T / D A T A B A S E  D E S C R I P T I O N
 ==========================================================
+
+(template based on https://arxiv.org/abs/1803.09010)
+
 
 * Name of the dataset/database:
 
