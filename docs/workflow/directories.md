@@ -65,7 +65,7 @@ See below for an example directory structure for your raw data:
     \data\data_provider_C\2020-03-01\...
 
 - We also recommend you to use self-explanatory file names for your data,
-[document the data yourself with a `readme`](documention-data.md), or include
+[document the data yourself with a `readme`](documenting-data.md), or include
 an overview about how the data was collected from your data provider.
 
 - Last, it may happen that you code up some data yourself, and that you
