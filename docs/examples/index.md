@@ -40,9 +40,3 @@ Check out our [GitHub repository with a few web scrapers](https://github.com/han
 
 !!! warning
       The repository is still work-in-progress.
-
-## 4. Other examples (including code snippets)
-
-- Code snippet to [download data from Dropbox](dropbox.md) to your local
-drive, so that you can rely on Dropbox's backup features while keeping
-your code hosted on GitHub.
