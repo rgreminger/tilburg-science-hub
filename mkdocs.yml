@@ -54,6 +54,7 @@ nav:
     - Learning Python and Julia: tips/quantecon.md
     - Writing an Academic Paper: tips/paper.md
     - Writing Good Code: tips/coding.md
+    - Setting up a file exchange: tips/fileexchanges.md
 - Example Projects: examples/index.md
 - Contact: contact.md
 - Acknowledgements: acknowledgement.md

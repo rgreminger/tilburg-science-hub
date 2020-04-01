@@ -221,6 +221,8 @@ so that you or your team members can download the outputs of previous pipeline s
     - have a script in `src\analysis` which downloads the data from the file exchange to
     `gen\analysis\input` (`get_input`)
 
+- For details on setting up and using a file exchange, follow our [tutorial](../tips/fileexchanges.md) here.
+
 ### 5. Managing notes and other documents
 
 - Notes and other documents are NOT part of your `my_project` directory, but are kept on a conveniently accessible cloud provider.

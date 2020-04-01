@@ -1,6 +1,6 @@
 # Example Projects
 
-Ever wondered how a fully reproducible and automated project may look like? Get inspired here!
+Ever wondered how a fully reproducible and automated project may look like? Get inspired here by accessing one of our example projects!
 
 ## 1. A Simple `Make` Pipeline with R and Latex
 
