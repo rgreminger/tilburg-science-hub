@@ -50,3 +50,23 @@ received by the project administrator:
 
     - For **downloading**, we use the following commands: `aws s3 sync s3://BUCKETNAME TARGETFOLDER`, which downloads the entire contents of `BUCKETNAME` (you can use subdirectories, too!) to the directory `TARGETFOLDER` on your local computer.
     - Sometimes you do want to download only *specific* files rather than entire folders. For example, `aws s3 sync s3://BUCKETNAME/directory1/ TARGETFOLDER --region eu-central-1 --exclude "*" --include "*.json"` downloads only *json* files to the `TARGETFOLDER` on your local computer.
+
+## Dropbox
+
+Raw data files are ideally hosted on a secure server; in practice, many researchers
+store their data on Dropbox, though (e.g., because they want to enable
+co-authors *not* used to reproducible workflows to also access these
+files.
+
+A good way then is to *host* your raw data files in a Dropbox folder. Thereby,
+- your co-authors have access to the files (and, e.g., can populate
+  the directories with their own data collections)
+- you can still programmatically access these files and reproduce
+  them to any directory on your hard disk.
+
+Here is a Python script that *downloads* the data to your
+local directory structure. In that way, it mimics the "downloading" part of the AWS S3 file exchange described above.
+
+You can upload data simply by moving files to this shared Dropbox folder (yes, just use Dropbox!).
+
+<script src="https://gist.github.com/hannesdatta/10422a6fbb584f245c83361245335741.js"></script>
