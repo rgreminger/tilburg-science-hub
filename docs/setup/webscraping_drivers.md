@@ -20,8 +20,8 @@ If that returns an error, `homebrew` is not installed.
 
 - To install Homebrew, open a terminal and paste the following command:
 
-	```bash
-	ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+	```
+	/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
 	```
 
 - To verify that Homebrew installed correctly, enter the following into your terminal
