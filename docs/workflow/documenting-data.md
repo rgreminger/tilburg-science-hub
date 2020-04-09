@@ -42,17 +42,17 @@ Ideally, your data description includes the *very elaborate questions* outlined 
 ==========================================================
 
 1.1  For what purpose was the dataset created?
-     Was there a specific task in mind? Was therea specific gap that
-     needed to be filled?
+     Was there a specific task in mind? Was there
+		 a specific gap that needed to be filled?
      Please provide a description.
 
 1.2  Who created this dataset
-     (e.g., which team, research group) and on behalf of which
-     entity (e.g., company, institution, organization)?
+     (e.g., which team, research group) and on behalf of
+		 which entity (e.g., company, institution, organization)?
 
 1.3  Who funded the creation of the dataset?
-     If there is an associated grant, please provide thename of the
-     grantor and the grant name and number.
+     If there is an associated grant, please provide
+		 the name of the grantor and the grant name and number.
 
 1.4  Any other comments?
 
@@ -61,21 +61,24 @@ Ideally, your data description includes the *very elaborate questions* outlined 
 ==========================================================
 
 2.1  What do the instances that comprise the dataset represent
-    (e.g., documents, photos,people, countries)?
-    Are there multiple types of instances (e.g., movies, users, and ratings;
-    people and interactions between them; nodes and edges)?
-    Please provide a description.
+     (e.g., documents, photos, people, countries)?
+     Are there multiple types of instances (e.g., movies,
+		 users, and ratings; people and interactions between them;
+		 nodes and edges)?
+     Please provide a description.
 
-2.2  How many instances are there in total (of each type, if appropriate)?
+2.2  How many instances are there in total
+     (of each type, if appropriate)?
 
 2.3  Does the dataset contain all possible instances or is it a sample
      (not necessarily random) of instances from a larger set?
      If the dataset is a sample, then what is the larger set?
-     Is the sample representative of the larger set (e.g., geographic coverage)?
-     If so, please describehow this representativeness was validated/verified.
+     Is the sample representative of the larger set
+		 (e.g., geographic coverage)? If so, please describe how this
+		 representativeness was validated/verified.
      If it is not representative of the larger set, please describe why not
      (e.g., to cover a more diverse range of instances, because
-     instanceswere withheld or unavailable).
+     instances were withheld or unavailable).
 
 2.4  What data does each instance consist of?
      "Raw" data (e.g., unprocessed text or images)
@@ -86,8 +89,8 @@ Ideally, your data description includes the *very elaborate questions* outlined 
 
 2.6  Is any information missing from individual instances?
      If so, please provide a description, explaining why this information is
-     missing (e.g., because it was unavailable). This does not include intentionally
-     removed information, but might include, e.g., redacted text.
+     missing (e.g., because it was unavailable). This does not include
+		 intentionally removed information, but might include, e.g., redacted text.
 
 2.7  Are relationships between individual instances made
      explicit (e.g., users' movie ratings, social network links)?
@@ -104,14 +107,16 @@ Ideally, your data description includes the *very elaborate questions* outlined 
 2.10 Is the dataset self-contained, or does it link to or otherwise rely on
      external resources (e.g., websites, tweets, other datasets)?
      If it links to or relies on external resources,
-     a) are there guarantees that they will exist, and remain constant, over time;
+     a) are there guarantees that they will exist, and remain constant,
+		 over time;
      b) are there official archival versions of the complete dataset
      (i.e., including the external resources as they existed at the
      time the dataset was created);
      c) are there any restrictions (e.g., licenses, fees) associated with
      any of the external resources that might apply to a future user?
      Please provide descriptions of all external resources and any restrictions
-     associated with them, as well as links or other access points, as appropriate.
+     associated with them, as well as links or other access points, as
+		 appropriate.
 
 2.11 Does the dataset contain data that might be considered confidential
      (e.g., data that is protected by legal privilege or by doctor-patient
@@ -136,7 +141,7 @@ Ideally, your data description includes the *very elaborate questions* outlined 
      If so, please describe how.
 
 2.16 Does the dataset contain data that might be considered sensitive in
-     any way (e.g., data that reveals racial or ethnic   origins, sexual
+     any way (e.g., data that reveals racial or ethnic origins, sexual
      orientations, religious beliefs, political opinions or union memberships,
      or locations; financial or health data; biometric or genetic data;
      forms of government identification, such as social security numbers;
@@ -151,23 +156,23 @@ Ideally, your data description includes the *very elaborate questions* outlined 
 
 3.1  How was the data associated with each instance acquired?
      Was the data directly observable (e.g., raw text, movie ratings),
-     reported by subjects (e.g., survey responses), or indirectly inferred/derived
-     from other data (e.g., part-of-speech tags, model-based guesses for age
-     or language)? If data was reported by subjects or indirectly
+     reported by subjects (e.g., survey responses), or indirectly
+		 inferred/derived from other data (e.g., part-of-speech tags, model-based
+		guesses for age or language)? If data was reported by subjects or indirectly
      inferred/derived from other data, was the data validated/verified?
      If so, please describe how.
 
 3.2  What mechanisms or procedures were used to collect the data
-     (e.g., hardware apparatus or sensor, manual human curation, software program,
-     software API)?
+     (e.g., hardware apparatus or sensor, manual human curation,
+		 software program, software API)?
      How were these mechanisms or procedures validated?
 
 3.3  If the dataset is a sample from a larger set, what was the sampling strategy
      (e.g., deterministic, probabilistic with specific sampling probabilities)?
 
-3.4  Who was involved in the data collection process (e.g., students, crowdworkers,
-     contractors) and how were they compensated (e.g., how much were
-     crowdworkers paid)?
+3.4  Who was involved in the data collection process (e.g., students,
+	   crowdworkers, contractors) and how were they compensated (e.g., how
+		 much were crowdworkers paid)?
 
 3.5  Over what timeframe was the data collected? Does this timeframe
      match the creation timeframe of the data associated with the
@@ -192,7 +197,8 @@ Ideally, your data description includes the *very elaborate questions* outlined 
      notice was provided, and provide a link or other access point to,
      or otherwise reproduce, the exact language of the notification itself.
 
-3.10 Did the individuals in question consent to the collection and use of their data?
+3.10 Did the individuals in question consent to the collection and use of their
+     data?
      If so, please describe (or show with screenshots or other information)
      how consent was requested and provided, and provide a link or other access
      point to, or otherwise reproduce, the exact language to which the
@@ -205,8 +211,9 @@ Ideally, your data description includes the *very elaborate questions* outlined 
 
 3.12 Has an analysis of the potential impact of the dataset and its use on data
      subjects (e.g., a data protection impact analysis)been conducted?
-     If so, please provide a description of this analysis, including the outcomes,
-     as well as a link or other access point to any supporting documentation.
+     If so, please provide a description of this analysis, including the
+		 outcomes, as well as a link or other access point to any supporting
+		 documentation.
 
 3.13 Any other comments?
 
@@ -214,15 +221,16 @@ Ideally, your data description includes the *very elaborate questions* outlined 
 4. PREPROCESSING/CLEANING/LABELING
 ==========================================================
 
-4.1  Was any preprocessing/cleaning/labeling of the data done (e.g., discretization
-     or bucketing, tokenization, part-of-speech tagging, SIFT feature extraction,
-     removal of instances, processing of missing values)?
-     If so, please provide a description. If not, you may skip the remainder of
-     the questions in this section.
+4.1  Was any preprocessing/cleaning/labeling of the data done (e.g.,
+ 	   discretization or bucketing, tokenization, part-of-speech tagging,
+		 SIFT feature extraction, removal of instances, processing of
+		 missing values)? If so, please provide a description. If not, you may skip
+		 the remainder of the questions in this section.
 
-4.2  Was the "raw" data saved in addition to the preprocessed/cleaned/labeled data
-     (e.g., to support unanticipated future uses)?
-     If so, please provide a link or other access point to the "raw" data.
+4.2  Was the "raw" data saved in addition to the
+     preprocessed/cleaned/labeled data (e.g., to support unanticipated
+		 future uses)? If so, please provide a link or other access point to
+		 the "raw" data.
 
 4.3  Is the software used to preprocess/clean/label the instances available?
      If so, please provide a link or other access point.
@@ -243,13 +251,14 @@ Ideally, your data description includes the *very elaborate questions* outlined 
 
 5.3  What (other) tasks could the dataset be used for?
 
-5.4  Is there anything about the composition of the dataset or the way it
-     was collected and preprocessed/cleaned/labeled that might impact future uses?
-     For example, is there anything that a future user might need to know to avoid
-     uses that could result in unfair treatment of individuals or groups
-     (e.g., stereotyping, quality of service issues) or other undesirable harms
-     (e.g., financial harms, legal risks) If so, please provide a description.
-     Is there anything a future user could do to mitigate these undesirable harms?
+5.4  Is there anything about the composition of the dataset or the way it was
+		 collected and preprocessed/cleaned/labeled that might impact future uses?
+		 For example, is there anything that a future user might need to know to
+		 avoid uses that could result in unfair treatment of individuals or groups
+		 (e.g., stereotyping, quality of service issues) or other undesirable harms
+		 (e.g., financial harms, legal risks) If so, please provide a description.
+		 Is there anything a future user could do to mitigate these undesirable
+		 harms?
 
 5.5  Are there tasks for which the dataset should not be used?
      If so, please provide a description.
@@ -265,16 +274,16 @@ Ideally, your data description includes the *very elaborate questions* outlined 
      dataset was created?
      If so, please provide a description.
 
-6.2  How will the dataset will be distributed(e.g.,tarball on website, API, GitHub)?
-     Does the dataset have a digital object identifier (DOI)?
+6.2  How will the dataset will be distributed(e.g.,tarball on website, API,
+	   GitHub)? Does the dataset have a digital object identifier (DOI)?
 
 6.3  When will the dataset be distributed?
 
 6.4  Will the dataset be distributed under a copyright or other intellectual
      property(IP) license, and/or under applicable terms of use (ToU)?
      If so, please describe this license and/or ToU, and provide a link or other
-     access point to, or otherwise reproduce, any relevant licensing terms or ToU,
-     as well as any fees associated with these restrictions.
+     access point to, or otherwise reproduce, any relevant licensing terms or
+		 ToU (Terms of Use), as well as any fees associated with these restrictions.
 
 6.5  Have any third parties imposed IP-based or other restrictions on the
      data associated with the instances?
@@ -306,13 +315,14 @@ Ideally, your data description includes the *very elaborate questions* outlined 
      If so, please describe how often, by whom, and how updates will
      be communicated to users (e.g., mailing list, GitHub)?
 
-7.5  If the dataset relates to people, are there applicable limits on the retention
-     of the data associated with the instances
-     (e.g., were individuals in question told that their data would be retained for
-     a fixed period of time and then deleted)?
+7.5  If the dataset relates to people, are there applicable limits on the
+     retention of the data associated with the instances
+     (e.g., were individuals in question told that their data would be retained
+	   for a fixed period of time and then deleted)?
      If so, please describe these limits and explain how they will be enforced.
 
-7.6  Will older versions of the dataset continue to be supported/hosted/maintained?
+7.6  Will older versions of the dataset continue to be
+     supported/hosted/maintained?
      If so, please describe how. If not, please describe how its obsolescence
      will be communicated to users.
 
