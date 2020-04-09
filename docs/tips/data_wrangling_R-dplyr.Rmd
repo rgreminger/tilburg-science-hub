@@ -1,0 +1,230 @@
+---
+title: "Common data operations: MySQL, tidyverse/dplyr, and data.table"
+output:
+  html_document:
+    df_print: paged
+---
+
+This is an [R Markdown](http://rmarkdown.rstudio.com) Notebook. When you execute code within the notebook, the results appear beneath the code. 
+
+Try executing this chunk by clicking the *Run* button within the chunk or by placing your cursor inside it and pressing *Cmd+Shift+Enter*. 
+
+**Learning objectives:**
+
+- Familiarize you with the most common data operations on social and digital media data
+- Introduce you to two packages to wrangle with data: dplyr (which has a very "clean" and easy-to-use syntax, but is slow on big data sets), and data.table (which is a bit messier to write up, but shows extremely good performance on large datasets)
+- Show you alternatives - if they are available - using the SQL syntax
+
+**Prerequisites:**
+
+- access to the Research in Social Media SQL server.
+- install the following packages:
+  install.packages(c('RMySQL','data.table','tidyverse'))
+- download the cheat sheets
+  - dplyr and tidyr: https://rstudio.com/wp-content/uploads/2015/02/data-wrangling-cheatsheet.pdf
+  - data.table
+  - SQL
+
+Let's now initialize the packages.
+
+```{r echo=TRUE, message=FALSE, warning=FALSE}
+library(RMySQL) # loads the MySQL package
+library(data.table) # loads the data.table package
+library(dplyr) # loads the dplyr library
+library(tidyr) # loads the tidyr library
+
+```
+
+...and load some data from the classes' MySQL server. Recall that the database holds a copy of daily data on the Top 200 Charts, as shown on https://spotifycharts.com. 
+
+```{r echo=TRUE, message=FALSE, warning=FALSE}
+database = dbConnect(MySQL(), user = 'student', password='rsm!2020',
+                 dbname='rsm', host = 'sql.tilburg-digital.com')
+
+dbListTables(database) # shows a list with tables in the database
+
+```
+
+Let us also store a copy of the data in actual variables in R, so that we can use them with `dplyr` and `data.table`.
+
+```{r}
+
+# Let's define a function to load some sample data from the SQL database server (the first X rows)
+get_sample_data = function(tablename) {
+  rs = dbSendQuery(database, paste0("SELECT * FROM ", tablename, " LIMIT 1000"))
+  data = fetch(rs, n=-1)
+}
+
+# Let's define a function that will ease running queries on our MySQL database.
+run_query = function(query) {
+  rs= dbSendQuery(database, query) # runs the query
+  data = fetch(rs, n=-1) # fetches n rows of the result (here: -1 indicates to fetch ALL rows)
+  return(data) # returns the result back to the main program
+}
+
+artists = get_sample_data("artists")
+tracks = get_sample_data("tracks")
+plays = get_sample_data("plays")
+
+# To use the data with data.table, let us convert them to "data.table".
+dt_artists = data.table(artists)
+dt_tracks = data.table(tracks)
+dt_plays = data.table(plays)
+
+# To use the data with dplyr, let's convert them to a so-called "tibble":
+df_artists= tbl_df(artists)
+df_tracks = tbl_df(tracks)
+df_plays = tbl_df(plays)
+```
+
+# 1. Filtering/querying/subsetting
+
+The first set of operations we're going to review are simple "filters", which sometimes are also referred to as querying ("searching"), or subsetting ("showing only a part of what is there").
+
+There are two types of filters: filtering for particular rows, and filtering for particular columns.
+
+## Rows
+
+Let's start querying for some observations in rows. For example, we could "filter" for all artists that have the name Adele.
+
+**SQL**
+
+```{r}
+run_query('SELECT * FROM artists WHERE artists.name = "Adele"')
+```
+
+**dplyr**
+
+To use the `dplyr` syntax, we have to run our commands on the `df_` tables saved above.
+
+```{r}
+filter(df_artists, name == 'Adele')
+```
+
+**data.table**
+
+To use the `data.table` syntax, we have to run our commands on the `dt_` tables savbed above.
+
+```{r}
+dt_artists[name == 'Adele']
+```
+
+## Columns
+
+Let's now proceed with "filtering" for particular columns. For example, we can only show the "name" column from the artist table, but this time, we show only the first 10 results.
+
+Note that we will now combine the different commands in one code cell.
+
+```{r}
+# SQL
+run_query('SELECT name FROM artists LIMIT 10')
+
+# dplyr/tidyverse
+select(df_artists, name) # selects everything
+select(df_artists, name) %>% top_n(10) # first 10 rows
+
+# data.table
+dt_artists[, c('name')] # selects everything
+dt_artists[, c('name')][1:10] # shows first 10 rows
+```
+
+# 2. Reshaping data
+
+In wrangling with data, you frequently need to change the format of your data to "fit" the input requirements of some analysis methods you would like to use.
+
+For example, let's retrieve some data the number of plays for Adele and Drake across all countries. At this stage, let's not worry too much about the query to retrieve that data (it's quite complicated). Instead, let's focus on the reshaping operations later.
+
+```{r}
+
+bycountry = run_query("SELECT artists.name as name, country, SUM(streams) as total_plays FROM plays LEFT JOIN tracks ON tracks.id = plays.track_id LEFT JOIN artists ON artists.id = tracks.artist_id WHERE artists.name IN ('Adele', 'Drake') GROUP BY artists.name, plays.country")
+
+head(bycountry) # shows first six rows of result - Adele is there
+tail(bycountry) # shows last six rows of result - Drake is there
+```
+
+## From long to wide
+
+The data we're seeing is saved in the so-called "long" format - we have many rows to store the result of Adele and Drake, for each country.
+
+Now let's suppose we wanted to prepare an overview for a music manager on the performance of these two artists across all countries. Further, let's suppose the manager is interested in learning in which country any of these two artists wasn't making the Top 200 at all!
+
+We can give a quick answer to this by converting the "long" format to the so-called "wide" (which basically means: many columns) format.
+
+Watch this! (Note we're going to convert the result from above to tibbles and data.tables first)
+
+```{r}
+df_bycountry = tbl_df(bycountry)
+dt_bycountry = data.table(bycountry)
+
+# tidyverse/dplyr
+result1 = spread(df_bycountry, country, total_plays)
+result1
+
+# data.table
+result2 = dcast(dt_bycountry, name~country, value.var='total_plays')
+result2
+```
+
+## From wide to long
+
+Sometimes, we also just wish to go back from wide to long. Let's use the results from above as input.
+
+```{r}
+# tidyverse/dplyr
+result1b = gather(result1, 'country', 'total_plays', -name)
+result1b
+
+# data.table
+result2b = melt(result2, c('name'), variable.name='country', value.name = 'total_plays')
+result2b
+```
+
+## Uniting columns into one
+
+We can use code to unite columns into one. For example, let's create an overview about the Top 3 countries in terms of plays for each of the artists. Let's first create an indicator variable for the Top 3, filter on it, and then combine the resulting country names in one column.
+
+```{r}
+
+# tidyverse
+# to be added - anybody knows how?
+
+# data.table
+setorderv(result2b, c('name', 'total_plays'), order = c(1, -1), na.last=T) # sort in ascending order by name, and descending order by 
+result2b[, rank := 1:.N, by = c('name')] # create rank positions
+# filter for ranks
+result2b[rank <= 3]
+# let's create a variable which combines the country name with the streams (in brackets)
+result2b[, country_streams := paste0(country, ' (', total_plays, ')')]
+
+# let's now "concatenate" the top three countries
+result3 = result2b[rank <= 3, list(paste0(country_streams, collapse = ', ')),by = c('name')]
+
+```
+
+## Separating column values into multiple columns
+
+Now let's suppose we only have access to the comma-separated values in the country_streams column in the example above. How would we separate those values back into individual columns?
+
+Watch how here:
+
+```{r}
+
+# data.table
+tmp=result3[, list(strsplit(V1, ', ', fixed=T)[[1]]), by = c('name')]
+tmp[, strsplit(V1, ' ')]
+tmp[, country:=sapply(strsplit(V1, ' '), function(x) x[1])]
+tmp[, total_streams := sapply(strsplit(V1, ' (', fixed=T), function(x) x[2])]
+tmp[, total_streams := as.numeric(gsub(')', '', total_streams))]
+tmp[, V1:=NULL]
+result4 = tmp
+
+```
+
+# 3. Summarizing/aggregating data
+
+# 4. Make new variables
+
+# 5. Combine/join/merge data sets
+
+# 6. Format conversion
+
