@@ -8,6 +8,23 @@ site_author: Hannes Datta, Tobias J. Klein
 
 nav:
 - Home: index.md
+- Project Setup and Workflow Management:
+  - Getting Started: workflow/index.md
+  - Pipelines and Project Components: workflow/pipeline.md
+  - Data Management and Directory Structure: workflow/directories.md
+  - Automating your Pipeline: workflow/automation.md
+  - Documenting Code and Pipeline: workflow/documenting-code.md
+  - Documenting Datasets: workflow/documenting-data.md
+  - Versioning using Git/GitHub: workflow/versioning.md
+  - Collaborating using GitHub: workflow/collaboration.md
+    #- Overview:
+    #- Workflow in make: workflow/automation_workflow.md
+  #- Versioning: workflow/versioning.md
+  #- Data storage: workflow/data.md
+  #- Documentation: workflow/doc.md
+  #- Housekeeping: workflow/housekeeping.md
+  #- Portability: workflow/portability.md
+  - Checklist to Audit your Project: workflow/checklist.md
 - Software Setup:
   - Installation Guide Overview: setup/index.md
   #- Terminology: setup/terminology.md
@@ -18,32 +35,15 @@ nav:
   - Text Editor: setup/textEditor.md
 #  - Perl: setup/perl.md
   - Python: setup/python.md
-  - Python Extras: setup/python-more.md
-  - Build Tools/Make:
-    - Why Build Tools?: setup/make-intro.md
-    - Automation with Make: setup/make.md
-#    - Automation with Waf: setup/waf.md
-    - Automation with Snakemake: setup/snakemake.md
+  - Python Packages: setup/python-packages.md
+  - Build Tools/Make: setup/make.md
+    # - Automation with Waf: setup/waf.md
+    #- Automation with Snakemake: setup/snakemake.md
   - Webscraping: setup/webscraping_drivers.md
   - Teamviewer: setup/teamviewer.md
 #  - Pandoc: setup/pandoc.md
   # - Matlab: setup/matlab.md
   # - Path Settings: setup/path-setting.md
-- Project Setup and Workflow Management:
-  - Getting Started: workflow/index.md
-  - Pipelines and Project Components: workflow/workflow.md
-  - Directory Structure: workflow/directories.md
-  - Automating your Pipeline: workflow/automation.md
-  - Documenting Code and Pipeline: workflow/doc.md
-  - Documenting Datasets: workflow/doc_data.md
-    #- Overview:
-    #- Workflow in make: workflow/automation_workflow.md
-  #- Versioning: workflow/versioning.md
-  #- Data storage: workflow/data.md
-  #- Documentation: workflow/doc.md
-  #- Housekeeping: workflow/housekeeping.md
-  #- Portability: workflow/portability.md
-  - Checklist to Audit your Project: workflow/checklist.md
 #- Manuals:
 #  - How to write good code:
 #  - Style instructions for papers:
@@ -53,6 +53,8 @@ nav:
     - Learning R: tips/learn_R.md
     - Learning Python and Julia: tips/quantecon.md
     - Writing an Academic Paper: tips/paper.md
+    - Writing Good Code: tips/coding.md
+    - Setting up a file exchange: tips/fileexchanges.md
 - Example Projects: examples/index.md
 - Contact: contact.md
 - Acknowledgements: acknowledgement.md

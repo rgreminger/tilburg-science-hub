@@ -2,6 +2,11 @@
 
 Anaconda is a pre-packaged Python distribution for scientific users.
 
+Watch our YouTube video, in which we walk you through the setup on Windows.
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/hGZSAuDcmQc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+
 Direct your browser to [Anaconda download page](https://www.anaconda.com/download/) and download the Python 3.x Graphical Installer for your machine.
 Sometimes, the download defaults to Mac, so if you're on Windows or Linux, make sure to select the right version.
 
@@ -35,20 +40,20 @@ You should see the following information returned:
 ###   Windows users:
 
 ```bash
-Python 3.6.5 :: Anaconda, Inc.
+Python 3.x.x :: Anaconda, Inc.
 ```
 
 ###  Mac & Linux/Ubuntu users:
 
 ```bash
-Python 3.6.2 :: Anaconda custom (64-bit)
+Python 3.x.x :: Anaconda custom (64-bit)
 ```
 
 !!! tip "Python 2 versus Python 3"
-    Python 2 and 3 are incompatible in syntax. 
-	If you had Python 2 previously installed on your machine, 
+    Python 2 and 3 are incompatible in syntax.
+	If you had Python 2 previously installed on your machine,
 	you might have seen `Python 2.x.x` above. In that case try typing
 
     ```python3 --version```
 
-    instead. Now you should see a message like the one above and are good to go for the course.
+    instead. Now you should see a message like the one above and are good to go.

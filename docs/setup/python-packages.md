@@ -1,7 +1,6 @@
-# Additional Python packages
+# Python packages
 
-Anaconda's Python Distribution comes with many of the packages we need to do scientific computing.
-If you're interested in all the packages included, click [here](https://docs.continuum.io/anaconda/packages/pkg-docs) and go to the Python 3.6 tab.
+Anaconda's Python Distribution comes with many of the packages we need to do scientific computing. If you're interested in all the packages included, click [here](https://docs.continuum.io/anaconda/packages/pkg-docs) and go to the Python 3.x tab.
 
 Howevever, you may come across packages that are not installed by default.
 In this case we recommend you use the `pip` package management tool to install them.
@@ -20,7 +19,7 @@ If you get an error, try typing instead:
 python -m pip install --upgrade pip
 ```
 
-For this course, we will need the package `Selenium` as part of the web scraping tool kit we will build up. First let us install a depency for it via
+You also need the package `Selenium` as part of the web scraping tool kit we will build up. First let us install a depency for it via
 
 ```bash
 pip install msgpack
@@ -36,8 +35,13 @@ pip install selenium
 If this succeeded, the last line it printed out should be:
 
 ```
-Successfully installed selenium-3.14.0
+Successfully installed selenium-3.x.0
 ```
+
+!!! tip "No administrator rights?"
+    If you do not have administrator rights to the computer you are using,
+    please install packages only for your account.
+    You can do so by typing `pip install --user packagename`, e.g., `pip install --user selenium`.
 
 ## More packages
 

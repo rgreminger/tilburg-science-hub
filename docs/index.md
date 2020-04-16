@@ -7,19 +7,21 @@
 *Tilburg Science Hub* is an open-source resource repository that supports students and researchers
 in the social sciences to *efficiently manage data- and computation-intensive projects*.
 
-To get you started, we have curated a *boot camp in scientific computing and reproducible science*.
+To get you started, we recommend you to follow our *Boot camp in Scientific Computing and Reproducible Science*.
 
 ### Boot camp in Scientific Computing and Reproducible Science
 
 The [Oxford Dictionary](https://www.lexico.com/definition/boot_camp) defines a boot camp as a "short, intensive, and rigorous course of training." In this spirit, on this website, you can
 
-- Learn how to set up your computing environment (&rarr; [software setup](setup/)),
 - Implement workflows to manage complex computational projects (&rarr; [project setup and workflow management](workflow/) ),
+- Learn how to set up your computing environment (&rarr; [software setup](setup/)),
 - Browse a library of tips & tricks (such as how to learn R &rarr; [tips and manuals](tips/learn_R.md)), and
 - Get inspired by learning from various templates (&rarr; [example projects](examples/)).
 
-Soon, we are planning on releasing resources on *creating R packages*
-and on *efficiently managing web data collections using scraping/APIs and (un)structured databases*.
+Our roadmap for future releases of this site include:
+
+- guidelines on *creating R packages*, and
+- a tutorial and code to *efficiently managing large-sclae web data collections using scraping/APIs and (un)structured databases*.
 
 !!! hint "Do I really need this site?"
 

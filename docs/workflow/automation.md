@@ -2,7 +2,7 @@
 
 ## Overview
 
-Remember the [different stages of a project's pipeline](workflow.md#project-pipelines)? Let's suppose
+Remember the [different stages of a project's pipeline](pipeline.md#project-pipelines)? Let's suppose
 we're in the process of preparing our data set for analysis. For example:
 
 1. You wish to convert three raw data sets from Excel to CSV files.

@@ -3,7 +3,7 @@
 Pandoc is an extremely useful 'swiss army knife' for converting between different types of markup languages from the command line.
 For example, it readily builds PDFs with latex, and markdown - both of which are heavily used in academic research.
 
-We do not actively teach how to use Pandoc in the course - but we will utilize it in some lessons where we produce PDF, Word or HTML output from plain text files.
+<!--We do not actively address how to use Pandoc - but we will utilize it in some lessons where we produce PDF, Word or HTML output from plain text files.-->
 
 ## Linux
 
