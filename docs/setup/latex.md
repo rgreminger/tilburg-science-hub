@@ -22,7 +22,7 @@ Primary author of TeX: D.E. Knuth.
 ```
 
 !!! note "For Windows Users" 
-    Download the file `install-tl-windows.exe' from [here](https://www.tug.org/texlive/acquire-netinstall.html) and follow the instructions. 
+    Download the file `install-tl-windows.exe` from [here](https://www.tug.org/texlive/acquire-netinstall.html) and follow the instructions. 
 
 !!! note "For Mac Users"
     We can install this using `homebrew`: 
