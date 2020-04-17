@@ -41,6 +41,7 @@ nav:
     #- Automation with Snakemake: setup/snakemake.md
   - Webscraping: setup/webscraping_drivers.md
   - Teamviewer: setup/teamviewer.md
+  - Add. Programming: setup/otherProgLang.md
 #  - Pandoc: setup/pandoc.md
   # - Matlab: setup/matlab.md
   # - Path Settings: setup/path-setting.md
