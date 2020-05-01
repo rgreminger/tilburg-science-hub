@@ -2,8 +2,6 @@
 title: 'Overview about the most common data operations'
 subtitle: Implemented in MySQL, and R's `tidyverse/dplyr` and `data.table`
 output:
-  revealjs::revealjs_presentation: 
-    theme: default
   pdf_document: default
   html_document:
     df_print: paged
