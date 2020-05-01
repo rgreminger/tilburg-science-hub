@@ -7,7 +7,7 @@ We are also grateful to the following "sister" initiatives from which we have
 borrowed some of our content.
 
 ##### Software setup
-* [`Installation Guide, Programming Practices for Research in Economics`](https://pp4rs.github.io/installation-guide/), University of Zurich, by [Ulrich Bergmann, Lachlan Deer, Adrian Etter, Julian Langer, Ursina Schaede, Dora Simon, Max Winkler, Carlo Zanella & Christian Zünd
+* [`Installation Guide, Programming Practices for Research in Economics`](https://pp4rs.github.io/installation-guide/), University of Zurich, by Ulrich Bergmann, Lachlan Deer, Adrian Etter, Julian Langer, Ursina Schaede, Dora Simon, Max Winkler, Carlo Zanella & Christian Zünd
 * [`Programming Practices For Economists`](pp4rs.github.io/2017-uzh), by Lachlan Deer, Adrian Etter, Julian Langer & Max Winkler
 * [`Effective Programming Practices for Economists`](http://wiwi.uni-bonn.de/gaudecker/teaching/prog_econ_slides.html#prog-econ-slides), a course by [Hans-Martin von Gaudecker](http://wiwi.uni-bonn.de/gaudecker/index.html)
 * Software Carpentry's [`Managing Software Research Projects`](https://swcarpentry.github.io/managing-research-software-projects/) lesson

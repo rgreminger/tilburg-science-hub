@@ -53,7 +53,7 @@ but you still need access to the "last version" of your data.
 - Please structure data in logically consistent "subfolders". For example, by data provider
 (e.g., website A, company B, data provider C).
 - If you receive multiple versions
-of the same data (e.g., a dumb in 2012, a dumb in 2015), then also create subfolders
+of the same data (e.g., a dump in 2012, a dump in 2015), then also create subfolders
 for these particular years. It is not necessary to use file versioning for your raw data,
 as this may greatly exceed the capacity of services such as GitHub.
 
