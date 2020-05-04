@@ -16,7 +16,8 @@ The [Oxford Dictionary](https://www.lexico.com/definition/boot_camp) defines a b
 - Implement workflows to manage complex computational projects (&rarr; [project setup and workflow management](workflow/) ),
 - Learn how to set up your computing environment (&rarr; [software setup](setup/)),
 - Browse a library of tips & tricks (such as how to learn R &rarr; [tips and manuals](tips/learn_R.md)), and
-- Get inspired by learning from various templates (&rarr; [example projects](examples/)).
+- Get inspired by learning from various templates (&rarr; [example projects](examples/)), and
+- Follow a tutorial to implement a reproducible workflow (&rarr; [tutorial](tutorial/)).
 
 Our roadmap for future releases of this site include:
 
