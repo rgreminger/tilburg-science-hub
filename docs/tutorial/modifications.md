@@ -22,7 +22,7 @@ This time, you can directly start working on the practice questions below. Also 
             - You now have two main directories on your system and you can directly compare the output of the two `analysis.html` files in `my_project\gen\analysis\output` and `my_project - copy\gen\analysis\output\`.
 
     3) Last, try to replace the download URL in `download.py` with a different raw data set, available at
-    `https://uvt-public.s3.eu-central-1.amazonaws.com/data/trump_disinfectant.zip`, and run the entire workflow again. Remember to adjust subsequent scripts!!!
+    `"https://uvt-public.s3.eu-central-1.amazonaws.com/data/trump_disinfectant.zip"`, and run the entire workflow again. Remember to adjust subsequent scripts!!!
 
     !!! tip "Returning back to our "head revision""
         In question #2 above, we've "branched out" to understand the implications of modifying the event of interest (JSON file). In this part of the practice questions, we're returning back to our "main repository" - or, in *reproducible-science slang*, the "head revision" of our project. A head revision is always the main version of the project. Think about it as your master copy.
