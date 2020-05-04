@@ -31,7 +31,7 @@ Longing to put your knowledge from our [workflow guide](../workflow) into practi
     -	[R, RStudio](../setup/r.md) and the following packages:
 
         ```
-        install.library(c("data.table", "knitr", 'Rcpp', 'ggplot2'))
+        install.packages(c("data.table", "knitr", 'Rcpp', 'ggplot2'))
         ```
 
     -	[GNU Make](../setup/make.md)
