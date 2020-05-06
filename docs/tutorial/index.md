@@ -34,6 +34,19 @@ Longing to put your knowledge from our [workflow guide](../workflow) into practi
         install.packages(c("data.table", "knitr", "Rcpp", "ggplot2"))
         ```
 
+        !!! warning "R 4.0"
+
+            Newer versions of R (>=R 4.0) may require you to download additional packages.
+
+            ```
+            install.packages(c("rlang", "pillar"))
+            ```
+
+            - If you're being asked whether to build these packages from source or not [options: yes/no], select NO.
+
+            - If you're being asked to install RTools, please do follow these installation instructions.
+
+
     -	[GNU Make](../setup/make.md)
 
 - Familiarity with our [workflows](../workflow), in particular on [pipelines and project components](../workflow/pipeline.md), [directory structure](../workflow/directories.md) and [pipeline automation](../workflow/automation.md).
