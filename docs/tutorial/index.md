@@ -34,6 +34,8 @@ Longing to put your knowledge from our [workflow guide](../workflow) into practi
         install.packages(c("data.table", "knitr", "Rcpp", "ggplot2"))
         ```
 
+        When installing the packages, R may ask you to select a "CRAN-Mirror". This is the location of the package repository from which R seeks to download the packages. Either pick `0-Cloud`, or any of the location nearest to your current geographical location.
+
         !!! warning "R 4.0"
 
             Newer versions of R (>=R 4.0) may require you to download additional packages.
