@@ -23,10 +23,12 @@ Longing to put your knowledge from our [workflow guide](../workflow) into practi
         pip install -U textblob
         ```
 
-        Then, open Python and type
+        Then, open Python (`python`) and type
 
             import nltk
             nltk.download('punkt')
+
+        If you receive an error message, please verify you are typing this command in python (opened on the terminal by typing `python`), and not *directly* in the terminal/Anaconda prompt.
 
     -	[R, RStudio](../setup/r.md) and the following packages:
 
