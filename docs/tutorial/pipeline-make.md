@@ -15,6 +15,6 @@ Please first try to answer our questions below, and then watch our solutions.
     2) Now let's inspect the full file names (i.e., file name *and* directory names). Mostly,
     the directories start with `../..`. Can you explain why that is? What is really happening here?
 
-    Watch our solutions here.
+    **Watch the solutions here.**
 
     <iframe width="560" height="315" src="https://www.youtube.com/embed/PyoJ7RUfwds" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>

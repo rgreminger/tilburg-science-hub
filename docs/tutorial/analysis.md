@@ -22,6 +22,6 @@ Now let's continue with a couple of modifications. You can directly start workin
     word count, and produce a histogram `hist(dt$nwords)` of it in the
     RMarkdown document.
 
-    Watch the solution here.
+    **Watch the solution here.**
 
     <iframe width="560" height="315" src="https://www.youtube.com/embed/GI3CmKFSUQk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>

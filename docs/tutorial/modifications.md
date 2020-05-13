@@ -27,6 +27,6 @@ This time, you can directly start working on the practice questions below. Also 
     !!! tip "Returning back to our "head revision""
         In question #2 above, we've "branched out" to understand the implications of modifying the event of interest (JSON file). In this part of the practice questions, we're returning back to our "main repository" - or, in *reproducible-science slang*, the "head revision" of our project. A head revision is always the main version of the project. Think about it as your master copy.
 
-    Watch the solutions to all questions here.
+    **Watch the solutions to all questions here.**
 
     <iframe width="560" height="315" src="https://www.youtube.com/embed/IjHKc6oOIUU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>

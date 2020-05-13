@@ -16,11 +16,17 @@ Watch our video here.
     let's now parse the first 2000 lines, and then remove the prototyping
     condition altogether! Hint: check `parse.py` for the code!
 
+    !!! tip "Using counters"
+        - In `parse.py`, we make use of a "counting variable", called `cnt`. We set this variable to 0 at the beginning of the script, and then increment it with 1 every time we parse a JSON object (`cnt+=1` is the same as `cnt = cnt + 1`).
+        - That way, for each iteration of our loop, we exactly know how many objects we have already parsed!
+        - Ultimately, we are using this variable to abort the loop when we have parsed 1000 objects (we consider this a reasonable amount of tweets to parse for a "prototype").
+        - Next to prototyping, counters are very useful for diagnosing errors. For example, your parsing script may crash while parsing, and then the value of `cnt` will show you at which object this error happened. That way, you directly know with which data you need to start debugging your code.
+
     2) Let's now also add the username of the Twitter user to the parsed
     CSV file. Again, check `parse.py` for the code on how to
     extract attributes form the JSON Twitter data. Hint: use the
     attribute `.get('user').get('screen_name')`.
 
-    Watch the solutions here.
+    **Watch the solutions here.**
 
     <iframe width="560" height="315" src="https://www.youtube.com/embed/EgiLBt1njo4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>

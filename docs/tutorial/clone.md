@@ -16,6 +16,6 @@ Watch our video to learn about the two ways of downloading a template. After tha
 
     4) Which directories featured [here](../workflow/directories.md) are present in your local copy, and which ones are not? Why do you think that is?
 
-    Watch our solutions here.
+    **Watch our solutions here.**
 
     <iframe width="560" height="315" src="https://www.youtube.com/embed/ybJOCS9pDYA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>

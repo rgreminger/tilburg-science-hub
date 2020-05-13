@@ -16,6 +16,6 @@ So let's go ahead by first watching our demo on what happens if you run `make` i
 
     4) Can you reconstruct what has just happened when running `make`, by looking at the `makefile` in the main directory? Imagine you're arriving at the crime scene, and all you see is that file. Be a detective and start your investigation!
 
-    Watch our solutions here.
+    **Watch the solutions here.**
 
     <iframe width="560" height="315" src="https://www.youtube.com/embed/8TioIL9VEmE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
