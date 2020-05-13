@@ -4,3 +4,8 @@ site/*
 .DS_Store
 _DS_Store
 ~$*
+.Rhistory
+data_wrangling_R-dplyr.html
+data_wrangling_R-dplyr.pdf
+*.RData
+*.csv
