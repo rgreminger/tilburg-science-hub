@@ -33,10 +33,10 @@ Longing to put your knowledge from our [workflow guide](../workflow) into practi
     -	[R, RStudio](../setup/r.md) and the following packages:
 
         ```
-        install.packages(c("data.table", "knitr", "Rcpp", "ggplot2"))
+        install.packages(c("data.table", "knitr", "Rcpp", "ggplot2", "rmarkdown"))
         ```
 
-        When installing the packages, R may ask you to select a "CRAN-Mirror". This is the location of the package repository from which R seeks to download the packages. Either pick `0-Cloud`, or any of the location nearest to your current geographical location.
+        When installing the packages, R may ask you to select a "CRAN-Mirror". This is the location of the package repository from which R seeks to download the packages. Either pick `0-Cloud`, or manually choose any of the location nearest to your current geographical location.
 
         !!! warning "R 4.0"
 
