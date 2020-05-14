@@ -4,7 +4,7 @@
 
 # Tilburg Science Hub
 
-*Tilburg Science Hub* is an open-source resource repository that supports individual researchers, data scientists and teams to *efficiently manage data- and computation-intensive projects*.
+*Tilburg Science Hub* is an open-source resource repository that supports individual researchers, data scientists and teams to *efficiently carry out data- and computation-intensive projects*.
 
 To get you started, we recommend you to follow our *Boot camp in Scientific Computing and Reproducible Science*.
 
