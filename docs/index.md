@@ -4,8 +4,7 @@
 
 # Tilburg Science Hub
 
-*Tilburg Science Hub* is an open-source resource repository that supports students and researchers
-in the social sciences to *efficiently manage data- and computation-intensive projects*.
+*Tilburg Science Hub* is an open-source resource repository that supports individual researchers, data scientists and teams to *efficiently manage data- and computation-intensive projects*.
 
 To get you started, we recommend you to follow our *Boot camp in Scientific Computing and Reproducible Science*.
 
@@ -19,10 +18,11 @@ The [Oxford Dictionary](https://www.lexico.com/definition/boot_camp) defines a b
 - Get inspired by learning from various templates (&rarr; [example projects](examples/)), and
 - Follow a tutorial to implement a reproducible workflow (&rarr; [tutorial](tutorial/)).
 
-Our roadmap for future releases of this site include:
+<!--Our roadmap for future releases of this site include:
 
 - guidelines on *creating R packages*, and
 - a tutorial and code to *efficiently managing large-sclae web data collections using scraping/APIs and (un)structured databases*.
+-->
 
 !!! hint "Do I really need this site?"
 
@@ -45,11 +45,3 @@ Our roadmap for future releases of this site include:
 !!! important "Want to contribute?"
     	  * Find any outdated content, links, or unclear descriptions? [E-mail us!](mailto:h.datta@tilburguniversity.edu)
         * Want to get involved in this open-source project by changing/adding material? [Visit our GitHub page to see how](https://github.com/hannesdatta/tilburg-science-hub/blob/tilburg-update/CONTRIBUTING.md).
-
-<!-- !!! tip "Installation Help" -->
-<!--     Please try and install all the software before the course begins. -->
-<!--     If you are struggling, we can help - but we expect you have tried to work through the guide yourself. -->
-<!--     Details of the Installation help session are found below: -->
-
-<!--     * When: Friday, August 25th, 9.30am - 12.30am -->
-<!--     * Where: SOF-E-09 -->
