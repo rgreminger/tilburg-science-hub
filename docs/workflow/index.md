@@ -8,7 +8,9 @@ Gradually, we write code and edit data sets, and put those files somewhere on ou
 
 As you will quickly realize, the folder structure is a mess, and it is close to impossible to find the code that prepared the datasets, or the code that was used to estimate the econometric model that eventually got published (if you do find these files, please let us know). ;-)
 
-Avoiding this chaos is **at the core of managing data- and computation-intensive projects**, and the primary mission of this boot camp.
+Alternatively, the way you have set up your project may make it cumbersome to execute the project. However, re-running your project multiple times is crucial to test new variables, or estimate prototypes of your model on smaller datasets.
+
+The primary mission of **managing data- and computation-intensive projects** is to build a transparent project infrastructure, that allows for easily (re)executing your code potentially many times.
 
 The following pages should help you to get introduced to a few principles of a project management.
 
