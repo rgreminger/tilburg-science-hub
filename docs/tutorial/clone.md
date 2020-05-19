@@ -6,6 +6,11 @@ Watch our video to learn about the two ways of downloading a template. After tha
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/0rxHQQUNR1o" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
+!!! warning "Clone/download the files where you have writing rights"
+    - In the video, we're saving the template to `C:\projects`.
+    - However, if you don't have sufficient "writing" rights to folders on the `C:\` drive, this may not work for you.
+    - Therefore, we recommend you to clone/download the template to a folder where you *usually store your documents* (e.g., your documents folder).
+
 !!! questions "Practice questions and answers"
 
     1) Open Anaconda Prompt (on Windows) or the terminal (on Mac, Linux) at the directory where you stored your local copy of our repository.
