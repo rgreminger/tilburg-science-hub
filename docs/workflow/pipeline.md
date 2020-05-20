@@ -84,8 +84,14 @@ with the following project "components":
 
 2. **source code**
 
-    This is all the source code written to *execute your pipeline* (defined earlier; e.g., preparing data, analyzing it, and producing some tables or figures). It's important to version your code, so that you can always roll back to different incarnations
-    of your project.    
+    This is all the source code written to *execute your pipeline* (defined earlier; e.g., preparing data, analyzing it, and producing some tables or figures).
+
+    - Each source code file typically...
+        - loads some input files or accepts some arguments,
+        - does some operations on data (e.g., clean it, estimate a model), and
+        - then saves *generated files* (output, audit, or temporary files).
+
+    - It's important to version your code, so that you can always roll back to different incarnations of your project.    
 
 3. **generated files (temporary and output)**
 
