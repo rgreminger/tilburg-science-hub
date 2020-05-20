@@ -93,10 +93,10 @@ with the following project "components":
 
     - It's important to version your code, so that you can always roll back to different incarnations of your project.    
 
-3. **generated files (temporary and output)**
+3. **generated files (temporary, output, and audit)**
 
     These files are *the result of executing your source code*. Think about cleaned
-    data sets, results of your analysis, or tables and figures. In most instances, it may be enough to store
+    data sets, results of your analysis, tables and figures, or some log files to audit whether everything went well (e.g., counting the number of observations, and writing those in `audit.txt`). In most instances, it may be enough to store
     those only temporarily on your local computer.
 
 4. **file exchange**
