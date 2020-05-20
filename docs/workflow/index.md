@@ -2,31 +2,37 @@
 
 ## Motivation
 
-When working on a project, most of us spend time thinking about *what* to create (e.g., a cleaned data set, a new algorithm, an analysis, and/or a paper and corresponding slides), but not about how to *manage* its creation.
+When working on a project, most of us spend time thinking about *what* to create (e.g., a cleaned data set, a new algorithm, an analysis, and/or a paper and corresponding slides), but not about how to *manage* its creation. This results in two major issues, as outlined next.
 
-Gradually, we write code and edit data sets, and put those files somewhere on our computer. When we update files, we either overwrite them, or save new versions under different file names (e.g., including dates like `20191126_mycode.R` or version numbers like `mycode_v2.R`). Even with *best intentions to keep everything tidy*, months or years of working on a project will very likely result in chaos. For example, have a look at the intransparent [directory and file structure of a PhD project](structure_phd_2013.html) Hannes once was working on (back in 2013).
+!!! important "Major issues in managing data-intensive projects"
 
-As you will quickly realize, the folder structure is a mess, and it is close to impossible to find the code that prepared the datasets, or the code that was used to estimate the econometric model that eventually got published (if you do find these files, please let us know). ;-)
+    - we may lose sight of the project ("directory and file chaos")
 
-Alternatively, the way you have set up your project may make it cumbersome to execute the project. However, re-running your project multiple times is crucial to test new variables, or estimate prototypes of your model on smaller datasets.
+        - Gradually, we write code and edit data sets, and put those files somewhere on our computer.
+        - When we update files, we either overwrite them, or save new versions under different file names (e.g., including dates like `20191126_mycode.R` or version numbers like `mycode_v2.R`).
+        - Even with *best intentions to keep everything tidy*, months or years of working on a project will very likely result in chaos.
+        - For example, have a look at the intransparent [directory and file structure of a PhD project](structure_phd_2013.html) Hannes once was working on (back in 2013). Can you find the code used to estimate the final models?! (e-mail us if you do...)
+
+    - we may find it difficult to (re)execute the project ("lack of automation")
+          - The way you have set up your project may make it cumbersome to execute the project. Which code files to run, which not? How long does it take for a code file to complete running?
+          - For example, you wish to re-do your analysis on a small subset of the data (either for prototyping, or as a robustness check), or you would like to try out new variables or test whether a new package provides speed gains...
+          - However, re-running your project takes a lot of time - if at all you remember how to "run" the various code files you have written.
 
 The primary mission of **managing data- and computation-intensive projects** is to build a transparent project infrastructure, that allows for easily (re)executing your code potentially many times.
-
-The following pages should help you to get introduced to a few principles of a project management.
 
 ## Guiding Principles
 
 The objectives of this boot camp are:
 
 - learn how to organize and track the evolution of your projects (e.g., by means of a proper [directory structure](directories.md), and [code versioning](versioning.md))
+- learn how to automize your workflows, and make them reproducible (e.g., by using [automation](automation.md))
 - learn how to [work on projects with others](collaboration.md) (e.g., by means of Git/GitHub)
-- learn how to make your workflows reproducible (e.g., by using [automation](automation.md))
 - learn how to [document datasets](documenting-data.md) and [workflows](documenting-code.md)
 - learn how to write clean code (e.g., see our [tips here](../tips/coding.md))
 
 ## Gradual Implementation
 
-!!! tip "Tips"
+!!! tip "Gradually implement our tips"
     * We may sometimes sound a bit dogmatic (e.g., you must do this or that). Some of our instructions will only make sense to you after a while. So, please stick with our recommendations during the course of your first few projects. Later on, take the liberty to re-design the workflows to your needs.
     * Consider adopting our suggestions **gradually**
         1. Start with a proper [directory structure on your local computer](directories.md#data-management), which
@@ -43,6 +49,7 @@ The objectives of this boot camp are:
         3. Document your [project](documenting-code.md) and [raw data](documenting-data.md)
         4. Start to [track changes to your source code](versioning.md), and [clean up your source/"do your housekeeping"](checklist.md) regularly
 
+## Configure your Computer
 
 !!! tip "Configure your computer"
     - Note that to implement our workflow suggestions, your computer needs to be configured properly - so we [suggest you to do that first](../setup/index.md).
@@ -58,3 +65,7 @@ The objectives of this boot camp are:
 <!--#* Please follow the steps one-by-one in the order they appear on the side bar and do not deviate from them, unless you really know what you are doing.
 #* Where necessary, we have provided instructions for Mac, Windows and Linux machines.
 --!>
+<!--
+[^1]:  As you will quickly realize, the folder structure is a mess, and it is close to impossible to find the code that prepared the datasets, or the code that was used to estimate the econometric model that eventually got published (if you do find these files, please let us know). ;-)
+
+-->
