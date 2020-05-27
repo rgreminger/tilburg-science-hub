@@ -61,6 +61,22 @@
 - increase transparency and collaboration: work in different parts of pipeline
 - software stack: full flexibility
 
+## Discussion
+
+__What are common pipeline stages in your areas of expertise?__
+
+::: notes
+
+as an academic, it's data-prep, model, writing
+
+(What stages would you choose to change, remove, add?)
+
+Think of:
+    - what steps do I do, what steps do others do?
+    - other deployment stages: e.g., dashboards, etc.
+
+:::
+
 # Components of a pipeline
 
 ## Definition
@@ -143,6 +159,20 @@ __What's different from what I just told you?__
 
 :::
 
+## Discussion
+
+__What are the benefits (or drawbacks) of keeping project components separate?__
+
+__Do you keep them separate, or not (and why)?__
+
+::: notes
+
+benefits: each has its own "data management" policies attached to it
+e.g., code needs to be versioned, raw data does not
+
+
+:::
+
 # Data Management and Directory Structure
 
 ## Guiding principles
@@ -197,7 +227,7 @@ __What's different from what I just told you?__
 
 ## Project directory structure (2)
 
-- Keep generated files separate: `input`, `output`, `temp`, `audit` [notes](http://tilburgsciencehub.com/workflow/directories/#summary), [download template](http://tilburgsciencehub.com/workflow/dir_structure.zip))
+- Keep generated files separate: `input`, `output`, `temp`, `audit` [notes](http://tilburgsciencehub.com/workflow/directories/#summary))
 
 ```
 \src\data-prep       <- SOURCE CODE
@@ -231,6 +261,13 @@ another pipeline stage (e.g., `\gen\analysis\input`)
     - Code in `\src\data-prep` moves `\gen\data-prep\output` to file exchange (e.g., S3, local server)
     - Code in `\src\analysis` downloads data from file exchange, puts it into `\gen\analysis\input`
     - Much better when working with others
+
+## Discussion
+
+Please download the [directory template](http://tilburgsciencehub.com/workflow/dir_structure.zip)
+
+__What changes would you make to *use* this template for your own work?__
+
 
 # Automation
 
@@ -277,6 +314,27 @@ target: source(s)
 
 - Automate everything that *can* be automated
 
+## Activity
+
+__Let's learn from some makefiles!__
+
+- Check out some `makefiles`
+    - [Researcher](https://kbroman.org/minimal_make#more-complicated-examples)
+    - [Software devel](https://en.wikipedia.org/wiki/Make_(software)#Example_makefiles)
+
+- Can you understand what's being done?
+- How are they structured? Do you recognize any "sections"?
+- What's the same, what's different from what you have seen in this tutorial so far?
+
+::: notes
+
+- parameters so that you can loop
+- variables so you don't have to repeat commands
+- use of cleaning rules
+
+:::
+
+
 # Documentation
 
 ## Documenting code and pipeline
@@ -288,9 +346,31 @@ target: source(s)
 ## Documenting (raw) data
 
 - Import for newly generated raw data *and* any generated output data
-- Let's go through sections of [this template](http://tilburgsciencehub.com/workflow/documenting-data/)
+- You can make use of [this template](http://tilburgsciencehub.com/workflow/documenting-data/)
 
-# Versioning and collaboration on GitHub
+## Activity
+
+- Think about a data set __you have generated__
+    - Which sections of [the template](http://tilburgsciencehub.com/workflow/documenting-data) would you find easy to fill in, which ones hard?
+    - Do you find all sections equally important?
+
+. . .
+
+- Think about a data set you are using (i.e., __somebody else made it__)
+    - Which aspects in [the template](http://tilburgsciencehub.com/workflow/documenting-data) would you have liked to know (but don't, because nobody documented it)?
+
+__Let's share your learnings!__
+
+::: notes
+
+- which sections are there?
+- what would you write?
+
+
+:::
+
+
+# Versioning on GitHub
 
 ## Versioning the old way
 
@@ -348,8 +428,9 @@ regressions_022413.log
 - [More on TSH](http://tilburgsciencehub.com/workflow/versioning)
 - [Wonderful cheatsheet](https://education.github.com/git-cheat-sheet-education.pdf)
 
+# Collaboration and project management
 
-## Collaboration
+## Collaboration on GitHub
 
 - Find a project to collaborate on
 - Fork repository
@@ -358,13 +439,19 @@ regressions_022413.log
 - Create pull request
   - Owner of main repository will review, then integrate changes
 
-## Project management
+## Project management on GitHub
 
 - Issues
 - Project board
 - Milestones
 
-# Housekeeping
+# Implementation and Housekeeping
+
+## Implementation
+
+- Start gradually
+    - e.g., have a directory structure first + move files; then start to automate __step by step__
+- Have a few templates you can learn from (e.g., on [Tilburg Science Hub](http://tilburgsciencehub.com))
 
 ## Programming 101
 
@@ -389,7 +476,7 @@ regressions_022413.log
     - fix, fix, fix
 
 
-    ::: note
+::: notes
 
     On own computer
     Wipe all temp and output files
@@ -405,7 +492,7 @@ regressions_022413.log
     Does it reproduce the results?
 
 
-    :::
+:::
 
 ## Checklist
 

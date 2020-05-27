@@ -192,15 +192,26 @@ Please tell me __what would make this course a success__ for you
 
 - 14:45 - 15:45: Running and *extending* a reproducible workflow
   - Key building blocks of efficient workflows (*'cntd*)
-  - [TSH workflow tutorial](http://tilburgsciencehub.com/tutorial) with Q&A
-  - Pipeline exercises
+  - Putting things in practice
+      - [TSH workflow tutorial](http://tilburgsciencehub.com/tutorial) Q&A
+      - Activity: Drafting your project pipeline
+      - Advanced pipeline exercises / topics
+
+::: notes
+
+first: pipelines & components
+
+after the break: data management, automation
+
+:::
 
 ## Agenda (2)
 
 - 16:00 - 17:00: Advanced topics & discussion
-  - Version control, collaboration
-  - Advanced topics
+  - Version control
+  - Collaboration and project management
   - Implementation plan
+  - Wrap-up
 
 ::: notes
 
@@ -297,3 +308,20 @@ how i Use what I teach
 show EC2
 
 :::
+
+# Wrap-up
+
+## Summary
+
+What are __your__ takeaways?
+
+## Met the objective?
+
+Work __efficiently__ on __data- and computation-intensive__ projects
+
+## Your feedback
+
+## Contact
+
+Hannes Datta
+https://hannesdatta.com
