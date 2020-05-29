@@ -4,6 +4,10 @@
 
 # Let's get started!
 
+## Slides
+
+...are available at the course website at [https://tiu.nu/dep](https://tiu.nu/dep)
+
 ## Agenda
 
 (before we *really* start)
@@ -32,7 +36,6 @@
 - MSc Marketing Analytics and Management: Data science skills for digital and social media research
 - This class (at various levels; academic, exec)
 
-
 ## Research experience
 
 - see [https://hannesdatta.com](https://hannesdatta.com) for papers
@@ -40,6 +43,41 @@
     - How did online streaming (Spotify, Netflix) chaneg behavior?
     - Bunch of follow-ups now (e.g., playlists, discovery of new music, music "filter" bubbles, change in production)
 - Large-scale observational (big) data
+
+# About you
+
+## Projects
+
+Getting to know you through your projects
+
+- Text
+- Predictive analytics
+- Marketing optimization
+- Process mining
+- Modeling
+
+::: notes
+
+Look at the XLS sheet, talk about some projects
+
+1) 360 degrees stakeholder impact scan (data and text analysis); How to improve the bachelor programs at UvT for both students and academic staff (1st project)
+2) Mobile telecom congestion prediction for beach radio stations
+3) Cluster analysis, segmentation models for loyalty programs, banking app Zalando?
+
+
+:::
+
+## Covid-19
+
+- Where are you at right now?
+
+. . .
+
+- Home office, on a scale from 1 to 10...?
+
+. . .
+
+- Wanna have the last half-an-hour of this with a borrel? ;)
 
 # Motivation for course
 
@@ -153,10 +191,12 @@ data prep, modeling, evaluation, deployment, data
 > - I prefer to do this in English...
 - I assume you have viewed the [course page](https://hannesdatta.github.io/course-jads2020/)
 - If I’m going too fast (and I will), slow me down!
-- I'm from marketing analytics, *not* data science
+- I may deviate from the timing
+- I'm from marketing analytics, *not* data science, not IT
 - I heavily refer to [Tilburg Science Hub](http://tilburgsciencehub.com)
 - I'm using this slide deck for the first time
 - I'm not the most efficient person to talk to... ;)
+
 
 ::: notes
 
@@ -185,38 +225,41 @@ Please tell me __what would make this course a success__ for you
 
 ## Agenda (1)
 
-- 13:30 - 14:30 (now): Introduction
+- 13:15 - 14:15 (now): Introduction
   - Course setup (done that)
   - Preview of efficient workflows
-  - Key building blocks of efficient workflows
-
-- 14:45 - 15:45: Running and *extending* a reproducible workflow
-  - Key building blocks of efficient workflows (*'cntd*)
-  - Putting things in practice
-      - [TSH workflow tutorial](http://tilburgsciencehub.com/tutorial) Q&A
-      - Activity: Drafting your project pipeline
-      - Advanced pipeline exercises / topics
-
-::: notes
-
-first: pipelines & components
-
-after the break: data management, automation
-
-:::
+  - Key building blocks
+      - Pipelines & components
+      - Data management & directory structure
+      - Automation
 
 ## Agenda (2)
 
-- 16:00 - 17:00: Advanced topics & discussion
-  - Version control
-  - Collaboration and project management
+- 14:30 - 15:30: Running and *extending* a reproducible workflow
+  - Putting things in practice
+      - [TSH workflow tutorial](http://tilburgsciencehub.com/tutorial) + Q&A
+      - Activity: Drafting your project pipeline
+  - Key building blocks (*'cntd*)
+      - Documentation
+      - Versioning
+      - Collaboration
+
+::: notes
+- skip documentation?
+
+:::
+
+## Agenda (3)
+
+- 15:45 - 16:45: Advanced topics & implementation
+  - Inventorizing your needs + picking activities/extra content
   - Implementation plan
   - Wrap-up
 
 ::: notes
 
 - Schedule
-    - 1-hour blocks
+    - 1-hour blocks, but may deviate
 
 Q&A: fixing problems, automation basics
 
@@ -321,7 +364,18 @@ Work __efficiently__ on __data- and computation-intensive__ projects
 
 ## Your feedback
 
+- About this course
+    - About me
+    - The format of this course
+    - Communication
+- About Tilburg Science Hub
+    - About the text mining tutorial
+    - About the installation instructions
+    - About the overall workflows
+- ...anything else
+
 ## Contact
 
 Hannes Datta
+
 https://hannesdatta.com

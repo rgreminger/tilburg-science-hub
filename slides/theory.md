@@ -2,7 +2,7 @@
 % [Hannes Datta](https://hannesdatta.com)
 % May 29, 2020
 
-# Overview
+# Overview - Part 1
 
 ## Goals of this module
 
@@ -10,7 +10,7 @@
 
 - Think of your project as a pipeline
 - Learn about the key components of a pipeline
-- Discuss directory structures
+- Discuss data management and directory structures
 - Automate your pipeline
 
 <!--- Gradual implementation-->
@@ -334,6 +334,17 @@ __Let's learn from some makefiles!__
 
 :::
 
+
+# Overview - Part 2
+
+## Goals of this module
+
+*Understand the [key building blocks of efficient workflows](http://tilburgsciencehub.com/workflow)*
+
+- Learn how to document your workflow and (raw) data
+- Discover how versioning can change your life
+- Collaborate on open source projects via GitHub
+- Housekeeping that sparks joy!
 
 # Documentation
 
