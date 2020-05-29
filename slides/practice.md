@@ -235,6 +235,13 @@ What are the benefits of `git bash` over git gui?
 
 ## Overview
 
+- Drafting a project pipeline
+- Using AWS S3, FTP, Google Drive, Dropbox in your projects
+- Using databases
+- Versioning (local, on GitHub, implementing in your project, submodules)
+- Contributing to open source projects
+- Programming tips
+
 ## Drafting a project pipeline
 
 __Develop a rough draft of a pipeline for your graduation project__
@@ -334,11 +341,14 @@ checks what data is available, and only gets data that is missing
 
 - Use the [Git cheat sheet](https://education.github.com/git-cheat-sheet-education.pdf)
 
-- Show
-    - `git clone`
-    - `git status`
-    - `git add`
-    - `git commit -m "message"`
+```
+git clone
+git status
+git add
+git commit -m "message"
+```
+
+- Practice on [TSH tutorial workflow](http://tilburgsciencehub.com/tutorial)
 
 ::: notes
 
@@ -432,3 +442,16 @@ Thumbs.db
 ```
 
 ## Working with submodules in Git
+
+
+## Programming 101
+
+- Have clear variable names
+- Use loops where possible
+    - e.g., variable operationalization
+    - e.g., estimation on different slices of the data
+- Modularization of functions
+    - e.g., make your own module for commonly used functions
+    - e.g., modularize functions itself
+- Use of assrts
+    - e.g., `stopifnot()` in R, `assert` in Python

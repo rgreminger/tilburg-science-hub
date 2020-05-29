@@ -13,7 +13,13 @@
 - Discuss data management and directory structures
 - Automate your pipeline
 
-<!--- Gradual implementation-->
+::: notes
+
+could be a little dry
+
+Gradual implementation possible
+
+:::
 
 # Pipelines
 
@@ -63,7 +69,7 @@
 
 ## Discussion
 
-__What are common pipeline stages in your areas of expertise?__
+__What are common pipeline stages in your domain?__
 
 ::: notes
 
@@ -85,7 +91,7 @@ Think of:
 
 ## (1) Source code
 
-inputs [data, arguments] --> transformation --> output [datasets, log files, images]
+inputs [data, arguments] &#8594; transformation &#8594; output [datasets, log files, images]
 
 . . .
 
@@ -112,6 +118,12 @@ inputs [data, arguments] --> transformation --> output [datasets, log files, ima
 
 - [Documented with `readme.txt`](http://tilburgsciencehub.com/workflow/documenting-data)!
 
+::: notes
+
+how do YOU store data?
+
+:::
+
 ## (3) Generated files
 
 - These are the *outputs* of your source code.
@@ -120,29 +132,24 @@ inputs [data, arguments] --> transformation --> output [datasets, log files, ima
 - If *temporary* --> "temp"
 - If used for auditing --> "audit"
 
+::: notes
+
+do you keep them separate? how?
+
+:::
+
+
 ## (4) Notes
 
 - Documentation, literature, PDFs, ...
 - Keep in separate folder, with potentially subfolders
 
-## Exploration
-
-- Let's explore those components in practice...
-- E.g., view [structure of my Spotify paper](http://tilburgsciencehub.com/workflow/structure_spotify_2018.html)
-
-__What's different from what I just told you?__
-
 ::: notes
 
-1. Describe the directory structure – where did I store what?
-2. What’s the use of the main directories in the project? (raw, derived, analysis) – why do I do it that way?
-3. What’s that server directory doing?!
-
-"project" centric - "wipeable"
-
-"submodule centric" - self-contained, highly portable
+where do YOU store them?
 
 :::
+
 
 ## Conceptual framework
 
@@ -163,6 +170,8 @@ __What's different from what I just told you?__
 
 __What are the benefits (or drawbacks) of keeping project components separate?__
 
+. . .
+
 __Do you keep them separate, or not (and why)?__
 
 ::: notes
@@ -177,11 +186,11 @@ e.g., code needs to be versioned, raw data does not
 
 ## Guiding principles
 
-- Others should understand pipeline, merely by looking at file/directory structure
-- Each step in pipeline is self-contained ("portability")
-- Project is versioned & backed-up (more later)
+- Others should understand pipeline, merely by *looking at file/directory structure*
+- Each step in pipeline is *self-contained* ("portability")
+- Project is *versioned & backed-up* (more later)
 
-## Let's share your experience and firm practices
+## Let's share your practices
 
 - How __do you__ keep files/directories tidy?
 - How __do you__ ensure portability?
@@ -191,13 +200,15 @@ e.g., code needs to be versioned, raw data does not
 
 -	Be prepared to show the directory of a recent project you’re working on – be able to explain that structure (you don’t need to revise the structure before class!)
 
+Anybody wants to show?
+
 :::
 
 ## How to store raw data
 
 - Suggestions are [here](http://tilburgsciencehub.com/workflow/directories/)
     - CSV is more stable than XLSX, SAV, ...
-    - Databases will shut down, so take copies
+    - Databases will shut down, so take copies of your data
 
 - Transparent directory structure with [`readme.txt`](http://tilburgsciencehub.com/workflow/documenting-data) in each folder
   ```
@@ -242,6 +253,24 @@ e.g., code needs to be versioned, raw data does not
 \data\website_A\...  <- RAW DATA
 \data\company_B\...
 ```
+## Exploration
+
+- Let's explore a directory structure in practice...
+- E.g., view [structure of my Spotify paper](http://tilburgsciencehub.com/workflow/structure_spotify_2018.html)
+
+__What's different from what I just told you?__
+
+::: notes
+
+1. Describe the directory structure – where did I store what?
+2. What’s the use of the main directories in the project? (raw, derived, analysis) – why do I do it that way?
+3. What’s that server directory doing?!
+
+"project" centric - "wipeable"
+
+"submodule centric" - self-contained, highly *portable*
+
+:::
 
 ## Enabling portability (1)
 
@@ -262,7 +291,7 @@ another pipeline stage (e.g., `\gen\analysis\input`)
     - Code in `\src\analysis` downloads data from file exchange, puts it into `\gen\analysis\input`
     - Much better when working with others
 
-## Discussion
+## Using a directory template
 
 Please download the [directory template](http://tilburgsciencehub.com/workflow/dir_structure.zip)
 
@@ -271,7 +300,7 @@ __What changes would you make to *use* this template for your own work?__
 
 # Automation
 
-## Build tools
+## Automate your workflow
 
 - Build tools introduce "recipes" of how to make stuff
     - *target* __what__ needs to be built (e.g., a file)
@@ -285,6 +314,10 @@ __What changes would you make to *use* this template for your own work?__
 - "Loop" over different model specifications
 - Nightly builds
 
+::: notes
+
+related to the practical example given earlier :::
+
 ## Example recipes
 
 Let's generate some example recipes by writing __pseudo code__...
@@ -294,18 +327,36 @@ target: source(s)
     execution command
 ```
 
-## Make
+::: notes
 
-- Installed on Mac, Linux; installable on Windows
+more examples:
+(a) tell me what will be built & the file names
+(b) what are the dependencies
+(c) how to run it, which software?
+
+:::
+
+## Make is *one* build tool
+
+- Installed on Mac, Linux; [installable on Windows](http://tilburgsciencehub.com/setup/make)
 - Documentation [here](http://tilburgsciencehub.com/workflow/automation/)
     - `make` runs entire workflow
     - `make -n` does a dry-run
 
-## Relative paths
+::: notes
 
-- Use relative paths
-    - NOT absolute: `c:\projects\jads\data\myfile.csv`
-    - Reference is `src` directory
+
+preview the TSH tutorial here
+
+could also show another data set I have
+
+:::
+
+## Learning about *relative* paths
+
+- You all know how *absolute* paths look like: `c:\projects\jads\data\myfile.csv`
+- But... what are *relative* paths?
+    - Have reference directory; typically where file is in
     - Exercise
       - Open terminal
       - Navigate directory with `cd` and `dir` (Win) or `ls` (Mac)
@@ -313,6 +364,15 @@ target: source(s)
 ## What to automate?
 
 - Automate everything that *can* be automated
+
+::: notes
+
+but... limits to automation!!!
+
+may cost a lot of time
+
+:::
+
 
 ## Activity
 
@@ -333,6 +393,7 @@ __Let's learn from some makefiles!__
 - use of cleaning rules
 
 :::
+
 
 
 # Overview - Part 2
@@ -420,6 +481,12 @@ regressions_022413.log
 - Git saves *changes* rather than snapshots
 - Git allows you to work *in parallel*, with others
 
+::: notes
+
+- show git in an example directory, and how it incrementally saves stuff
+- show .gitignore
+
+:::
 
 ## Git workcycle (1)
 
@@ -445,9 +512,11 @@ regressions_022413.log
 
 - Find a project to collaborate on
 - Fork repository
+- Build the project
+- Do your work!
   - Create branch for each feature
-  - Perform a workcycle
-- Create pull request
+  - Perform Git workcycles
+- Done? Create pull request
   - Owner of main repository will review, then integrate changes
 
 ## Project management on GitHub
@@ -462,24 +531,12 @@ regressions_022413.log
 
 - Start gradually
     - e.g., have a directory structure first + move files; then start to automate __step by step__
-- Have a few templates you can learn from (e.g., on [Tilburg Science Hub](http://tilburgsciencehub.com))
-
-## Programming 101
-
-- Have clear variable names
-- Use loops where possible
-    - e.g., variable operationalization
-    - e.g., estimation on different slices of the data
-- Modularization of functions
-    - e.g., make your own module for commonly used functions
-    - e.g., modularize functions itself
-- Use of assrts
-    - e.g., `stopifnot()` in R, `assert` in Python
+- Use projects or templates you can learn from (e.g., on [Tilburg Science Hub](http://tilburgsciencehub.com))
 
 ## Tidying up
 
-- Delete what can be deleted
-- Tests for portability
+- Because we versioned, we can *delete what can be deleted*
+- Testing for portability
     - locally: restart PC, rerun
     - locally: wipe `gen`, rerun
     - other computer: run `make`
@@ -508,3 +565,24 @@ regressions_022413.log
 ## Checklist
 
 We've compiled a [housekeeping checklist here](http://tilburgsciencehub.com/workflow/checklist/)
+
+## Drafting an implementation plan
+
+__Which steps are important?__
+
+__How would you proceed?__
+
+## Implementation suggestions
+
+1. Version stuff, but exclude file types that need not to be versioned!
+2. *Draft* pipeline: which *stages* do you need?
+3. Move files in proper directories ([use directory template](http://tilburgsciencehub.com/workflow/dir_structure.zip))
+4. Build pipeline (input, outputs for each file) + test manually
+5. Make `make` work on what you have
+
+::: notes
+
+can do it for one project if you like...
+
+
+:::
