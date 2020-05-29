@@ -11,8 +11,10 @@ for i in "${!FileNames[@]}"; do
 
    pandoc -t revealjs -s -o gen/${OutputNames[i]}.html ${FileNames[i]}.md -V revealjs-url=./reveal-old -V theme=white-tsh
    sed '/::: notes/,/:::/d' ${FileNames[i]}.md > ${FileNames[i]}-nonotes.md
-   pandoc ${FileNames[i]}-nonotes.md --pdf-engine=xelatex -o "gen/${OutputNames[i]}.pdf"
+   sed '/\. \. \./d' ${FileNames[i]}-nonotes.md > ${FileNames[i]}-nonotes2.md
+   pandoc ${FileNames[i]}-nonotes2.md --pdf-engine=xelatex -o "gen/${OutputNames[i]}.pdf"
    rm ${FileNames[i]}-nonotes.md
+   rm ${FileNames[i]}-nonotes2.md
 
 done
 
