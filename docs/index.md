@@ -10,7 +10,7 @@ To get you started, we recommend you to follow our *Boot camp in Scientific Comp
 
 ### Boot camp in Scientific Computing and Reproducible Science
 
-The [Oxford Dictionary](https://www.lexico.com/definition/boot_camp) defines a boot camp as a "short, intensive, and rigorous course of training." In this spirit, on this website, you can
+The [Oxford Dictionary](https://www.lexico.com/definition/boot_camp){target=_blank} defines a boot camp as a "short, intensive, and rigorous course of training." In this spirit, on this website, you can
 
 - Implement workflows to manage complex computational projects (&rarr; [project setup and workflow management](workflow/) ),
 - Learn how to set up your computing environment (&rarr; [software setup](setup/)),
@@ -44,4 +44,4 @@ The [Oxford Dictionary](https://www.lexico.com/definition/boot_camp) defines a b
 
 !!! important "Want to contribute?"
     	  * Find any outdated content, links, or unclear descriptions? [E-mail us!](mailto:h.datta@tilburguniversity.edu)
-        * Want to get involved in this open-source project by changing/adding material? [Visit our GitHub page to see how](https://github.com/hannesdatta/tilburg-science-hub/blob/tilburg-update/CONTRIBUTING.md).
+        * Want to get involved in this open-source project by changing/adding material? [Visit our GitHub page to see how](https://github.com/hannesdatta/tilburg-science-hub/blob/tilburg-update/CONTRIBUTING.md){target=_blank}.

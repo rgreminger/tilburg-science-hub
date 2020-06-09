@@ -38,7 +38,7 @@ The objectives of this boot camp are:
         1. Start with a proper [directory structure on your local computer](directories.md#data-management), which
         may already be sufficient to start collaborating. For example,
         do you need feedback from your advisor? Just zip (the relevant parts of) your pipeline
-        and use [SURF's filesending service](https://filesender.surf.nl/) to email it!
+        and use [SURF's filesending service (for researchers affiliated with Dutch institutions)](https://filesender.surf.nl/) to send it!
 
         !!! warning "Uhh, email, really?!"
             - Indeed, email is not what we want to advocate.

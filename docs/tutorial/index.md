@@ -66,3 +66,7 @@ Longing to put your knowledge from our [workflow guide](../workflow) into practi
 ## Disclaimer
 
 To keep this tutorial as accessible as possible, it will mention Git/GitHub a few times, but assume you will acquire details on these skills elsewhere. In other words, versioning and contributing to Git repositories is not part of this tutorial.
+
+<!-- to do:
+
+add note what to put in make, and what to put in R-->

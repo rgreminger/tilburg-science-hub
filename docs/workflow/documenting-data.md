@@ -2,8 +2,7 @@
 
 ## Overview
 
-If your project contains data that has been newly created (i.e., which is not otherwise (publicly) available yet), you are
-required to include a documentation of that data in your project.
+If your project contains data that has been newly created (i.e., which is not otherwise (publicly) available yet; including *derived* data sets), you are required to include a documentation of that data in your project.
 
 Instances of "new data" may included, but are not restricted to be:
 
@@ -13,16 +12,16 @@ Instances of "new data" may included, but are not restricted to be:
 	* e.g., to assign GDP per capita to a list of countries
 	* e.g., to classify a music label as a major versus independent label
 	* ...
+* data *derived* from secondary data (e.g., a cleaned data set; making explicit how you cleaned the data is important for future use of that data)
 
 !!! tip
-	Think of "new data" as *any* data that feeds into your project; it really needs
-	not to be "big" data, but can simply consist of a `.csv` file with
+	Think of "new data" as *any* data that feeds into one of the pipeline stages in your project; it really needs not to be "big" data, but can simply consist of a `.csv` file with
 	names and associated labels (e.g., as in the case of countries --> GDP per capita).
 
 ## Describe your raw data
 
 Ideally, your data description includes the *very elaborate questions* outlined in `Datasheets for datasets` by Gebru, Timnit, et al. (2018).
-**We strongly** refer you to the [original paper](https://arxiv.org/abs/1803.09010), which explains in detail the seven key ingredients of a proper dataset documentation. Below, we have reproduced these questions, and we recommend you to include those as a **`readme.txt`**, together with your datasets.
+**We strongly** refer you to the [original paper](https://arxiv.org/abs/1803.09010), which explains in detail the seven key ingredients of a proper dataset documentation. Below, we have reproduced these questions, and we recommend you to include those as a **`readme.txt`**, together with your datasets. For *derived* data, it may be enough to point to a relevant source code file, and provide a list of variables and their operationalization.
 
 ```
 ==========================================================

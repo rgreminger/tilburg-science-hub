@@ -22,6 +22,9 @@ prototypical directory structure that you need to set up on your computer.
 		such as preparing and analyzing the data, writing the paper, etc.).
 --->
 
+!!! tip "Obtain approval for using external services"
+    Below, we're mentioning the use of several external services, such as Amazon Web Services (AWS), Dropbox, or Google Drive. Please make sure to obtain the approval of your organization to make use of these services. Typically, organizations also have a range of alternatives available in-house (e.g,. such as SurfDrive as a replacement for Dropbox for Dutch research institutions).
+
 ## Data Management for Each of the Project's Components
 
 Here's our advice on how to manage and store each component of your project.

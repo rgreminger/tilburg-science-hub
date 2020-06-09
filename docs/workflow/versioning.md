@@ -12,6 +12,9 @@ with team members.
 Git "lives" on your local computer, and allows you to configure
 so-called "repositories" that track files and directories.
 
+!!! tip "Storing sensitive data"
+    Git will eventually become the long-term memory of your project, and you may decide to make the repository public so others can learn from or use your work. Therefore, it is crucial that you __do not store any sensitive information__ in your source code (e.g., API credentials, passwords).
+
 ### What is GitHub?
 
 You can optionally use Git in combination with an online hosting service such as [**GitHub**](https://www.github.com), which allows you to backup your code, synchronize your work across multiple computers, or collaborate with others on joint projects. There are several alternatives to GitHub available, and maybe your institution even offers
@@ -83,7 +86,7 @@ Proceed to step 3.
 !!! tip
     Ideally, you use a main project folder on your computer, pretty high-up
     in your folder hierarchy (e.g., 'D:/projects/`). While technically feasible,
-    you'd like to avoid storing your Git repositories on Dropbox.
+    you should avoid storing your Git repositories on Dropbox as this may lead to synchronization conflicts.
 
 ### 3. Work on your project
 

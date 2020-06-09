@@ -154,8 +154,7 @@ different project components.
     a powerful EC2 instance in the Amazon Cloud, cloned our source code using Git,
     pulled in that big final dataset from the file exchange, and estimate our model.
     We're relieved the model is running in the cloud, as that computer likely will
-    not restart or crash (unlike our office PC, which may be arbitrarily shut down
-    by our IT admins... - been there before...).
+    not restart or crash.
 
     4. **Stage 4 - prepare tables and figures & write paper**: Time to shine! We pull in our final data set from stage 1, and either the
     prototype model results (from stage 2) or the final model results (from stage 3)

@@ -9,7 +9,7 @@ The key requirements of a file exchange are:
 - allowing members of the project to upload or download data,
 - employing fine-grained access controls (i.e., to give users reading rights, or reading/writing rights).
 
-Below, we show a few options that we've used in our research projects.
+Below, we show a few options that we've used in our research projects. Please check with your own institution whether the use of these services is permitted.
 
 ## Amazon S3
 
