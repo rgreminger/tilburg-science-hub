@@ -166,6 +166,7 @@ Work __efficiently__ on __data- and computation-intensive__ projects
   - prototype the "final product" soon, refine later
   - rotating on tasks
   - sharing/reusing code
+  - having *others* audit your code
 
 ## What's *not* efficient?
 
