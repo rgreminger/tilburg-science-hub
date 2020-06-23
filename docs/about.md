@@ -1,6 +1,6 @@
-# Contact
+# About Tilburg Science Hub
 
-## About Tilburg Science Hub (TSH)
+## Overview
 
 Tilburg Science Hub (TSH) is an *online resource that helps individual researchers, data scientists, and teams to efficiently carry out data- and computation-intensive projects*. It provides information about workflow and data management and tutorials that teach researchers how to organize and document their data and code, so the research becomes sustainable and reproducible. This in turn leads to time savings and transparency in the process.
 

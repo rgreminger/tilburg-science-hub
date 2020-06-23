@@ -14,7 +14,7 @@ On this website, you can
 - Get inspired by learning from various research templates (&rarr; [example projects](examples/)), and
 - Follow tutorials to implement reproducible workflows (&rarr; [tutorial](tutorial/)).
 
-Learn [more about our initiative here](contact.md).
+Learn [more about our initiative here](about.md).
 
 <!--Our roadmap for future releases of this site include:
 
