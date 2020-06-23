@@ -6,17 +6,15 @@
 
 *Tilburg Science Hub* is an open-source resource repository that supports individual researchers, data scientists, and teams to *efficiently carry out data- and computation-intensive projects*.
 
-To get you started, we recommend you to follow our *Boot camp in Scientific Computing and Reproducible Science*.
+On this website, you can
 
-### Boot camp in Scientific Computing and Reproducible Science
+- Learn about data management and workflows to manage complex computational projects (&rarr; [project setup and workflow management](workflow/) ),
+- Follow our guide to set up your computing environment (&rarr; [software setup](setup/)),
+- Browse a library of tips & tricks (such as how to learn R &rarr; [tips and manuals](tips/learn_R.md)),
+- Get inspired by learning from various research templates (&rarr; [example projects](examples/)), and
+- Follow tutorials to implement reproducible workflows (&rarr; [tutorial](tutorial/)).
 
-The [Oxford Dictionary](https://www.lexico.com/definition/boot_camp){target=_blank} defines a boot camp as a "short, intensive, and rigorous course of training." In this spirit, on this website, you can
-
-- Implement workflows to manage complex computational projects (&rarr; [project setup and workflow management](workflow/) ),
-- Learn how to set up your computing environment (&rarr; [software setup](setup/)),
-- Browse a library of tips & tricks (such as how to learn R &rarr; [tips and manuals](tips/learn_R.md)), and
-- Get inspired by learning from various templates (&rarr; [example projects](examples/)), and
-- Follow a tutorial to implement a reproducible workflow (&rarr; [tutorial](tutorial/)).
+Learn [more about our initiative here](contact.md).
 
 <!--Our roadmap for future releases of this site include:
 
@@ -24,7 +22,7 @@ The [Oxford Dictionary](https://www.lexico.com/definition/boot_camp){target=_bla
 - a tutorial and code to *efficiently managing large-sclae web data collections using scraping/APIs and (un)structured databases*.
 -->
 
-!!! hint "Do I really need this site?"
+!!! hint "Why this site?"
 
     - No matter how confident you are about your computer skills, the chance is that
     you *manage your projects guided by intuition*. A directory
