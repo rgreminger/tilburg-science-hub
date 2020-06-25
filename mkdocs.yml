@@ -51,6 +51,18 @@ nav:
 #  - Style instructions for papers:
 #  - How to collaborate using Git @Hulai
 #  -
+- Project Templates and Tutorials:
+    - Overview: examples/index.md
+    - Tutorial:
+        - Getting Started: tutorial/index.md
+        - Verify Software Setup: tutorial/verify.md
+        - Download the Template: tutorial/clone.md
+        - Running the Workflow: tutorial/run.md
+        - Inspecting the Data-preparation Pipeline: tutorial/pipeline-make.md
+        - Dry-run of Make and First Modifications: tutorial/wipe-rerun.md
+        - More Modifications: tutorial/modifications.md
+        - Extending the Analysis: tutorial/analysis.md
+        - Finished & Looking Ahead: tutorial/finish.md
 - Tips and Manuals:
     - Learning R: tips/learn_R.md
     - Learning Python and Julia: tips/quantecon.md
@@ -58,20 +70,8 @@ nav:
     - Writing Good Code: tips/coding.md
     - Setting up a file exchange: tips/fileexchanges.md
     - Links to other initatives: tips/links.md
-- Example Projects: examples/index.md
-- Tutorial:
-    - Getting Started: tutorial/index.md
-    - Verify Software Setup: tutorial/verify.md
-    - Download the Template: tutorial/clone.md
-    - Running the Workflow: tutorial/run.md
-    - Inspecting the Data-preparation Pipeline: tutorial/pipeline-make.md
-    - Dry-run of Make and First Modifications: tutorial/wipe-rerun.md
-    - More Modifications: tutorial/modifications.md
-    - Extending the Analysis: tutorial/analysis.md
-    - Finished & Looking Ahead: tutorial/finish.md
-
-- Contact: contact.md
-- Acknowledgements: acknowledgement.md
+- About: about.md
+#- Acknowledgements: acknowledgement.md
 
 theme:
   name: 'material'
@@ -85,5 +85,5 @@ markdown_extensions:
   - attr_list
   - footnotes
   - attr_list
-  
+
 google_analytics: ['UA-23035208-2', 'tilburgsciencehub.com']
