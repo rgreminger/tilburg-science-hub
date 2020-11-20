@@ -84,13 +84,19 @@ with the following project "components":
 
 2. **source code**
 
-    This is all the source code written to *execute your pipeline* (defined earlier; e.g., preparing data, analyzing it, and producing some tables or figures). It's important to version your code, so that you can always roll back to different incarnations
-    of your project.    
+    This is all the source code written to *execute your pipeline* (defined earlier; e.g., preparing data, analyzing it, and producing some tables or figures).
 
-3. **generated files (temporary and output)**
+    - Each source code file typically...
+        - loads some input files or accepts some arguments,
+        - does some operations on data (e.g., clean it, estimate a model), and
+        - then saves *generated files* (output, audit, or temporary files).
+
+    - It's important to version your code, so that you can always roll back to different incarnations of your project.    
+
+3. **generated files (temporary, output, and audit)**
 
     These files are *the result of executing your source code*. Think about cleaned
-    data sets, results of your analysis, or tables and figures. In most instances, it may be enough to store
+    data sets, results of your analysis, tables and figures, or some log files to audit whether everything went well (e.g., counting the number of observations, and writing those in `audit.txt`). In most instances, it may be enough to store
     those only temporarily on your local computer.
 
 4. **file exchange**
@@ -148,8 +154,7 @@ different project components.
     a powerful EC2 instance in the Amazon Cloud, cloned our source code using Git,
     pulled in that big final dataset from the file exchange, and estimate our model.
     We're relieved the model is running in the cloud, as that computer likely will
-    not restart or crash (unlike our office PC, which may be arbitrarily shut down
-    by our IT admins... - been there before...).
+    not restart or crash.
 
     4. **Stage 4 - prepare tables and figures & write paper**: Time to shine! We pull in our final data set from stage 1, and either the
     prototype model results (from stage 2) or the final model results (from stage 3)

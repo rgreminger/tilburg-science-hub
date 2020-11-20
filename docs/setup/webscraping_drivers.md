@@ -1,59 +1,12 @@
 # Web Scraping Using an Automated Browser
 
-Sometimes when we scrape the web, we need to automate our computer to open a web browser to gather information from each page.
-This is especially true when the site we want to scrape has content that is loaded dynamically with javascript.
+Sometimes when we scrape the web, we need to automate our computer to open a web browser to gather information from each page. This is especially true when the site we want to scrape has content that is loaded dynamically with javascript.
 
-We will install one package to help us here: Chromedriver
-
+We will install one package to help us here: Chromedriver.
 
 Installing this stuff is operating-system specific, hence so are the instructions below.
 
-## Mac Users
-
-Make sure your `homebrew` package is up-to-date. To do so, open a terminal and enter
-
-```
-brew update
-```
-
-If that returns an error, `homebrew` is not installed.
-
-- To install Homebrew, open a terminal and paste the following command:
-
-	```
-	/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
-	```
-
-- To verify that Homebrew installed correctly, enter the following into your terminal
-
-	```bash
-	brew doctor
-	```
-
-	...and you should see the following output
-
-	```bash
-	Your system is ready to brew
-	```
-
-
-### Chromedriver
-
-* We assume you have Google Chrome installed. If not, do this first.
-
-*   Install `chromedriver` via homebrew:
-```
-brew cask install chromedriver
-```
-*   Verify your install, by entering the following in your terminal. The expected output is `ChromeDriver 2.4X.X`
-```
-chromedriver --version
-```
-
-
 ## Windows Users
-
-### Chromedriver
 
 Watch our YouTube video, in which we walk you through the setup on Windows.
 
@@ -88,9 +41,54 @@ Watch our YouTube video, in which we walk you through the setup on Windows.
 
 			- Click on `OK` as often as needed.
 
-## Linux Users
 
-### Chromedriver
+## Mac Users
+
+### Let's install homebrew first!
+
+Make sure your `homebrew` package is up-to-date. To do so, open a terminal and enter
+
+```
+brew update
+```
+
+If that returns an error, `homebrew` is not installed.
+
+- To install Homebrew, open a terminal and paste the following command:
+
+	```
+	/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
+	```
+
+- To verify that Homebrew installed correctly, enter the following into your terminal
+
+	```
+	brew doctor
+	```
+
+	...and you should see the following output
+
+	```
+	Your system is ready to brew
+	```
+
+### Let's proceed to installing Chromedriver
+
+* We assume you have Google Chrome installed. If not, do this first, please.
+
+*   Install `chromedriver` via homebrew:
+
+```
+brew cask install chromedriver
+```
+
+*   Verify your install, by entering the following in your terminal. The expected output is `ChromeDriver XX`
+
+```
+chromedriver --version
+```
+
+## Linux Users
 
 *   Open a terminal session
 *   Install Google Chrome for Debian/Ubuntu by pasting the following and then pressing `Return`
@@ -101,10 +99,12 @@ wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
 sudo dpkg -i google-chrome*.deb
 sudo apt-get install -f
 ```
+
 *   Install `xvfb` so chrome can run 'headless' by pasting the following and then pressing `Return`
 ```
 sudo apt-get install xvfb
 ```
+
 *   Install Chromedriver by pasting the following and then pressing `Return`:
 ```
 sudo apt-get install unzip
@@ -117,11 +117,7 @@ sudo mv -f chromedriver /usr/local/share/chromedriver
 sudo ln -s /usr/local/share/chromedriver /usr/local/bin/chromedriver
 sudo ln -s /usr/local/share/chromedriver /usr/bin/chromedriver
 ```
-*   Your install worked, you should get `ChromeDriver 2.4X.XX` returned if the installation was successful
+*   Your install worked, you should get `ChromeDriver XX` returned if the installation was successful
 ```
 chromedriver --version
 ```
-
-
-!!! tip "Hat-tip"
-    We borrowed quite liberally from Christopher Su to for instructions on [installing Chrome and Chromedriver](https://christopher.su/2015/selenium-chromedriver-ubuntu/).

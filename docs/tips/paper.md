@@ -62,6 +62,7 @@ This will take a long time. One rule of thumb is that doing the analysis takes 5
 ### Using LyX?
 
 Some technical tips when you are using LyX:
+
 - The booktabs package is nice.
 - It's a good idea to put table and figure notes into minipage environments.
 - Use a normal size font and the resizebox package to make tables smaller.

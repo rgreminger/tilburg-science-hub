@@ -6,10 +6,10 @@ Throughout the course we will emphasize use of the terminal and executing comman
 
 ## Windows Users
 
-So that we can work as closely as possible to the Mac and Linux users we will install [Cygwin](https://www.cygwin.com/).
+So that we can work as closely as possible to the Mac and Linux users we will install [Cygwin](https://www.cygwin.com/){target=_blank}.
 
-*   Download Cygwin [here](https://cygwin.com/install.html) and use the graphical installer. Accept all the default options.
-*   Choose any server from which to download cygwin and packages when prompted. 
+*   Download Cygwin [here](https://cygwin.com/install.html){target=_blank} and use the graphical installer. Accept all the default options.
+*   Choose any server from which to download cygwin and packages when prompted.
 *   Verify your installation by opening Cygwin. When it opens you should see a black box with some text that looks like:
 ```bash
 userName@computerName: ~$
@@ -43,7 +43,7 @@ You will need to install some other software from the terminal thoughout the cou
 
 *   First we want to install X-code command line tools. Open a terminal by searching for it with spotlight, `cmd + spacebar` then type terminal and press `Return` when it appears. Then, copy and paste the following
 
-```bash
+```
 xcode-select --install
 ```
 
@@ -51,22 +51,22 @@ If you get an answer that the command line tools are already installed, you can 
 
 * Second,  install Homebrew by opening a terminal and pasting the following command:
 
-```bash
+```
 ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 ```
 
 * To verify that Homebrew installed correctly, enter the following into your terminal
-```bash
+```
 brew doctor
 ```
 And you should see the following output
-```bash
+```
 Your system is ready to brew
 ```
 
 * Now we can use homebrew to easily install software. To use the current R version 3.5.1, we want to make sure you have some basic system tools that some packages require. Let's (re)install them real quick. First `libxml2`:
 
-```bash
+```
 brew reinstall libxml2
 ```
 
@@ -74,13 +74,13 @@ If you system tells you that it is not yet installed, then try  ```brew install 
 
 We also want to link this so that terminal finds it later:
 
-```bash
+```
 echo 'export PATH="/usr/local/opt/libxml2/bin:$PATH"' >> ~/.bash_profile
 ```
 
 * Second, we also need `openssl`:
 
-```bash
+```
 brew reinstall openssl
 ```
 Again, if it is already installed, then use ``` brew install openssl``` instead.
@@ -95,7 +95,7 @@ echo 'export PATH="/usr/local/opt/openssl/bin:$PATH"' >> ~/.bash_profile
 
 * Finally, we need `libgit2`:
 
-```bash
+```
 brew install libgit2
 ```
 
@@ -107,13 +107,13 @@ To use the current R version, we need to install some system tools. For this ope
 
 * Now copy the following command into terminal and press `Enter`:
 
-```bash
+```
   sudo apt-get install libcurl4-gnutls-dev librtmp-dev
 ```
 
 * After the installation succeeded successfully repeat this one-by-one with the following two other commands:
 
-```bash
+```
 sudo apt-get install libxml2-dev
 sudo apt-get install libssl-dev
 ```

@@ -2,9 +2,9 @@
 title: 'Overview about the most common data operations'
 subtitle: Implemented in MySQL, and R's `tidyverse/dplyr` and `data.table`
 output:
+  pdf_document: default
   html_document:
     df_print: paged
-  pdf_document: default
 ---
 
 **About this document:**
@@ -15,9 +15,22 @@ Try executing this chunk by clicking the *Run* button within the chunk or by pla
 
 **Learning objectives:**
 
+*Mandatory for everybody*
+
 - Familiarize you with the most common data operations on social and digital media data
-- Introduce you to two packages to wrangle with data: dplyr (which has a very "clean" and easy-to-use syntax, but is slow on big data sets), and data.table (which is a bit messier to write up, but shows extremely good performance on large datasets)
-- Show you alternatives - if they are available - using the SQL syntax
+- Being able to explain, in words (not in programming code), what types of different operations there are, and how they change their input data.
+
+    *Example of a multiple-choice question you may encounter an a test:*
+    
+    Question: "Mike has a dataset with primary key date and track ID for 100 tracks. Because the data is available at the daily level for one year, that's quite a number of rows (365 x 100 = 36,500), and difficult to read. Can you suggest Mike a *data operation* that would make this data more accessible for a decision-maker interested in retaining the daily data?"
+    
+    Answer: "The data is stored in long format. You can convert it to wide format. Ideally, the primary key of that data will be `date`, and the columns will become `track_id`. The new data set then is only 365 rows long and 100 columns wide."
+
+*Optional for those who wish to enhance their R skills*
+
+- Introduce you to two packages to wrangle with data: `dplyr`/`tidyverse` (which has a very "clean" and easy-to-use syntax, but is slow on big data sets), and `data.table` (which is a bit messier to write up, but shows extremely good performance on large datasets)
+- Reproduce examples using SQL - if available and/or efficient to do so.
+- Want to add to/change this document? Want to create a version for Python, featuring `pandas`? You can *fork* the originating GitHub repository, commit your changes, and then issue a pull request to us & we're more than happy to integrate/update!
 
 **Prerequisites:**
 
@@ -27,8 +40,8 @@ Try executing this chunk by clicking the *Run* button within the chunk or by pla
 
 - download the cheat sheets
   - dplyr and tidyr: https://rstudio.com/wp-content/uploads/2015/02/data-wrangling-cheatsheet.pdf
-  - data.table: tba
-  - SQL: tba
+  - data.table: https://s3.amazonaws.com/assets.datacamp.com/blog_assets/datatable_Cheat_Sheet_R.pdf
+  - SQL: https://www.jrebel.com/blog/sql-cheat-sheet (and our course's own cheat sheet: https://docs.google.com/document/d/1AVGKeo2L6jFacAzl3_CjJKN5oPSMEVu1V85bwnOfPo8/edit)
 
 # Setup
 
@@ -472,11 +485,222 @@ result4b = tmp
 result4b
 ```
 
-# 6. Combine/join/merge data sets
+# 6. Combine data sets
+
+Combining data sets is an essential component of preparing a data for analysis. 
+
+## Row binds
+
+The "most" simple combination is a row bind. Suppose you have data set A with 100 rows, and data set B with 150 rows (and both of these data sets have exactly the same column names), then you can bind these data sets together in the same way you would glue two books together. The resulting book has 250 pages.
+
+Let's first prepare two separate data sets (we just take two different rows from the artist dataset.
+
+```{r}
+datasetA = df_artists %>% filter(name=='Adele')
+datasetB = df_artists %>% filter(name=='AC/DC')
+```
+
+**dplry**
+
+```{r}
+bind_rows(datasetA, datasetB)
+```
+
+**data.table**
+```{r}
+rbindlist(list(datasetA, datasetB))
+```
+
+## Joins/merges
+
+In simple terms, merging (or joining) dataset A with dataset B means that you add columns from one dataset to the other dataset, given some corresponding key columns in both data sets.
+
+Suppose you have a dataset A with artist names, and a dataset T with track names, and both of these data sets have an ID column for artists, then you can "add" the artist names to the track data set using a join. Specifically, a LEFT JOIN.
+
+**Important**
+
+To be able to merge datasets, they *need to be at the same (or higher) level of aggregation*. For example, if you have data set A which measures a playlist followers in weeks, and another data set B that measures the content of the playlists every day, then you can't merge these two datasets directly.
+
+However, you could do the following:
+
+- Aggregate/summarize data set B at the weekly level (e.g., average variables); the resulting dataset B now has the same level of aggregation than dataset B, and you can merge.
+- If your primary focus is to analyze your data at the daily level, then you could "blow up" data set A by inserting 7 rows (for each day of the week) for each week in that data, and linearly interpolate the number of followers. Now, both data sets have the same aggregation level (daily), and you can go ahead and merge them.
 
 
+
+### Left joins
+
+Left joins add the columns of dataset B to dataset A, and leaves the structure of dataset A intact.
+
+**SQL**
+```{r}
+run_query('SELECT tracks.name as track_name, artists.name as artist_name FROM tracks LEFT JOIN artists ON tracks.artist_id = artists.id')
+```
+
+**dplyr**
+
+```{r}
+left_join(tracks, artists, by = c('artist_id' = 'id'))
+```
+
+**data.table**
+```{r}
+merge(tracks, artists, by.x='artist_id', by.y='id', all.x=T)
+```
+
+### Right joins
+
+Right joins work the other way around: it keeps all data in the right table (dataset B), and joins available data from the left table (dataset A)
+
+**SQL**
+```{r}
+run_query('SELECT tracks.name as track_name, artists.name as artist_name FROM artists RIGHT JOIN tracks ON tracks.artist_id = artists.id')
+```
+
+**dplyr**
+
+```{r}
+right_join(artists, tracks, by = c('id' = 'artist_id'))
+```
+
+**data.table**
+```{r}
+merge(artists, tracks, by.x='id', by.y='artist_id', all.y=T)
+```
+
+### Inner joins
+
+Inner joins keeps only rows in both data sets.
+
+**SQL**
+```{r}
+run_query('SELECT tracks.name as track_name, artists.name as artist_name FROM artists INNER JOIN tracks ON tracks.artist_id = artists.id')
+```
+
+**dplyr**
+
+```{r}
+inner_join(tracks, artists, by = c('artist_id' = 'id'))
+```
+
+**data.table**
+```{r}
+merge(tracks, artists, by.x='artist_id', by.y = 'id')
+```
+
+## Special cases
+
+Here, we discuss a few "special" joins.
+
+### Filling in data
+
+Let's take a look at the plays for the track "El Perdon". Notice the track has mostly been playing in Argentina and Australia, sometime starting in 2015.
+
+```{r}
+run_query("SELECT * from plays WHERE track_id = '4Ld3RS6KBXGsvtfmnjxlVl'")
+```
+
+Suppose now you'd like to prepare a panel data set in which for each day in 2015 and 2016, you'd see the number of streams for that particular song in Argentina and Australia. Merely using the SQL query above isn't enough - two years have 365*2 days, and the resulting rows above only list data on two particular dates in a year.
+
+What we then require first is an "empty" dataset, only listing the country, and date values for each day in 2015 and 2016.
+
+Let's create that data first:
+```{r}
+countries = c('ar', 'au')
+dates = seq(from=as.Date('2015-01-01'), to = as.Date('2016-12-31'), by = '1 day')
+
+tmp = lapply(countries, function(x) data.table(country=x, date=dates))
+keydata = rbindlist(tmp)
+keydata
+```
+
+Browse this "empty" data set above. Can you confirm it lists all dates in 2015 and 2016, for both countries?
+
+We can now go ahead and merge our song data, using a LEFT JOIN (we want to keep all rows in A, and only merge the rows to it when the song was actually in the Top 200).
+
+**dplyr**
+
+```{r}
+# Version 1
+tmp =  df_plays %>% filter(track_id == '4Ld3RS6KBXGsvtfmnjxlVl') %>% mutate(date=as.Date(date))
+left_join(keydata, tmp) %>% select(country, date, streams) %>% replace_na(list(streams=0))
+
+# Version 2 is even more elegant/readable
+tmp %>% complete(date= seq.Date(from = as.Date('2015-01-01'), to = as.Date('2016-12-31'), by = '1 day')) %>% select(country, date, streams)
+```
+
+Scroll down to about April/May 2015: see those streams there? 
+
+**data.table**
+```{r}
+merged_data = merge(keydata, tmp, by = c('country', 'date'), all.x=T)
+merged_data[is.na(streams), streams := 0] # replace NAs with 0s
+merged_data[, c('country', 'date','streams'),with=F] # only show selected columns
+```
 
 # 7. Loading and saving
 
+Alright - we're done "wrangling" with our data. It's time to save it.
 
+## Saving data
 
+### CSV files
+
+Saving your data in CSV files has several advantages:
+- program independence: you can open the data in any software (e.g., R, Python, SPSS, ...)
+- the data is likely to be accessible in the future: CSV files have a very simple structure that you
+  can even see while merely looking at it in a text editor.
+  
+The disadvantages are:
+- If you're working with special encodings (e.g., special characters), CSV files many times
+  break when you try to open them in other software. For example, if you open a CSV file
+  in Excel and save it again, it's format will be changed and R may encounter difficulties 
+  reading it in.
+
+Here, we by all means prefer `data.table` due to its unprecedented speed in writing data to the disk.
+
+**data.table**
+```{r}
+# Let's compare a regular write (100 times)...
+system.time({for (i in 1:100) write.table(plays, 'plays.csv')})
+
+# To 100 times a data.table fwrite
+system.time({for (i in 1:100) fwrite(plays, 'plays.csv')})
+
+# It's save to assume fwrite always beats R's own write.table. 
+# So, let's write it to the disk.
+fwrite(plays, 'plays.csv')
+
+new_data <- fread('plays.csv')
+```
+
+### RData
+
+Sometimes it's also convenient to store data directly in the RData format. You can also save more than one object in a file. The advantage is you can read in all data at the same time, and the data is also automatically zipped. The disadvantage is that you need R to read in that data (so no independence!), and it may take a while to load in the data (way longer than reading in three CSVs!).
+
+```{r}
+save(plays, artists, tracks, file = 'my_data.RData')
+```
+
+## Reading data
+
+### CSV files
+
+Let's now read in our saved data.
+
+```{r}
+my_plays <- fread('plays.csv')
+head(my_plays)
+```
+
+```{r}
+# remove our existing data first
+rm(plays, artists, tracks)
+
+load('my_data.RData')
+
+head(plays)
+head(artists)
+head(tracks)
+
+```
