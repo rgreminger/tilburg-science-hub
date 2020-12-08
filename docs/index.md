@@ -24,4 +24,4 @@ Learn more [about Tilburg Science Hub here](about.md).
 !!! important "Want to contribute?"
     	  * This is an __open source project__, and we welcome contributions of any kind.
         * You can report any outdated content, broken links, or unclear descriptions [via e-mail!](mailto:h.datta@tilburguniversity.edu)
-        * Want to get involved in our project by changing/adding material? [Visit our GitHub repository to see how](https://github.com/hannesdatta/tilburg-science-hub/blob/tilburg-update/CONTRIBUTING.md){target=_blank}.
+        * Want to get involved in our project by changing/adding material? [Visit our GitHub repository to see how](https://github.com/tilburgsciencehub/tilburg-science-hub/blob/tilburg-update/CONTRIBUTING.md){target=_blank}.

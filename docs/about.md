@@ -54,7 +54,7 @@ and Management (2019-...)](https://www.tilburguniversity.edu/about/schools/econo
 The site is managed by [Hannes Datta](https:/hannesdatta.com){target=_blank} and [Tobias Klein](https://www.tilburguniversity.edu/staff/t-j-klein){target=_blank}.
 Some material is based on the fantastic (open source) works of others - see below.
 
-Want to contribute to this open-source initiative? [Visit our GitHub page to see how](https://github.com/hannesdatta/tilburg-science-hub/blob/tilburg-update/CONTRIBUTING.md){target=_blank}.
+Want to contribute to this open-source initiative? [Visit our GitHub page to see how](https://github.com/tilburgsciencehub/tilburg-science-hub/blob/tilburg-update/CONTRIBUTING.md){target=_blank}.
 <!--Watch our YouTube video!-->
 
 ## Acknowledgements
