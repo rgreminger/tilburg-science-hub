@@ -45,7 +45,7 @@ like to "build" the entire project on your computer?** Editing a project in the 
 ### Contribution Guide
 
 Here's our contribution guide (these instructions
-    also apply to [contributing to this site](https://github.com/hannesdatta/tilburg-science-hub/blob/tilburg-update/README.md)).
+    also apply to [contributing to this site](https://github.com/tilburgsciencehub/tilburg-science-hub/blob/tilburg-update/README.md)).
 
 1. To get started... (you need to only do this once per repository)
     1. Forking required?

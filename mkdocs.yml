@@ -1,7 +1,7 @@
 site_name: Tilburg Science Hub
 site_url: http://www.tilburgsciencehub.com
-repo_url: https://github.com/hannesdatta/tilburg-science-hub
-edit_uri: https://github.com/hannesdatta/tilburg-science-hub/blob/tilburg-update/docs/
+repo_url: https://github.com/tilburgsciencehub/tilburg-science-hub
+edit_uri: https://github.com/tilburgsciencehub/tilburg-science-hub/blob/tilburg-update/docs/
 repo_name: 'GitHub'
 site_description: "Tilburg Science Hub is an open-source resource repository that supports students and researchers in the social sciences to set up reproducible workflows and to efficiently manage data- and computation-intensive projects."
 site_author: Hannes Datta, Tobias J. Klein
@@ -71,6 +71,13 @@ nav:
     - Setting up a file exchange: tips/fileexchanges.md
     - Links to other initatives: tips/links.md
 - About: about.md
+- Creating Educational Videos:
+  - Buying Equipment for Educational Videos: edu-videos/equipment-edu-videos.md
+  - Shooting Educational Videos: edu-videos/shooting-edu-videos.md
+- Contribute:
+  - How to contribute: contribute/how-to-contribute.md
+  - Building Blocks Template: contribute/building-block-shell.md
+  - Tutorial Template: contribute/tutorial-shell.md
 #- Acknowledgements: acknowledgement.md
 
 theme:

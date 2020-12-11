@@ -1,6 +1,6 @@
 # Contributing
 
-[Tilburg Science Hub](https://github.com/hannesdatta/tilburg-science-hub) is an open source project,
+[Tilburg Science Hub](https://github.com/tilburgsciencehub/tilburg-science-hub) is an open source project,
 and we welcome contributions of all kinds:
 new tutorials,
 fixes to existing material,

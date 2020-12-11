@@ -380,7 +380,7 @@ Can use TeamViewer here
 
 - Use the [Git cheat sheet](https://education.github.com/git-cheat-sheet-education.pdf)
 
-- Show [contribution guidelines of Tilburg Science Hub](https://github.com/hannesdatta/tilburg-science-hub/blob/tilburg-update/CONTRIBUTING.md)
+- Show [contribution guidelines of Tilburg Science Hub](https://github.com/tilburgsciencehub/tilburg-science-hub/blob/tilburg-update/CONTRIBUTING.md)
 
 - Find something you'd like to rewrite, issue a pull request!
 
