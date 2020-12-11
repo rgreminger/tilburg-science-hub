@@ -51,6 +51,7 @@ nav:
 #  - Style instructions for papers:
 #  - How to collaborate using Git @Hulai
 #  -
+  - Software Environments: setup/environments.md 
 - Project Templates and Tutorials:
     - Overview: examples/index.md
     - Tutorial:
